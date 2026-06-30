@@ -1,0 +1,157 @@
+#!/usr/bin/env python3
+"""Generate the navigation index.html for all cities and templates."""
+import json, os
+
+REPO = '/Users/macclaw/yuejingxi-r-and-d-assistant'
+with open(os.path.join(REPO, 'data/city_config.json')) as f:
+    CONFIG = json.load(f)
+
+DATE = CONFIG.get('date', '20260624')
+
+
+def report_exists(city_name, cuisine_name, cat_key):
+    fname = f'{city_name}{cuisine_name}_{cat_key}_{DATE}.html'
+    return os.path.exists(os.path.join(CONFIG['paths']['desktop'], city_name, fname))
+
+
+def build_index():
+    cities = CONFIG['cities']
+    templates = CONFIG['templates']
+
+    # Group jobs by city
+    city_templates = {}
+    for job in CONFIG['jobs']:
+        city_templates.setdefault(job['city'], []).append(job['template'])
+
+    city_buttons = []
+    city_sections = []
+
+    for i, city in enumerate(cities):
+        cname = city['name']
+        tkeys = city_templates.get(cname, [])
+        if not tkeys:
+            continue
+
+        active = 'active' if i == 0 else ''
+        city_buttons.append(f'    <button class="city-tab {active}" data-city="{cname}" onclick="switchCity(\'{cname}\')">{cname}</button>')
+
+        sections = []
+        for tk in tkeys:
+            tpl = templates[tk]
+            cuisine = tpl['cuisine_name']
+            cards = []
+            for cat in tpl['report_categories']:
+                key = cat['key']
+                fname = f'{cname}{cuisine}_{key}_{DATE}.html'
+                exists = report_exists(cname, cuisine, key)
+                badge = '<span class="tg2">已生成</span>' if exists else '<span class="tg2 pending">待生成</span>'
+                href = f'{cname}/{fname}' if exists else '#'
+                # Pick icon by key
+                icon = {'黑珍珠':'🏆','精选':'🏆','必吃榜':'🏅','排队':'🚶','老字号':'🏛️'}.get(key,'📄')
+                cards.append(f'''
+      <a class="cc c1" href="{href}">
+        <div class="bar"></div>
+        <div class="ic">{icon}</div>
+        <h3>{key}</h3>
+        <div class="ct">{cuisine}</div>
+        {badge}
+      </a>''')
+
+            sections.append(f'''
+    <div class="st">🍜 {cuisine} <span class="tg">{cname}</span></div>
+    <div class="cg">{''.join(cards)}</div>''')
+
+        style = '' if i == 0 else 'display:none'
+        city_sections.append(f'''
+  <div class="city-section" id="city-{cname}" style="{style}">
+{''.join(sections)}
+  </div>''')
+
+    buttons_html = '\n'.join(city_buttons)
+    sections_html = '\n'.join(city_sections)
+
+    html = f'''<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<title>粤京熹 · 菜品研发数据库</title>
+<style>
+*{{margin:0;padding:0;box-sizing:border-box}}
+body{{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;background:#f5f5f5;color:#333}}
+.header{{background:linear-gradient(135deg,#c0392b,#e74c3c);color:#fff;padding:50px 20px 40px;text-align:center}}
+.header h1{{font-size:30px;margin-bottom:6px}}
+.header .sub{{font-size:14px;opacity:.85;margin-top:6px}}
+.container{{max-width:1100px;margin:0 auto;padding:30px 20px}}
+.city-tabs{{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}}
+.city-tab{{background:#fff;border:1px solid #ddd;border-radius:20px;padding:8px 18px;cursor:pointer;font-size:14px;transition:all .2s}}
+.city-tab:hover{{background:#fef3f2;border-color:#c0392b;color:#c0392b}}
+.city-tab.active{{background:#c0392b;color:#fff;border-color:#c0392b}}
+.st{{font-size:18px;font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:8px;color:#333}}
+.st .tg{{font-size:12px;background:#c0392b;color:#fff;padding:2px 10px;border-radius:10px}}
+.cg{{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:36px}}
+.cc{{background:#fff;border-radius:16px;padding:22px 20px;box-shadow:0 2px 12px rgba(0,0,0,.08);text-decoration:none;color:#333;display:block;position:relative;overflow:hidden;transition:transform .2s}}
+.cc:hover{{transform:translateY(-3px);box-shadow:0 6px 20px rgba(0,0,0,.12)}}
+.cc .bar{{position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#c0392b,#e74c3c)}}
+.cc .ic{{font-size:30px;margin-bottom:8px}}
+.cc h3{{font-size:16px;font-weight:700;margin-bottom:2px}}
+.cc .ct{{font-size:12px;color:#999}}
+.cc .tg2{{display:inline-block;background:#fef3f2;color:#c0392b;padding:2px 10px;border-radius:10px;font-size:11px;margin-top:6px}}
+.cc .tg2.pending{{background:#eee;color:#999}}
+.ll{{display:inline-block;background:#fff;border-radius:12px;padding:14px 24px;box-shadow:0 2px 8px rgba(0,0,0,.06);text-decoration:none;color:#333;font-size:15px;font-weight:600}}
+.footer{{text-align:center;padding:30px;color:#999;font-size:12px}}
+@media(max-width:768px){{.cg{{grid-template-columns:repeat(2,1fr)}}.header{{padding:36px 16px 30px}}.header h1{{font-size:24px}}}}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>🍜 粤京熹 · 菜品研发数据库</h1>
+<div class="sub">粤菜 · {DATE[:4]}年{DATE[4:6]}月 · 多城市扩展版</div>
+</div>
+<div class="container">
+<div class="city-tabs">
+{buttons_html}
+</div>
+{sections_html}
+<div style="text-align:center;margin-top:10px">
+<a class="ll" href="research_list.html">📋 菜品研究方向清单</a>
+</div>
+<div class="footer">
+<p>粤京熹 R&D 助手 · 数据来源：大众点评</p>
+<p style="margin-top:4px;font-size:11px">📍 当前覆盖：{'、'.join(c['name'] for c in cities)}</p>
+</div>
+</div>
+<script>
+function switchCity(name){{
+  document.querySelectorAll('.city-section').forEach(s=>s.style.display='none');
+  document.getElementById('city-'+name).style.display='block';
+  document.querySelectorAll('.city-tab').forEach(t=>t.classList.remove('active'));
+  event.target.classList.add('active');
+}}
+</script>
+</body>
+</html>'''
+    return html
+
+
+def main():
+    html = build_index()
+
+    # Write to repo root, docs, and desktop root
+    paths = [
+        os.path.join(REPO, 'index.html'),
+        os.path.join(REPO, 'docs', 'index.html'),
+        os.path.join(CONFIG['paths']['desktop'], 'index.html'),
+    ]
+    for p in paths:
+        os.makedirs(os.path.dirname(p), exist_ok=True)
+        with open(p, 'w') as f:
+            f.write(html)
+    print('Index generated:')
+    for p in paths:
+        print(f'  {p}')
+
+
+if __name__ == '__main__':
+    main()
