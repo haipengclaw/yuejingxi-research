@@ -12,7 +12,7 @@
         {"key": "黑珍珠", "search_keywords": ["粤菜 黑珍珠"], "max": 60},
         {"key": "米其林", "search_keywords": ["粤菜 米其林"], "max": 60},
         {"key": "必吃榜", "search_keywords": ["粤菜 必吃榜"], "max": 60},
-        {"key": "排队", "search_keywords": ["粤菜"], "sort_by": "reviewCount", "max": 60},
+        {"key": "排队", "search_keywords": ["粤菜 排队"], "sort_by": "reviewCount", "max": 60},
         {"key": "老字号", "search_keywords": ["粤菜 老字号"], "max": 60}
       ]
     }

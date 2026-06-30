@@ -87,9 +87,11 @@ def run_search(city_name, template_key):
             for page in range(1, MAX_PAGES + 1):
                 try:
                     shops = extract_search_shops(city_id, kw, page=page)
-                    print(f'    🔍 [{cat_label}] {kw} p{page} -> {len(shops)} shops')
-                    cat_shops.extend(shops)
-                    if len(shops) == 0:
+                    # Filter out non-restaurants immediately so we stop early
+                    real_shops = [s for s in shops if is_restaurant(s.get('name', ''))]
+                    print(f'    🔍 [{cat_label}] {kw} p{page} -> {len(shops)} shops ({len(real_shops)} 餐饮)')
+                    cat_shops.extend(real_shops)
+                    if len(real_shops) == 0:
                         break
                     time.sleep(SLEEP_S)
                 except RuntimeError as e:

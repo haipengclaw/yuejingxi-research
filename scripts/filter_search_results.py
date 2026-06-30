@@ -69,18 +69,16 @@ def filter_results(city_name, template_key):
                 print(f'  🗑️ [{cat}] {name}')
         filtered[cat] = kept
 
-    # Deduplicate: keep shop in highest-priority category
-    priority_index = {cat: i for i, cat in enumerate(CATEGORY_PRIORITY)}
-    seen = {}
+    # Deduplicate within each category only (don't remove from other categories)
+    final = {}
     for cat, shops in filtered.items():
-        prio = priority_index.get(cat, 99)
+        seen = set()
+        kept = []
         for name, sid in shops:
-            if sid not in seen or prio < seen[sid][0]:
-                seen[sid] = (prio, cat, name)
-
-    final = {cat: [] for cat in filtered}
-    for sid, (prio, cat, name) in seen.items():
-        final[cat].append([name, sid])
+            if sid not in seen:
+                seen.add(sid)
+                kept.append([name, sid])
+        final[cat] = kept
 
     # Preserve original order
     original_order = {sid: i for cat, shops in data.items() for i, (name, sid) in enumerate(shops)}
