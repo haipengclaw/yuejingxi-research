@@ -64,11 +64,13 @@ def generate_one_report(city_name, city_pinyin, cuisine_name, category_label, sh
         info = get_shop_info(shop_id, name, city_name)
         rating = info.get('rating', 0)
         stars = '★' * max(1, round(rating)) if rating else ''
+        bp = os.path.join(REPO, 'docs', 'brands', city_name, f'{name}.html')
+        dbn = f' <a href="../brands/{city_name}/{name}.html" class="detail-btn" target="_blank" title="查看品牌详情">📋 详细</a>' if os.path.exists(bp) else ''
 
         html += f'''
 <div class="shop-card">
 <div class="shop-banner">
-<h2>{idx+1}. {name}{detail_btn_name}</h2>
+<h2>{idx+1}. {name}{dbn}</h2>
 <div class="meta">
 <span class="stars">{stars}</span>
 <span class="{score_class(rating)}" style="font-weight:700;font-size:16px">{rating}</span>
