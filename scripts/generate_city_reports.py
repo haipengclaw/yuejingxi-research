@@ -51,8 +51,13 @@ def generate_one_report(city_name, city_pinyin, cuisine_name, category_label, sh
 <body>
 <div class="container">
 <div class="header">
+<div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;margin-bottom:8px">
+<div style="font-size:12px;opacity:.8">
+<a href="../../index.html" style="color:#fff;text-decoration:none">← 返回首页</a>
+</div>
 <div style="float:right;font-size:13px;opacity:.9;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px">
 <a href="../research_list.html" style="color:#fff;text-decoration:none">📋 研究清单 <span id="researchCount" style="font-weight:700">0</span> 道菜</a>
+</div>
 </div>
 <h1>🍜 {city_name}{cuisine_name} · {cat_key}</h1>
 <div class="desc">📍 {city_name} · 数据来源：大众点评 · {DATE[:4]}-{DATE[4:6]}-{DATE[6:]} · 已收录 <strong>{shown}</strong> 家 · 粤京熹 R&D 助手</div>
