@@ -67,7 +67,6 @@ def build_index():
 {''.join(sections)}
   </div>''')
 
-    buttons_html = '\n'.join(city_buttons)
     sections_html = '\n'.join(city_sections)
 
     html = f'''<!DOCTYPE html>
@@ -84,10 +83,6 @@ body{{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;backg
 .header h1{{font-size:30px;margin-bottom:6px}}
 .header .sub{{font-size:14px;opacity:.85;margin-top:6px}}
 .container{{max-width:1100px;margin:0 auto;padding:30px 20px}}
-.city-tabs{{display:none}}
-.city-tab{{background:#fff;border:1px solid #ddd;border-radius:20px;padding:8px 18px;cursor:pointer;font-size:14px;transition:all .2s}}
-.city-tab:hover{{background:#fef3f2;border-color:#c0392b;color:#c0392b}}
-.city-tab.active{{background:#c0392b;color:#fff;border-color:#c0392b}}
 .st{{font-size:18px;font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:8px;color:#333}}
 .st .tg{{font-size:12px;background:#c0392b;color:#fff;padding:2px 10px;border-radius:10px}}
 .cg{{display:flex;gap:14px;margin-bottom:36px}}.cg .cc{{flex:1;min-width:0}}
@@ -110,9 +105,6 @@ body{{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;backg
 <div class="sub">粤菜 · {DATE[:4]}年{DATE[4:6]}月 · 多城市扩展版</div>
 </div>
 <div class="container">
-<div class="city-tabs">
-{buttons_html}
-</div>
 {sections_html}
 <div style="text-align:center;margin-top:10px">
 <a class="ll" href="research_list.html">📋 菜品研究方向清单</a>
@@ -122,14 +114,6 @@ body{{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;backg
 <p style="margin-top:4px;font-size:11px">📍 当前覆盖：{'、'.join(c['name'] for c in cities)}</p>
 </div>
 </div>
-<script>
-function switchCity(name){{
-  document.querySelectorAll('.city-section').forEach(s=>s.style.display='none');
-  document.getElementById('city-'+name).style.display='block';
-  document.querySelectorAll('.city-tab').forEach(t=>t.classList.remove('active'));
-  event.target.classList.add('active');
-}}
-</script>
 </body>
 </html>'''
     return html
