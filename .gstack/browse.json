@@ -1,8 +1,8 @@
 {
-  "pid": 34690,
+  "pid": 63397,
   "port": 34567,
-  "token": "42663fea-10d2-458e-ab8e-155a015a5675",
-  "startedAt": "2026-06-30T17:01:12.338Z",
+  "token": "a7f972b0-b92b-47e4-b203-8cdf73e1b726",
+  "startedAt": "2026-07-01T03:24:19.202Z",
   "serverPath": "/Users/macclaw/.claude/skills/gstack/browse/src/server.ts",
   "mode": "headed"
 }
