@@ -73,22 +73,22 @@ body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;backgr
 
 JS = '''
 function toggleDish(btn,dishName,shopName,imgUrl){
-  const list=JSON.parse(localStorage.getItem('researchList')||'[]');
+  const list=JSON.parse(localStorage.getItem('yjx_researchList')||'[]');
   const key=shopName+'::'+dishName;
   const idx=list.findIndex(item=>item.shop+'::'+item.dish===key);
   if(idx>=0){list.splice(idx,1);btn.classList.remove('selected');btn.textContent='☆';}
   else{list.push({shop:shopName,dish:dishName,img:imgUrl||''});btn.classList.add('selected');btn.textContent='★';}
-  localStorage.setItem('researchList',JSON.stringify(list));
+  localStorage.setItem('yjx_researchList',JSON.stringify(list));
   updateCount();
 }
 function updateCount(){
   const el=document.getElementById('researchCount');
-  if(el)el.textContent=(JSON.parse(localStorage.getItem('researchList')||'[]')).length;
+  if(el)el.textContent=(JSON.parse(localStorage.getItem('yjx_researchList')||'[]')).length;
 }
 window.addEventListener('load',function(){
   updateCount();
   document.querySelectorAll('.select-btn').forEach(b=>{
-    const list=JSON.parse(localStorage.getItem('researchList')||'[]');
+    const list=JSON.parse(localStorage.getItem('yjx_researchList')||'[]');
     if(list.some(i=>i.shop===b.dataset.shop&&i.dish===b.dataset.dish)){b.classList.add('selected');b.textContent='★';}
   });
 });
