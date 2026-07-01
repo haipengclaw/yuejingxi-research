@@ -1,151 +1,25 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="referrer" content="no-referrer">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>潮福餐馆(江南西店) · 品牌详情 · 粤京熹</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;background:#f5f5f5;color:#333}
-.container{max-width:800px;margin:0 auto;padding:16px}
-.header{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);color:#fff;border-radius:12px;padding:28px 24px;margin-bottom:16px}
-.header h1{font-size:22px;margin-bottom:4px}
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="referrer" content="no-referrer"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>潮福餐馆(江南西店) · 品牌研究 · 粤京熹</title><style>*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f5f5;color:#333}
+.container{max-width:900px;margin:0 auto;padding:16px}
+.header{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);color:#fff;border-radius:14px;padding:32px 28px;margin-bottom:16px}
+.header h1{font-size:24px;margin-bottom:4px}
 .header .sub{font-size:13px;opacity:.7;margin-bottom:8px}
 .header .tags{display:flex;flex-wrap:wrap;gap:4px}
 .header .tag{background:rgba(255,255,255,.12);padding:2px 10px;border-radius:12px;font-size:10px}
+.header .tag.gold{background:#d4af37;color:#1a1a2e;font-weight:600}
 .back{display:inline-block;color:#666;font-size:12px;margin-bottom:12px;text-decoration:none}
-.section{background:#fff;border-radius:12px;padding:20px;margin-bottom:14px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
-.section h2{font-size:16px;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:6px}
-.section p{font-size:13px;line-height:1.7;color:#555}
-.stars{color:#f5a623;font-size:16px;margin-right:4px}
-.scores{display:flex;gap:12px;font-size:12px;color:#666;margin-top:6px;flex-wrap:wrap}
-.meta{font-size:13px;color:#666;display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
-.price{color:#c0392b;font-weight:700}
-.dish-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px}
-.dish-card{background:#fafafa;border-radius:8px;padding:8px;text-align:center;border:1px solid #eee}
-.dish-card img{width:100%;aspect-ratio:1.5;object-fit:cover;border-radius:4px;margin-bottom:4px}
-.dish-card .dish-info .rank{display:inline-block;width:16px;height:16px;line-height:16px;background:#c0392b;color:#fff;font-size:9px;border-radius:50%;margin-right:2px}
-.dish-card .dish-info .name{font-size:11px;font-weight:600}
-.kw-section{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
-.kw-section .kw{background:#fef3f2;color:#c0392b;padding:2px 8px;border-radius:10px;font-size:10px;border:1px solid #fdd}
-.learn-item{padding:10px 14px;background:#fafafa;border-radius:8px;margin-bottom:8px;border-left:3px solid #c0392b;font-size:12px;line-height:1.6;color:#555}
-.learn-item .title{font-weight:600;color:#333;margin-bottom:2px}
+.section{background:#fff;border-radius:12px;padding:24px;margin-bottom:14px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.section h2{font-size:17px;font-weight:700;margin-bottom:14px}
+.section p{font-size:13px;line-height:1.8;color:#444;margin-bottom:8px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px}
+.fact{text-align:center;padding:12px 8px;background:#f8f8f8;border-radius:8px}
+.fact .num{font-size:18px;font-weight:800;color:#c0392b}
+.fact .lbl{font-size:10px;color:#999;margin-top:2px}
+.dish-card{border-left:3px solid #c0392b;padding:12px 16px;background:#fafafa;border-radius:0 8px 8px 0;margin-bottom:10px}
+.dish-card .name{font-size:14px;font-weight:600;color:#1a1a2e}
+.dish-card .desc{font-size:12px;color:#555;line-height:1.6;margin-top:4px}
+.dish-card .tag{display:inline-block;font-size:10px;background:#fef3f2;color:#c0392b;padding:1px 8px;border-radius:8px;margin-top:4px;margin-right:4px}
+.learn-card{padding:14px 16px;background:#fafafa;border-radius:8px;margin-bottom:10px;border-left:3px solid #2980b9;font-size:12px;line-height:1.7;color:#444}
+.learn-card .title{font-weight:600;color:#1a1a2e;margin-bottom:4px;font-size:13px}
 .footer{text-align:center;padding:16px;color:#999;font-size:11px}
-.footer a{color:#c0392b;text-decoration:none}
-</style>
-</head>
-<body>
-<div class="container">
-<a class="back" href="/yuejingxi-research/广州/广州粤菜_黑珍珠_20260630.html">← 返回报告</a>
-
-<div class="header">
-<h1>潮福餐馆(江南西店)</h1>
-<div class="sub">广州 · 潮汕菜</div>
-<div class="tags"><span class="tag">🏅 必吃榜</span><span class="tag">🚶 排队</span></div>
-</div>
-
-<div class="section">
-<h2>📊 基本信息</h2>
-<div class="meta">
-<span class="stars">★★★★★</span>
-<span class="price">¥97</span>
-<span>📍 江南西</span>
-
-</div>
-<div class="scores"><span>口味 4.6</span><span>环境 4.4</span><span>服务 4.5</span><span>评价 5363条</span></div>
-</div>
-
-<div class="section"><h2>🍽️ 推荐菜 Top 10</h2><div class="dish-list">
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/bTF1s54QXjlC3ICgm5Paj8UUbMSVTnc8GFKpApnfvNg6LhM5mo9xh_TBdVFsdo7-rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#1</span>
-                <span class="name">生腌虾</span>
-            </div>
-        </div>
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/sUC9ACMLZbTR0DYi8i-5Uu_dVOpUTH_JfffZg3p4-CNgFvMmoLdprHuYmfsNaLy7rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#2</span>
-                <span class="name">海鲜炒米粉</span>
-            </div>
-        </div>
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/I_XiQcRdIihqIXW66k6Kev5TO-XSK0ldoxxg0X5pgsyeUTpyRvj2azXvAQnE7eVvrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#3</span>
-                <span class="name">蚝仔烙</span>
-            </div>
-        </div>
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/WkCHqzQqyS_mDihet7Tz8pmaEqmwfgSjMUI7Ak6JEe0rby3SL8JiuqxTxq0ya0ULrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#4</span>
-                <span class="name">椒盐九肚鱼</span>
-            </div>
-        </div>
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/UaZx4P3ADDbMWjdiOqgaVPmPQwxTQ-ZkGwNKtjnOSKUnC5tacyrnsfycSXExtz4DrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#5</span>
-                <span class="name">芥蓝炒牛肉</span>
-            </div>
-        </div>
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/J4NESeMMmSeH50l78Dy6LL6ZGzyZ8zbROVqsrGN56MmC8tmzzKd4P_r64CXeZIK2rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#6</span>
-                <span class="name">炸普宁豆腐</span>
-            </div>
-        </div>
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/JQncb1r9_VwqSxrrwlDkrQ0tzownzdCwMT7rAmlq3QlJ1d-UaiACIbCESM9tlXdTrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#7</span>
-                <span class="name">卤水拼盘</span>
-            </div>
-        </div>
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/d9JronDOkzg_1styoO84DUDu9kEbNK7Ed8DAJub2NPplni-UQsZi56nDy8anDP6prN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#8</span>
-                <span class="name">姜葱炒花甲</span>
-            </div>
-        </div>
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/ByFu4hNzlZtZi5t6nYWuvYRmX5GcARtjfKo_YXToA7WipuAflbCJKK6UI9lwcqKprN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#9</span>
-                <span class="name">腌血蛤</span>
-            </div>
-        </div>
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/1KB1ZRv9OXv2pPhstcBB5Fs6hDA5VCQ7UM7lyQWtOxVfIrBx1qjFI1IJwOwyeAgbrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#10</span>
-                <span class="name">虾蟹粥</span>
-            </div>
-        </div></div></div>
-
-<div class="section"><h2>💬 食客印象</h2><div class="kw-section"><span class="kw">停车建议(38)</span> <span class="kw">必点菜品(328)</span> <span class="kw">椒盐皮皮虾有膏(25)</span> <span class="kw">打卡送饮料(13)</span> <span class="kw">适合朋友聚餐(97)</span> <span class="kw">蒜味很重(241)</span></div></div>
-
-<div class="section">
-<h2>💡 值得学习</h2>
-<div class="learn-item">
-<div class="title">⭐ 亮点</div>
-<div>潮福餐馆(江南西店)在必吃榜榜单中表现突出，评分4.6，人均¥97。位于江南西，是广州潮汕菜的代表性餐厅之一。</div>
-</div>
-<div class="learn-item">
-<div class="title">🍽️ 招牌产品</div>
-<div>推荐菜包括生腌虾、海鲜炒米粉、蚝仔烙、椒盐九肚鱼、芥蓝炒牛肉。</div>
-</div>
-</div>
-
-<div class="footer">
-<a href="/yuejingxi-research/index.html">返回粤京熹首页</a> · 粤京熹 R&D 助手<br>
-<span style="font-size:10px;color:#bbb">本页面由AI自动生成，详细信息待补充</span>
-</div>
-</div>
-</body>
-</html>
+.learn-card{padding:14px 16px;background:#fafafa;border-radius:8px;margin-bottom:10px;border-left:3px solid #2980b9;font-size:12px;line-height:1.7;color:#444}.learn-card .title{font-weight:600;color:#1a1a2e;margin-bottom:4px;font-size:13px}</style></head><body><div class="container"><a class="back" href="/yuejingxi-research/广州/广州粤菜_黑珍珠_20260630.html">← 返回报告</a><div class="header"><h1>潮福餐馆(江南西店)</h1><div class="sub">广州</div><div class="tags"><span class="tag gold">🏅 必吃榜</span><span class="tag gold">🚶 排队</span><span class="tag">¥97</span></div></div><div class="section"><h2>📊 品牌速览</h2><div class="facts"><div class="fact"><div class="num">4.65363</div><div class="lbl">评分</div></div><div class="fact"><div class="num">必吃榜·排队</div><div class="lbl">上榜</div></div><div class="fact"><div class="num">¥97</div><div class="lbl">人均</div></div></div></div><div class="section"><h2>📜 品牌介绍</h2><p>潮福餐馆(江南西店)是广州必吃榜·排队榜单上的知名餐厅。获得4.65363分的高评分，人均消费¥97。食客们认为查看全部排队情况、停车建议、必点菜品是其亮点。</p></div><div class="section"><h2>🍽 产品与经营亮点</h2><div class="dish-card"><div class="name">🏆 推荐菜品</div><div class="desc">生腌虾、海鲜炒米粉、蚝仔烙、椒盐九肚鱼、芥蓝炒牛肉</div></div><div class="dish-card"><div class="name">💬 食客口碑</div><div class="desc">查看全部排队情况(390人提及) · 停车建议(38人提及) · 必点菜品(328人提及) · 椒盐皮皮虾有膏(25人提及) · 打卡送饮料(13人提及) · 适合朋友聚餐(97人提及)</div></div></div><div class="section"><h2>💡 研发与运营启示</h2><div class="learn-card"><div class="title">🚶 排队效应分析</div><div>排队是品质的背书。持续排队说明产品力+口碑+运营效率三者都在线。可以研究它的等位管理、出餐效率、翻台率等运营细节。</div></div><div class="learn-card"><div class="title">🏅 必吃榜运营启示</div><div>必吃榜上榜需要高评分+高评价数+高热度。做好线上口碑运营、引导顾客写评价、保持评分稳定是必修课。</div></div><div class="learn-card"><div class="title">🍽️ 产品策略参考</div><div>推荐菜品生腌虾、海鲜炒米粉、蚝仔烙值得关注。分析菜品的食材选择、烹饪工艺、定价策略，可为研发提供参考。</div></div></div><div class="footer"><a href="/yuejingxi-research/index.html">返回首页</a> · 粤京熹 R&amp;D</div></div></body></html>
