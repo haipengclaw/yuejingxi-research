@@ -68,9 +68,21 @@ def build_index():
     <div class="st">🍜 {cuisine} <span class="tg">{cname}</span></div>
     <div class="cg">{''.join(cards)}</div>''')
 
+        # Find city date from first existing report
+        city_date = ''
+        for tk in tkeys:
+            tpl = templates[tk]
+            for cat in tpl['report_categories']:
+                found, fd = find_report(cname, tpl['cuisine_name'], cat['key'])
+                if found:
+                    city_date = f'{fd[:4]}-{fd[4:6]}-{fd[6:]}'
+                    break
+            if city_date: break
+
         style = ''
         city_sections.append(f'''
   <div class="city-section" id="city-{cname}" style="{style}">
+  <div class="city-date">📅 数据更新：{city_date}</div>
 {''.join(sections)}
   </div>''')
 
