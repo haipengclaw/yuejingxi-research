@@ -14,7 +14,7 @@ body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;backgr
 .header .desc{font-size:13px;opacity:.85;margin-top:8px}
 .shop-card{background:#fff;border-radius:16px;margin-bottom:28px;overflow:hidden;box-shadow:0 2px 16px rgba(0,0,0,.08)}
 .shop-banner{padding:18px 24px;border-bottom:1px solid #eee;background:#fafafa}
-.shop-banner h2{font-size:17px;font-weight:700;margin-bottom:2px}
+.shop-banner h2{font-size:17px;font-weight:700;margin-bottom:2px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}.detail-btn{display:inline-block;font-size:11px;background:#c0392b;color:#fff!important;padding:2px 10px;border-radius:12px;text-decoration:none;font-weight:400;white-space:nowrap}.detail-btn:hover{background:#a93226}
 .shop-banner .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:2px;font-size:13px;color:#666;align-items:center}
 .shop-banner .stars{color:#f5a623;font-size:15px}
 .score-high{color:#27ae60}.score-mid{color:#f39c12}
@@ -45,9 +45,9 @@ body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;backgr
 .kw-grid{display:flex;flex-wrap:wrap;gap:5px}
 .kw-tag{background:#fef3f2;color:#c0392b;padding:4px 10px;border-radius:14px;font-size:12px;border:1px solid #fdd;white-space:nowrap}
 .kw-tag .cnt{color:#e74c3c;font-weight:700;margin-left:3px}
-.select-hint{font-size:11px;color:#999;text-align:center;padding:4px 0 8px;border-bottom:1px solid #eee}
+.select-hint{font-size:11px;color:#999;text-align:center;padding:4px 0 8px;border-bottom:1px solid #eee}.brand-summary{font-size:13px;line-height:1.7;color:#555;margin-bottom:8px}.brand-tags{display:flex;flex-wrap:wrap;gap:4px 10px;font-size:12px;color:#666;margin-bottom:8px}
 .footer{text-align:center;padding:20px;color:#999;font-size:12px}
-@media(max-width:768px){.dish-grid{grid-template-columns:repeat(3,1fr)}.shop-banner h2{font-size:15px}.score-grid{gap:6px;padding:8px 12px}.score-item .val{font-size:14px}.section{padding:10px 14px}.dish-card .dish-name{font-size:11px}}
+@media(max-width:768px){.dish-grid{grid-template-columns:repeat(3,1fr)}.shop-banner h2{font-size:15px}.detail-btn{font-size:10px;padding:1px 8px}.score-grid{gap:6px;padding:8px 12px}.score-item .val{font-size:14px}.section{padding:10px 14px}.dish-card .dish-name{font-size:11px}}
 @media print{body{background:#fff;padding:0}.shop-card{box-shadow:none;border:1px solid #ddd;break-inside:avoid}.header{background:#c0392b!important;-webkit-print-color-adjust:exact}.select-btn,.select-hint,.btn-print{display:none!important}}
 </style>
 <script>
@@ -80,402 +80,18 @@ window.addEventListener('load',function(){
 <a href="../research_list.html" style="color:#fff;text-decoration:none">📋 研究清单 <span id="researchCount" style="font-weight:700">0</span> 道菜</a>
 </div>
 <h1>🍜 广州粤菜 · 米其林</h1>
-<div class="desc">📍 广州 · 数据来源：大众点评 · 2026-06-30 · 已收录 <strong>7</strong> 家 · 粤京熹 R&D 助手</div>
+<div class="desc">📍 广州 · 数据来源：大众点评 · 2026-06-30 · 已收录 <strong>27</strong> 家 · 粤京熹 R&D 助手</div>
 <button class="btn-print" onclick="window.print()" style="float:right;margin-top:8px;padding:4px 12px;border-radius:8px;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;font-size:12px;cursor:pointer">🖨️ 导出PDF</button>
 </div>
 <div class="shop-card">
 <div class="shop-banner">
 <h2>1. 名人坊·粤菜中餐厅(花城汇店)</h2>
 <div class="meta">
-<span class="stars">★★★★★</span>
-<span class="score-high" style="font-weight:700;font-size:16px">4.6</span>
-<span>|</span><span class="price-tag">¥197</span>
-<span>|</span><span></span>
-<span>|📍 珠江新城</span>
-
-</div>
-</div>
-<div class="score-grid">
-<div class="score-item"><div class="val score-high">4.6</div><div class="lbl">口味</div></div>
-<div class="score-item"><div class="val score-high">4.8</div><div class="lbl">环境</div></div>
-<div class="score-item"><div class="val score-high">4.7</div><div class="lbl">服务</div></div>
-<div class="score-item"><div class="val">495</div><div class="lbl">评价数</div></div>
-
-</div>
-<div class="section"><h3>🍽️ 推荐菜 Top 10</h3>
-<div class="dish-grid">
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/4NTp-bXx-5J4PQ89KrJWy0A7thRQwqkW6uY41XMiVzCapVdUVA3Vqhy5e0GNVh2HrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">1</span>燕窝酿凤翅</div>
-<div class="dish-count">🔥 <span class="select-btn" data-dish="燕窝酿凤翅" data-shop="名人坊·粤菜中餐厅(花城汇店)" data-img="https://qcloud.dpfile.com/pc/4NTp-bXx-5J4PQ89KrJWy0A7thRQwqkW6uY41XMiVzCapVdUVA3Vqhy5e0GNVh2HrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'燕窝酿凤翅','名人坊·粤菜中餐厅(花城汇店)','https://qcloud.dpfile.com/pc/4NTp-bXx-5J4PQ89KrJWy0A7thRQwqkW6uY41XMiVzCapVdUVA3Vqhy5e0GNVh2HrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://p0.meituan.net/ugcshaitu/a916fd7b319cd9ac4ba03c3edcdd5430519714.jpg%40290w_188h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">2</span>香水柠天妇罗虎皮虾</div>
-<div class="dish-count">🔥 <span class="select-btn" data-dish="香水柠天妇罗虎皮虾" data-shop="名人坊·粤菜中餐厅(花城汇店)" data-img="https://p0.meituan.net/ugcshaitu/a916fd7b319cd9ac4ba03c3edcdd5430519714.jpg%40290w_188h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20" onclick="toggleDish(this,'香水柠天妇罗虎皮虾','名人坊·粤菜中餐厅(花城汇店)','https://p0.meituan.net/ugcshaitu/a916fd7b319cd9ac4ba03c3edcdd5430519714.jpg%40290w_188h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/igb1Pg6k9vyr3JI9ORXjZhUYNEBVe50REtovs6Yt7VO6yDO85r4c9iK1SxJXYVNnrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">3</span>熊猫米炒饭</div>
-<div class="dish-count">🔥 <span class="select-btn" data-dish="熊猫米炒饭" data-shop="名人坊·粤菜中餐厅(花城汇店)" data-img="https://qcloud.dpfile.com/pc/igb1Pg6k9vyr3JI9ORXjZhUYNEBVe50REtovs6Yt7VO6yDO85r4c9iK1SxJXYVNnrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'熊猫米炒饭','名人坊·粤菜中餐厅(花城汇店)','https://qcloud.dpfile.com/pc/igb1Pg6k9vyr3JI9ORXjZhUYNEBVe50REtovs6Yt7VO6yDO85r4c9iK1SxJXYVNnrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/4sYydmsusf6dJkRSmHu4fXORInjWU4DBcsgOWlZ8Ed9lF0QhVOlQw6gfRINxy4iOrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">4</span>展肉炖黑蒜</div>
-<div class="dish-count"> <span class="select-btn" data-dish="展肉炖黑蒜" data-shop="名人坊·粤菜中餐厅(花城汇店)" data-img="https://qcloud.dpfile.com/pc/4sYydmsusf6dJkRSmHu4fXORInjWU4DBcsgOWlZ8Ed9lF0QhVOlQw6gfRINxy4iOrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'展肉炖黑蒜','名人坊·粤菜中餐厅(花城汇店)','https://qcloud.dpfile.com/pc/4sYydmsusf6dJkRSmHu4fXORInjWU4DBcsgOWlZ8Ed9lF0QhVOlQw6gfRINxy4iOrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/hNFzstlw_bCPB8eU1oJU6aL-KNGA9v93EQvZEEZjpb9mYHZdSeUjkPyh5-nTQ1W5rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">5</span>开胃扇子笋</div>
-<div class="dish-count"> <span class="select-btn" data-dish="开胃扇子笋" data-shop="名人坊·粤菜中餐厅(花城汇店)" data-img="https://qcloud.dpfile.com/pc/hNFzstlw_bCPB8eU1oJU6aL-KNGA9v93EQvZEEZjpb9mYHZdSeUjkPyh5-nTQ1W5rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'开胃扇子笋','名人坊·粤菜中餐厅(花城汇店)','https://qcloud.dpfile.com/pc/hNFzstlw_bCPB8eU1oJU6aL-KNGA9v93EQvZEEZjpb9mYHZdSeUjkPyh5-nTQ1W5rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/G7hWxPaabpxh6g5PojgEH24512Kp_4LkdjndCl4xYpcjJnc0UtuLqmobEMP_5CzwrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">6</span>黑蒜猪展肉汤</div>
-<div class="dish-count"> <span class="select-btn" data-dish="黑蒜猪展肉汤" data-shop="名人坊·粤菜中餐厅(花城汇店)" data-img="https://qcloud.dpfile.com/pc/G7hWxPaabpxh6g5PojgEH24512Kp_4LkdjndCl4xYpcjJnc0UtuLqmobEMP_5CzwrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'黑蒜猪展肉汤','名人坊·粤菜中餐厅(花城汇店)','https://qcloud.dpfile.com/pc/G7hWxPaabpxh6g5PojgEH24512Kp_4LkdjndCl4xYpcjJnc0UtuLqmobEMP_5CzwrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/l7TrC0tP_FdxVuuJKrwXXLnAJSy5mXWzCQ_lOBsK9_nsBtuBJfhzJ8C_Iz-VgaBUrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">7</span>和味酱烧青头鸭</div>
-<div class="dish-count"> <span class="select-btn" data-dish="和味酱烧青头鸭" data-shop="名人坊·粤菜中餐厅(花城汇店)" data-img="https://qcloud.dpfile.com/pc/l7TrC0tP_FdxVuuJKrwXXLnAJSy5mXWzCQ_lOBsK9_nsBtuBJfhzJ8C_Iz-VgaBUrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'和味酱烧青头鸭','名人坊·粤菜中餐厅(花城汇店)','https://qcloud.dpfile.com/pc/l7TrC0tP_FdxVuuJKrwXXLnAJSy5mXWzCQ_lOBsK9_nsBtuBJfhzJ8C_Iz-VgaBUrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/XWGhgyxabEwwCLdq33YMZhxWQ3c6GIarGVe6Bqif0W4b9pQa5ST5unqHxetUwsg6rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">8</span>盐水菜心</div>
-<div class="dish-count"> <span class="select-btn" data-dish="盐水菜心" data-shop="名人坊·粤菜中餐厅(花城汇店)" data-img="https://qcloud.dpfile.com/pc/XWGhgyxabEwwCLdq33YMZhxWQ3c6GIarGVe6Bqif0W4b9pQa5ST5unqHxetUwsg6rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'盐水菜心','名人坊·粤菜中餐厅(花城汇店)','https://qcloud.dpfile.com/pc/XWGhgyxabEwwCLdq33YMZhxWQ3c6GIarGVe6Bqif0W4b9pQa5ST5unqHxetUwsg6rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/tzolsrqA9VKINK5PH88R4MFMtGNZJgoNN9j71UKuG1BKRdhXVHTmUsh3r_s-B_b-rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">9</span>豆香驴打滚</div>
-<div class="dish-count"> <span class="select-btn" data-dish="豆香驴打滚" data-shop="名人坊·粤菜中餐厅(花城汇店)" data-img="https://qcloud.dpfile.com/pc/tzolsrqA9VKINK5PH88R4MFMtGNZJgoNN9j71UKuG1BKRdhXVHTmUsh3r_s-B_b-rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'豆香驴打滚','名人坊·粤菜中餐厅(花城汇店)','https://qcloud.dpfile.com/pc/tzolsrqA9VKINK5PH88R4MFMtGNZJgoNN9j71UKuG1BKRdhXVHTmUsh3r_s-B_b-rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/04IMYl8rpFxEd8X4vnro0wkaphEeQ1r52-HwX3TCUeY18GfWuFWv2rkwnBU1hi0jrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">10</span>塔焖走地鸡</div>
-<div class="dish-count"> <span class="select-btn" data-dish="塔焖走地鸡" data-shop="名人坊·粤菜中餐厅(花城汇店)" data-img="https://qcloud.dpfile.com/pc/04IMYl8rpFxEd8X4vnro0wkaphEeQ1r52-HwX3TCUeY18GfWuFWv2rkwnBU1hi0jrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'塔焖走地鸡','名人坊·粤菜中餐厅(花城汇店)','https://qcloud.dpfile.com/pc/04IMYl8rpFxEd8X4vnro0wkaphEeQ1r52-HwX3TCUeY18GfWuFWv2rkwnBU1hi0jrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-</div>
-<div class="select-hint">💡 点击菜品上的 <span style="color:#f5a623">☆</span> 收藏到研究清单</div></div>
-<div class="section"><h3>💬 评价关键词 <span class="badge">共9个</span></h3><div class="kw-grid"><span class="kw-tag">停车建议 <span class="cnt">19</span></span><span class="kw-tag">适合商务宴请 <span class="cnt">21</span></span><span class="kw-tag">园林式餐厅环境雅致 <span class="cnt">25</span></span><span class="kw-tag">展肉炖黑蒜清淡入味 <span class="cnt">36</span></span><span class="kw-tag">熊猫米炒饭粒粒分明 <span class="cnt">49</span></span><span class="kw-tag">杨枝甘露非常正宗 <span class="cnt">44</span></span><span class="kw-tag">菜品不是预制菜 <span class="cnt">10</span></span><span class="kw-tag">开胃扇子笋酸甜可口 <span class="cnt">46</span></span><span class="kw-tag">一人份量很足 <span class="cnt">31</span></span></div></div>
-</div>
-
-<div class="shop-card">
-<div class="shop-banner">
-<h2>2. 和苑酒家·一线江景(星寰店)</h2>
-<div class="meta">
-<span class="stars">★★★★</span>
-<span class="score-mid" style="font-weight:700;font-size:16px">4.4</span>
-<span>|</span><span class="price-tag">¥106</span>
-<span>|</span><span></span>
-<span>|📍 珠江新城</span>
-
-</div>
-</div>
-<div class="score-grid">
-<div class="score-item"><div class="val score-mid">4.4</div><div class="lbl">口味</div></div>
-<div class="score-item"><div class="val score-high">4.8</div><div class="lbl">环境</div></div>
-<div class="score-item"><div class="val score-high">4.6</div><div class="lbl">服务</div></div>
-<div class="score-item"><div class="val">3302</div><div class="lbl">评价数</div></div>
-<div class="score-item"><div class="val" style="font-size:13px">侨光西路11号星寰国际商业中心</div><div class="lbl">地址</div></div>
-</div>
-<div class="section"><h3>🍽️ 推荐菜 Top 10</h3>
-<div class="dish-grid">
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/C6KsAuo3hJg8OQ_FTBbhgdj0oVhMalLxf_6snKZ22rWcDYwjlZDJXlfMGMfI6-USrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">1</span>舒芙蕾</div>
-<div class="dish-count">🔥 <span class="select-btn" data-dish="舒芙蕾" data-shop="和苑酒家·一线江景(星寰店)" data-img="https://qcloud.dpfile.com/pc/C6KsAuo3hJg8OQ_FTBbhgdj0oVhMalLxf_6snKZ22rWcDYwjlZDJXlfMGMfI6-USrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'舒芙蕾','和苑酒家·一线江景(星寰店)','https://qcloud.dpfile.com/pc/C6KsAuo3hJg8OQ_FTBbhgdj0oVhMalLxf_6snKZ22rWcDYwjlZDJXlfMGMfI6-USrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/lSSj1mN_SYdkS4AxAfVa4G82TJ3rsUfGphUczx1_WqkAYpBnpZyeK1-EVSeBbyfTrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">2</span>豉油鸡</div>
-<div class="dish-count">🔥 <span class="select-btn" data-dish="豉油鸡" data-shop="和苑酒家·一线江景(星寰店)" data-img="https://qcloud.dpfile.com/pc/lSSj1mN_SYdkS4AxAfVa4G82TJ3rsUfGphUczx1_WqkAYpBnpZyeK1-EVSeBbyfTrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'豉油鸡','和苑酒家·一线江景(星寰店)','https://qcloud.dpfile.com/pc/lSSj1mN_SYdkS4AxAfVa4G82TJ3rsUfGphUczx1_WqkAYpBnpZyeK1-EVSeBbyfTrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/qRccFMghRq0mv-cbnn7CRGeRdF7lvuGqQBknkT2Dup-cDYwjlZDJXlfMGMfI6-USrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">3</span>和苑一品虾饺皇</div>
-<div class="dish-count">🔥 <span class="select-btn" data-dish="和苑一品虾饺皇" data-shop="和苑酒家·一线江景(星寰店)" data-img="https://qcloud.dpfile.com/pc/qRccFMghRq0mv-cbnn7CRGeRdF7lvuGqQBknkT2Dup-cDYwjlZDJXlfMGMfI6-USrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'和苑一品虾饺皇','和苑酒家·一线江景(星寰店)','https://qcloud.dpfile.com/pc/qRccFMghRq0mv-cbnn7CRGeRdF7lvuGqQBknkT2Dup-cDYwjlZDJXlfMGMfI6-USrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/rtE7jLxRaow4j7HFsKlmC6HpUhQoUFPmthHlZRGEVcI32iHpQfqTt42Nj-6Xj6n-rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">4</span>铁塔鲜奶焗葡挞</div>
-<div class="dish-count"> <span class="select-btn" data-dish="铁塔鲜奶焗葡挞" data-shop="和苑酒家·一线江景(星寰店)" data-img="https://qcloud.dpfile.com/pc/rtE7jLxRaow4j7HFsKlmC6HpUhQoUFPmthHlZRGEVcI32iHpQfqTt42Nj-6Xj6n-rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'铁塔鲜奶焗葡挞','和苑酒家·一线江景(星寰店)','https://qcloud.dpfile.com/pc/rtE7jLxRaow4j7HFsKlmC6HpUhQoUFPmthHlZRGEVcI32iHpQfqTt42Nj-6Xj6n-rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/C_nWsKbcw1gu8g4QkKDkjCcEJR5f0B9LIj44hr93gJjtzJ2ui-GuL3NsET4yg0AArN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">5</span>蛋香沙翁</div>
-<div class="dish-count"> <span class="select-btn" data-dish="蛋香沙翁" data-shop="和苑酒家·一线江景(星寰店)" data-img="https://qcloud.dpfile.com/pc/C_nWsKbcw1gu8g4QkKDkjCcEJR5f0B9LIj44hr93gJjtzJ2ui-GuL3NsET4yg0AArN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'蛋香沙翁','和苑酒家·一线江景(星寰店)','https://qcloud.dpfile.com/pc/C_nWsKbcw1gu8g4QkKDkjCcEJR5f0B9LIj44hr93gJjtzJ2ui-GuL3NsET4yg0AArN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/nfRxZ-bYTMfAPofAlPvg9s20e6iBfIgymAwQfW7LRki5m9ai5Dwcre_SlpgUg8LorN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">6</span>飘香生炸妙龄乳鸽</div>
-<div class="dish-count"> <span class="select-btn" data-dish="飘香生炸妙龄乳鸽" data-shop="和苑酒家·一线江景(星寰店)" data-img="https://qcloud.dpfile.com/pc/nfRxZ-bYTMfAPofAlPvg9s20e6iBfIgymAwQfW7LRki5m9ai5Dwcre_SlpgUg8LorN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'飘香生炸妙龄乳鸽','和苑酒家·一线江景(星寰店)','https://qcloud.dpfile.com/pc/nfRxZ-bYTMfAPofAlPvg9s20e6iBfIgymAwQfW7LRki5m9ai5Dwcre_SlpgUg8LorN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/rPow0osmYaEignsTJjpvJjP7SZfrIreUUwOapoMY1WsgX4MZOpGNaFtM93oSSizbrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">7</span>陈醋拌珍品木耳</div>
-<div class="dish-count"> <span class="select-btn" data-dish="陈醋拌珍品木耳" data-shop="和苑酒家·一线江景(星寰店)" data-img="https://qcloud.dpfile.com/pc/rPow0osmYaEignsTJjpvJjP7SZfrIreUUwOapoMY1WsgX4MZOpGNaFtM93oSSizbrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'陈醋拌珍品木耳','和苑酒家·一线江景(星寰店)','https://qcloud.dpfile.com/pc/rPow0osmYaEignsTJjpvJjP7SZfrIreUUwOapoMY1WsgX4MZOpGNaFtM93oSSizbrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/a6Af_WoU4_P9U_ecrBod1FGAU0El73H_WywsJlM7Q8wVnBGjkhpKEC5GfeK-Ez0-rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">8</span>鲍鱼荷叶饭</div>
-<div class="dish-count"> <span class="select-btn" data-dish="鲍鱼荷叶饭" data-shop="和苑酒家·一线江景(星寰店)" data-img="https://qcloud.dpfile.com/pc/a6Af_WoU4_P9U_ecrBod1FGAU0El73H_WywsJlM7Q8wVnBGjkhpKEC5GfeK-Ez0-rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'鲍鱼荷叶饭','和苑酒家·一线江景(星寰店)','https://qcloud.dpfile.com/pc/a6Af_WoU4_P9U_ecrBod1FGAU0El73H_WywsJlM7Q8wVnBGjkhpKEC5GfeK-Ez0-rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/GIFnGxEzn7YJHUJvpJzIRwDHQNCQJhDesGVcIJz-kt0s4zkFWsiNVa9utiDliPcGrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">9</span>白切文昌鸡</div>
-<div class="dish-count"> <span class="select-btn" data-dish="白切文昌鸡" data-shop="和苑酒家·一线江景(星寰店)" data-img="https://qcloud.dpfile.com/pc/GIFnGxEzn7YJHUJvpJzIRwDHQNCQJhDesGVcIJz-kt0s4zkFWsiNVa9utiDliPcGrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'白切文昌鸡','和苑酒家·一线江景(星寰店)','https://qcloud.dpfile.com/pc/GIFnGxEzn7YJHUJvpJzIRwDHQNCQJhDesGVcIJz-kt0s4zkFWsiNVa9utiDliPcGrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/vvVzg--69q7M0vPIPuK7nkllfoIRP7yzVvaNI4yhnu4jLIQ8wWhdlE7XjNM2ZqP2rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">10</span>芫茜菜心粒鱼茸粥</div>
-<div class="dish-count"> <span class="select-btn" data-dish="芫茜菜心粒鱼茸粥" data-shop="和苑酒家·一线江景(星寰店)" data-img="https://qcloud.dpfile.com/pc/vvVzg--69q7M0vPIPuK7nkllfoIRP7yzVvaNI4yhnu4jLIQ8wWhdlE7XjNM2ZqP2rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'芫茜菜心粒鱼茸粥','和苑酒家·一线江景(星寰店)','https://qcloud.dpfile.com/pc/vvVzg--69q7M0vPIPuK7nkllfoIRP7yzVvaNI4yhnu4jLIQ8wWhdlE7XjNM2ZqP2rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-</div>
-<div class="select-hint">💡 点击菜品上的 <span style="color:#f5a623">☆</span> 收藏到研究清单</div></div>
-<div class="section"><h3>💬 评价关键词 <span class="badge">共6个</span></h3><div class="kw-grid"><span class="kw-tag">饭点需排队 <span class="cnt">112</span></span><span class="kw-tag">套餐赠送糖水 <span class="cnt">35</span></span><span class="kw-tag">经典点心地道 <span class="cnt">63</span></span><span class="kw-tag">包间服务及时周到 <span class="cnt">53</span></span><span class="kw-tag">早茶需提前预定 <span class="cnt">74</span></span><span class="kw-tag">商场内位置好找 <span class="cnt">55</span></span></div></div>
-</div>
-
-<div class="shop-card">
-<div class="shop-banner">
-<h2>3. 道谷·西桥(洛浦店)</h2>
-<div class="meta">
-<span class="stars">★★★★</span>
-<span class="score-mid" style="font-weight:700;font-size:16px">4.1</span>
-<span>|</span><span class="price-tag">¥104</span>
-<span>|</span><span></span>
-<span>|📍 珠江新城</span>
-
-</div>
-</div>
-<div class="score-grid">
-<div class="score-item"><div class="val score-mid">4.3</div><div class="lbl">口味</div></div>
-<div class="score-item"><div class="val score-mid">4.3</div><div class="lbl">环境</div></div>
-<div class="score-item"><div class="val score-mid">4.2</div><div class="lbl">服务</div></div>
-<div class="score-item"><div class="val">1158</div><div class="lbl">评价数</div></div>
-
-</div>
-<div class="section"><h3>🍽️ 推荐菜 Top 10</h3>
-<div class="dish-grid">
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/Lla6-1YD9otz4RCCK_6oKGi9sl0El5LxWm1GIPJYZyLoGeXp6aqROga_t44tHedgrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">1</span>松露鸡</div>
-<div class="dish-count">🔥 <span class="select-btn" data-dish="松露鸡" data-shop="道谷·西桥(洛浦店)" data-img="https://qcloud.dpfile.com/pc/Lla6-1YD9otz4RCCK_6oKGi9sl0El5LxWm1GIPJYZyLoGeXp6aqROga_t44tHedgrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'松露鸡','道谷·西桥(洛浦店)','https://qcloud.dpfile.com/pc/Lla6-1YD9otz4RCCK_6oKGi9sl0El5LxWm1GIPJYZyLoGeXp6aqROga_t44tHedgrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/NsydmopzDzI5J7OpcJdTSHiYBgbpx_f8IxA2nnjVEzmsTYWHGUub3VUw6ah9MG_1rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">2</span>姜油海边鸭</div>
-<div class="dish-count">🔥 <span class="select-btn" data-dish="姜油海边鸭" data-shop="道谷·西桥(洛浦店)" data-img="https://qcloud.dpfile.com/pc/NsydmopzDzI5J7OpcJdTSHiYBgbpx_f8IxA2nnjVEzmsTYWHGUub3VUw6ah9MG_1rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'姜油海边鸭','道谷·西桥(洛浦店)','https://qcloud.dpfile.com/pc/NsydmopzDzI5J7OpcJdTSHiYBgbpx_f8IxA2nnjVEzmsTYWHGUub3VUw6ah9MG_1rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/aWAmpTwD3lbUdgl9GURzEcRCFWwzb4HVzu698Yyu5zNXOxlrP9OrbeXc-9wcX0t4rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">3</span>道谷三色鲜虾饺</div>
-<div class="dish-count">🔥 <span class="select-btn" data-dish="道谷三色鲜虾饺" data-shop="道谷·西桥(洛浦店)" data-img="https://qcloud.dpfile.com/pc/aWAmpTwD3lbUdgl9GURzEcRCFWwzb4HVzu698Yyu5zNXOxlrP9OrbeXc-9wcX0t4rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'道谷三色鲜虾饺','道谷·西桥(洛浦店)','https://qcloud.dpfile.com/pc/aWAmpTwD3lbUdgl9GURzEcRCFWwzb4HVzu698Yyu5zNXOxlrP9OrbeXc-9wcX0t4rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/NiS9BdsfxX2Aut2vCgjkm3Sc9E4qB2d8Jah6kela9nzJksWQ1f7oBWZsxm1DWgcarN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">4</span>黑松露肉松烩荞麦面</div>
-<div class="dish-count"> <span class="select-btn" data-dish="黑松露肉松烩荞麦面" data-shop="道谷·西桥(洛浦店)" data-img="https://qcloud.dpfile.com/pc/NiS9BdsfxX2Aut2vCgjkm3Sc9E4qB2d8Jah6kela9nzJksWQ1f7oBWZsxm1DWgcarN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'黑松露肉松烩荞麦面','道谷·西桥(洛浦店)','https://qcloud.dpfile.com/pc/NiS9BdsfxX2Aut2vCgjkm3Sc9E4qB2d8Jah6kela9nzJksWQ1f7oBWZsxm1DWgcarN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/CFkHQtAP0FhOJxPuSyDLvPzkvjyTa1AwDRL1fK8gIpagc9RJlnFycIAKPeAVvXnMrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">5</span>盐油蒸山泉水鲩鱼</div>
-<div class="dish-count"> <span class="select-btn" data-dish="盐油蒸山泉水鲩鱼" data-shop="道谷·西桥(洛浦店)" data-img="https://qcloud.dpfile.com/pc/CFkHQtAP0FhOJxPuSyDLvPzkvjyTa1AwDRL1fK8gIpagc9RJlnFycIAKPeAVvXnMrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'盐油蒸山泉水鲩鱼','道谷·西桥(洛浦店)','https://qcloud.dpfile.com/pc/CFkHQtAP0FhOJxPuSyDLvPzkvjyTa1AwDRL1fK8gIpagc9RJlnFycIAKPeAVvXnMrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/7MYP48-6nRjHFbOC08g0-KWtrNigx06xZcvLoofNwtDFiQxTaXLzdOMprdkUI1qprN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">6</span>15年陈皮焖山溪鸭</div>
-<div class="dish-count"> <span class="select-btn" data-dish="15年陈皮焖山溪鸭" data-shop="道谷·西桥(洛浦店)" data-img="https://qcloud.dpfile.com/pc/7MYP48-6nRjHFbOC08g0-KWtrNigx06xZcvLoofNwtDFiQxTaXLzdOMprdkUI1qprN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'15年陈皮焖山溪鸭','道谷·西桥(洛浦店)','https://qcloud.dpfile.com/pc/7MYP48-6nRjHFbOC08g0-KWtrNigx06xZcvLoofNwtDFiQxTaXLzdOMprdkUI1qprN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/-XgMDexU9LDoEOvtqsqEbtATUFgaiQ2eDF2xaA05QuJ74emXkjUKBoRZOusmpkz3rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">7</span>黑松露烧鹅</div>
-<div class="dish-count"> <span class="select-btn" data-dish="黑松露烧鹅" data-shop="道谷·西桥(洛浦店)" data-img="https://qcloud.dpfile.com/pc/-XgMDexU9LDoEOvtqsqEbtATUFgaiQ2eDF2xaA05QuJ74emXkjUKBoRZOusmpkz3rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'黑松露烧鹅','道谷·西桥(洛浦店)','https://qcloud.dpfile.com/pc/-XgMDexU9LDoEOvtqsqEbtATUFgaiQ2eDF2xaA05QuJ74emXkjUKBoRZOusmpkz3rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/Xsd1Zu33ZRdv7RQK2RIT-v9TD0fR_lthE71-Jrg5RKQrCjJQd8ql1kYFLUFrR_WIrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">8</span>燕麦煎家乡薄撑</div>
-<div class="dish-count"> <span class="select-btn" data-dish="燕麦煎家乡薄撑" data-shop="道谷·西桥(洛浦店)" data-img="https://qcloud.dpfile.com/pc/Xsd1Zu33ZRdv7RQK2RIT-v9TD0fR_lthE71-Jrg5RKQrCjJQd8ql1kYFLUFrR_WIrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'燕麦煎家乡薄撑','道谷·西桥(洛浦店)','https://qcloud.dpfile.com/pc/Xsd1Zu33ZRdv7RQK2RIT-v9TD0fR_lthE71-Jrg5RKQrCjJQd8ql1kYFLUFrR_WIrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/qTyv9olHKbEieHsLJ7gs8pXUV2d8o5wIoYsB8PLuPrCZF3i9TcL3rCu_Q6VZfXrkrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">9</span>金沙海苔海皇肠粉</div>
-<div class="dish-count"> <span class="select-btn" data-dish="金沙海苔海皇肠粉" data-shop="道谷·西桥(洛浦店)" data-img="https://qcloud.dpfile.com/pc/qTyv9olHKbEieHsLJ7gs8pXUV2d8o5wIoYsB8PLuPrCZF3i9TcL3rCu_Q6VZfXrkrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'金沙海苔海皇肠粉','道谷·西桥(洛浦店)','https://qcloud.dpfile.com/pc/qTyv9olHKbEieHsLJ7gs8pXUV2d8o5wIoYsB8PLuPrCZF3i9TcL3rCu_Q6VZfXrkrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/A_zrFf3_ehcEp-x8NniEuF6Pok7l9lYI8mAKtEAtLN6VBubuiLj4PQk2zA8dmd3qrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">10</span>黑松露捞鲍鱼汁螺片黄金荞麦面</div>
-<div class="dish-count"> <span class="select-btn" data-dish="黑松露捞鲍鱼汁螺片黄金荞麦面" data-shop="道谷·西桥(洛浦店)" data-img="https://qcloud.dpfile.com/pc/A_zrFf3_ehcEp-x8NniEuF6Pok7l9lYI8mAKtEAtLN6VBubuiLj4PQk2zA8dmd3qrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'黑松露捞鲍鱼汁螺片黄金荞麦面','道谷·西桥(洛浦店)','https://qcloud.dpfile.com/pc/A_zrFf3_ehcEp-x8NniEuF6Pok7l9lYI8mAKtEAtLN6VBubuiLj4PQk2zA8dmd3qrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-</div>
-<div class="select-hint">💡 点击菜品上的 <span style="color:#f5a623">☆</span> 收藏到研究清单</div></div>
-<div class="section"><h3>💬 评价关键词 <span class="badge">共6个</span></h3><div class="kw-grid"><span class="kw-tag">本地人喜欢的餐厅 <span class="cnt">31</span></span><span class="kw-tag">独栋雅致装修 <span class="cnt">10</span></span><span class="kw-tag">黑松露焖鸡味道突出 <span class="cnt">36</span></span><span class="kw-tag">房间需提前预订 <span class="cnt">14</span></span><span class="kw-tag">必点菜品 <span class="cnt">47</span></span><span class="kw-tag">停车建议 <span class="cnt">19</span></span></div></div>
-</div>
-
-<div class="shop-card">
-<div class="shop-banner">
-<h2>4. 外来媳妇·粤菜小馆(白云湖金铂天地店)</h2>
-<div class="meta">
-<span class="stars">★★★★</span>
-<span class="score-mid" style="font-weight:700;font-size:16px">4.4</span>
-<span>|</span><span class="price-tag">¥63</span>
-<span>|</span><span></span>
-<span>|📍 珠江新城</span>
-
-</div>
-</div>
-<div class="score-grid">
-<div class="score-item"><div class="val score-mid">4.4</div><div class="lbl">口味</div></div>
-<div class="score-item"><div class="val score-high">4.5</div><div class="lbl">环境</div></div>
-<div class="score-item"><div class="val score-mid">4.4</div><div class="lbl">服务</div></div>
-<div class="score-item"><div class="val">2173</div><div class="lbl">评价数</div></div>
-
-</div>
-<div class="section"><h3>🍽️ 推荐菜 Top 10</h3>
-<div class="dish-grid">
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/5o9goBB7yNk2ELp6qdg-k6cd-ZqZt4VByZRb5rgIHQGy70VzwHwZJS5WbgX4LWBLrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">1</span>陈皮鼓油鸡</div>
-<div class="dish-count">🔥 <span class="select-btn" data-dish="陈皮鼓油鸡" data-shop="外来媳妇·粤菜小馆(白云湖金铂天地店)" data-img="https://qcloud.dpfile.com/pc/5o9goBB7yNk2ELp6qdg-k6cd-ZqZt4VByZRb5rgIHQGy70VzwHwZJS5WbgX4LWBLrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'陈皮鼓油鸡','外来媳妇·粤菜小馆(白云湖金铂天地店)','https://qcloud.dpfile.com/pc/5o9goBB7yNk2ELp6qdg-k6cd-ZqZt4VByZRb5rgIHQGy70VzwHwZJS5WbgX4LWBLrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/gX8AjIaCI3zoZ5Q53tEb1Bt77FbxYdo4QsZhDhswYW4npGSPkDiT3LvUo0A--PLxrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">2</span>头抽豉油碌鹅</div>
-<div class="dish-count">🔥 <span class="select-btn" data-dish="头抽豉油碌鹅" data-shop="外来媳妇·粤菜小馆(白云湖金铂天地店)" data-img="https://qcloud.dpfile.com/pc/gX8AjIaCI3zoZ5Q53tEb1Bt77FbxYdo4QsZhDhswYW4npGSPkDiT3LvUo0A--PLxrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'头抽豉油碌鹅','外来媳妇·粤菜小馆(白云湖金铂天地店)','https://qcloud.dpfile.com/pc/gX8AjIaCI3zoZ5Q53tEb1Bt77FbxYdo4QsZhDhswYW4npGSPkDiT3LvUo0A--PLxrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/FFejetXCM5pqM9TijWaMa-KcBNipEcElF8Sap9_hgthoBi-EqPUR7-9iHAYTHY1lrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">3</span>啫啫生肠</div>
-<div class="dish-count">🔥 <span class="select-btn" data-dish="啫啫生肠" data-shop="外来媳妇·粤菜小馆(白云湖金铂天地店)" data-img="https://qcloud.dpfile.com/pc/FFejetXCM5pqM9TijWaMa-KcBNipEcElF8Sap9_hgthoBi-EqPUR7-9iHAYTHY1lrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'啫啫生肠','外来媳妇·粤菜小馆(白云湖金铂天地店)','https://qcloud.dpfile.com/pc/FFejetXCM5pqM9TijWaMa-KcBNipEcElF8Sap9_hgthoBi-EqPUR7-9iHAYTHY1lrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/wTeZGAI0tUViDwqQ_DdBuMdgmPtLijz01bz9ErmisJYfL8Syu2VYB8L4J0OuHB33rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">4</span>广式腊味煲仔饭</div>
-<div class="dish-count"> <span class="select-btn" data-dish="广式腊味煲仔饭" data-shop="外来媳妇·粤菜小馆(白云湖金铂天地店)" data-img="https://qcloud.dpfile.com/pc/wTeZGAI0tUViDwqQ_DdBuMdgmPtLijz01bz9ErmisJYfL8Syu2VYB8L4J0OuHB33rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'广式腊味煲仔饭','外来媳妇·粤菜小馆(白云湖金铂天地店)','https://qcloud.dpfile.com/pc/wTeZGAI0tUViDwqQ_DdBuMdgmPtLijz01bz9ErmisJYfL8Syu2VYB8L4J0OuHB33rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/vndsiCZYA9cOJYIRsa-aOMIR1s3sWUibBmvmlGdrTZyIC3_Lu4-EVeO-cwJ48dAxrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">5</span>陈皮红豆沙</div>
-<div class="dish-count"> <span class="select-btn" data-dish="陈皮红豆沙" data-shop="外来媳妇·粤菜小馆(白云湖金铂天地店)" data-img="https://qcloud.dpfile.com/pc/vndsiCZYA9cOJYIRsa-aOMIR1s3sWUibBmvmlGdrTZyIC3_Lu4-EVeO-cwJ48dAxrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'陈皮红豆沙','外来媳妇·粤菜小馆(白云湖金铂天地店)','https://qcloud.dpfile.com/pc/vndsiCZYA9cOJYIRsa-aOMIR1s3sWUibBmvmlGdrTZyIC3_Lu4-EVeO-cwJ48dAxrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://img.meituan.net/content/83cb3fcef6e62ebb235b7fb50414455c33014.jpg%40290w_188h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">6</span>鼓油皇大肠</div>
-<div class="dish-count"> <span class="select-btn" data-dish="鼓油皇大肠" data-shop="外来媳妇·粤菜小馆(白云湖金铂天地店)" data-img="https://img.meituan.net/content/83cb3fcef6e62ebb235b7fb50414455c33014.jpg%40290w_188h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20" onclick="toggleDish(this,'鼓油皇大肠','外来媳妇·粤菜小馆(白云湖金铂天地店)','https://img.meituan.net/content/83cb3fcef6e62ebb235b7fb50414455c33014.jpg%40290w_188h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/M2L5W-b9LbDxgC5oyc3s_87HMkeQSrhFh2MOAk_aWD8mpoyeBPQOJE4vOdYZwm9ArN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">7</span>川贝雪梨炖猪展</div>
-<div class="dish-count"> <span class="select-btn" data-dish="川贝雪梨炖猪展" data-shop="外来媳妇·粤菜小馆(白云湖金铂天地店)" data-img="https://qcloud.dpfile.com/pc/M2L5W-b9LbDxgC5oyc3s_87HMkeQSrhFh2MOAk_aWD8mpoyeBPQOJE4vOdYZwm9ArN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'川贝雪梨炖猪展','外来媳妇·粤菜小馆(白云湖金铂天地店)','https://qcloud.dpfile.com/pc/M2L5W-b9LbDxgC5oyc3s_87HMkeQSrhFh2MOAk_aWD8mpoyeBPQOJE4vOdYZwm9ArN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/XryFnv556QwkczyBTp2eR1C_QhgOmVPi79_PhQiUs0U-6nbDDJnfJwPyRaeIkFSNrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">8</span>五指毛桃茶</div>
-<div class="dish-count"> <span class="select-btn" data-dish="五指毛桃茶" data-shop="外来媳妇·粤菜小馆(白云湖金铂天地店)" data-img="https://qcloud.dpfile.com/pc/XryFnv556QwkczyBTp2eR1C_QhgOmVPi79_PhQiUs0U-6nbDDJnfJwPyRaeIkFSNrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'五指毛桃茶','外来媳妇·粤菜小馆(白云湖金铂天地店)','https://qcloud.dpfile.com/pc/XryFnv556QwkczyBTp2eR1C_QhgOmVPi79_PhQiUs0U-6nbDDJnfJwPyRaeIkFSNrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/J-5kgExXPFBy7omzO8qLMwqYAZvU52eRkP89bBi7czKAbJwRhTXw_RewgCzq1UgyrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">9</span>香菠咕噜肉</div>
-<div class="dish-count"> <span class="select-btn" data-dish="香菠咕噜肉" data-shop="外来媳妇·粤菜小馆(白云湖金铂天地店)" data-img="https://qcloud.dpfile.com/pc/J-5kgExXPFBy7omzO8qLMwqYAZvU52eRkP89bBi7czKAbJwRhTXw_RewgCzq1UgyrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'香菠咕噜肉','外来媳妇·粤菜小馆(白云湖金铂天地店)','https://qcloud.dpfile.com/pc/J-5kgExXPFBy7omzO8qLMwqYAZvU52eRkP89bBi7czKAbJwRhTXw_RewgCzq1UgyrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-<div class="dish-card">
-<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/IrrAQT6t2DZY8TH29eZ7-_sE9HFfW690eNseg_4WQdcC2UCp51KqgSr6bSkc3AtIrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
-<div class="info">
-<div class="dish-name"><span class="rank">10</span>家嫂煎酿豆腐</div>
-<div class="dish-count"> <span class="select-btn" data-dish="家嫂煎酿豆腐" data-shop="外来媳妇·粤菜小馆(白云湖金铂天地店)" data-img="https://qcloud.dpfile.com/pc/IrrAQT6t2DZY8TH29eZ7-_sE9HFfW690eNseg_4WQdcC2UCp51KqgSr6bSkc3AtIrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'家嫂煎酿豆腐','外来媳妇·粤菜小馆(白云湖金铂天地店)','https://qcloud.dpfile.com/pc/IrrAQT6t2DZY8TH29eZ7-_sE9HFfW690eNseg_4WQdcC2UCp51KqgSr6bSkc3AtIrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
-</div>
-</div>
-</div>
-<div class="select-hint">💡 点击菜品上的 <span style="color:#f5a623">☆</span> 收藏到研究清单</div></div>
-<div class="section"><h3>💬 评价关键词 <span class="badge">共6个</span></h3><div class="kw-grid"><span class="kw-tag">菜品精致可口 <span class="cnt">38</span></span><span class="kw-tag">停车建议 <span class="cnt">15</span></span><span class="kw-tag">服务员有求必应 <span class="cnt">14</span></span><span class="kw-tag">碌鹅带甜味 <span class="cnt">26</span></span><span class="kw-tag">自然风味地道 <span class="cnt">54</span></span><span class="kw-tag">鸡肉质量上乘 <span class="cnt">37</span></span></div></div>
-</div>
-
-<div class="shop-card">
-<div class="shop-banner">
-<h2>5. 茉莉智慧母婴护理中心(四季店)</h2>
-<div class="meta">
 <span class="stars"></span>
 <span class="" style="font-weight:700;font-size:16px">0</span>
 <span>|</span><span class="price-tag"></span>
 <span>|</span><span></span>
-<span>|📍 珠江新城</span>
+
 
 </div>
 </div>
@@ -484,7 +100,91 @@ window.addEventListener('load',function(){
 <div class="score-item"><div class="val "></div><div class="lbl">环境</div></div>
 <div class="score-item"><div class="val "></div><div class="lbl">服务</div></div>
 <div class="score-item"><div class="val"></div><div class="lbl">评价数</div></div>
-<div class="score-item"><div class="val" style="font-size:13px">猎德街道珠江西路5号天河区四季酒店内距地铁</div><div class="lbl">地址</div></div>
+
+</div>
+</div>
+
+<div class="shop-card">
+<div class="shop-banner">
+<h2>2. 和苑酒家·一线江景(星寰店)</h2>
+<div class="meta">
+<span class="stars"></span>
+<span class="" style="font-weight:700;font-size:16px">0</span>
+<span>|</span><span class="price-tag"></span>
+<span>|</span><span></span>
+
+
+</div>
+</div>
+<div class="score-grid">
+<div class="score-item"><div class="val "></div><div class="lbl">口味</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">环境</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">服务</div></div>
+<div class="score-item"><div class="val"></div><div class="lbl">评价数</div></div>
+
+</div>
+</div>
+
+<div class="shop-card">
+<div class="shop-banner">
+<h2>3. 松风苑(万菱汇店)</h2>
+<div class="meta">
+<span class="stars"></span>
+<span class="" style="font-weight:700;font-size:16px">0</span>
+<span>|</span><span class="price-tag"></span>
+<span>|</span><span></span>
+
+
+</div>
+</div>
+<div class="score-grid">
+<div class="score-item"><div class="val "></div><div class="lbl">口味</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">环境</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">服务</div></div>
+<div class="score-item"><div class="val"></div><div class="lbl">评价数</div></div>
+
+</div>
+</div>
+
+<div class="shop-card">
+<div class="shop-banner">
+<h2>4. 道谷·西桥(洛浦店)</h2>
+<div class="meta">
+<span class="stars"></span>
+<span class="" style="font-weight:700;font-size:16px">0</span>
+<span>|</span><span class="price-tag"></span>
+<span>|</span><span></span>
+
+
+</div>
+</div>
+<div class="score-grid">
+<div class="score-item"><div class="val "></div><div class="lbl">口味</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">环境</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">服务</div></div>
+<div class="score-item"><div class="val"></div><div class="lbl">评价数</div></div>
+
+</div>
+</div>
+
+<div class="shop-card">
+<div class="shop-banner">
+<h2>5. 外来媳妇·粤菜小馆(白云湖金铂天地店)</h2>
+<div class="meta">
+<span class="stars"></span>
+<span class="" style="font-weight:700;font-size:16px">0</span>
+<span>|</span><span class="price-tag"></span>
+<span>|</span><span></span>
+
+
+</div>
+</div>
+<div class="score-grid">
+<div class="score-item"><div class="val "></div><div class="lbl">口味</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">环境</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">服务</div></div>
+<div class="score-item"><div class="val"></div><div class="lbl">评价数</div></div>
+
 </div>
 </div>
 
@@ -586,7 +286,256 @@ window.addEventListener('load',function(){
 
 <div class="shop-card">
 <div class="shop-banner">
-<h2>7. 和苑·精致粤菜(珠江新城店)</h2>
+<h2>7. 茉莉智慧母婴护理中心(四季店)</h2>
+<div class="meta">
+<span class="stars"></span>
+<span class="" style="font-weight:700;font-size:16px">0</span>
+<span>|</span><span class="price-tag"></span>
+<span>|</span><span></span>
+
+
+</div>
+</div>
+<div class="score-grid">
+<div class="score-item"><div class="val "></div><div class="lbl">口味</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">环境</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">服务</div></div>
+<div class="score-item"><div class="val"></div><div class="lbl">评价数</div></div>
+
+</div>
+</div>
+
+<div class="shop-card">
+<div class="shop-banner">
+<h2>8. BEAST野兽派(广州天环广场店)</h2>
+<div class="meta">
+<span class="stars"></span>
+<span class="" style="font-weight:700;font-size:16px">0</span>
+<span>|</span><span class="price-tag"></span>
+<span>|</span><span></span>
+
+
+</div>
+</div>
+<div class="score-grid">
+<div class="score-item"><div class="val "></div><div class="lbl">口味</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">环境</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">服务</div></div>
+<div class="score-item"><div class="val"></div><div class="lbl">评价数</div></div>
+
+</div>
+</div>
+
+<div class="shop-card">
+<div class="shop-banner">
+<h2>9. 方寸Cocktails·Whisky(青凤店)</h2>
+<div class="meta">
+<span class="stars"></span>
+<span class="" style="font-weight:700;font-size:16px">0</span>
+<span>|</span><span class="price-tag"></span>
+<span>|</span><span></span>
+
+
+</div>
+</div>
+<div class="score-grid">
+<div class="score-item"><div class="val "></div><div class="lbl">口味</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">环境</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">服务</div></div>
+<div class="score-item"><div class="val"></div><div class="lbl">评价数</div></div>
+
+</div>
+</div>
+
+<div class="shop-card">
+<div class="shop-banner">
+<h2>10. 来回·咖啡(天河南店)</h2>
+<div class="meta">
+<span class="stars"></span>
+<span class="" style="font-weight:700;font-size:16px">0</span>
+<span>|</span><span class="price-tag"></span>
+<span>|</span><span></span>
+
+
+</div>
+</div>
+<div class="score-grid">
+<div class="score-item"><div class="val "></div><div class="lbl">口味</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">环境</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">服务</div></div>
+<div class="score-item"><div class="val"></div><div class="lbl">评价数</div></div>
+
+</div>
+</div>
+
+<div class="shop-card">
+<div class="shop-banner">
+<h2>11. 白云山索道-售票处</h2>
+<div class="meta">
+<span class="stars"></span>
+<span class="" style="font-weight:700;font-size:16px">0</span>
+<span>|</span><span class="price-tag"></span>
+<span>|</span><span></span>
+
+
+</div>
+</div>
+<div class="score-grid">
+<div class="score-item"><div class="val "></div><div class="lbl">口味</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">环境</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">服务</div></div>
+<div class="score-item"><div class="val"></div><div class="lbl">评价数</div></div>
+
+</div>
+</div>
+
+<div class="shop-card">
+<div class="shop-banner">
+<h2>12. GRAINY BAKERY谷瑞(五羊店)</h2>
+<div class="meta">
+<span class="stars"></span>
+<span class="" style="font-weight:700;font-size:16px">0</span>
+<span>|</span><span class="price-tag"></span>
+<span>|</span><span></span>
+
+
+</div>
+</div>
+<div class="score-grid">
+<div class="score-item"><div class="val "></div><div class="lbl">口味</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">环境</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">服务</div></div>
+<div class="score-item"><div class="val"></div><div class="lbl">评价数</div></div>
+
+</div>
+</div>
+
+<div class="shop-card">
+<div class="shop-banner">
+<h2>13. 1989musicbar</h2>
+<div class="meta">
+<span class="stars"></span>
+<span class="" style="font-weight:700;font-size:16px">0</span>
+<span>|</span><span class="price-tag"></span>
+<span>|</span><span></span>
+
+
+</div>
+</div>
+<div class="score-grid">
+<div class="score-item"><div class="val "></div><div class="lbl">口味</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">环境</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">服务</div></div>
+<div class="score-item"><div class="val"></div><div class="lbl">评价数</div></div>
+
+</div>
+</div>
+
+<div class="shop-card">
+<div class="shop-banner">
+<h2>14. 惠食佳(滨江大公馆店)</h2>
+<div class="meta">
+<span class="stars">★★★★★</span>
+<span class="score-high" style="font-weight:700;font-size:16px">4.8</span>
+<span>|</span><span class="price-tag">¥182</span>
+<span>|</span><span></span>
+<span>|📍 珠江新城</span>
+<span class="award-badge">🏅 2026上榜一钻餐厅休息中11:30开始营业有包厢有大桌付费停车</span>
+</div>
+</div>
+<div class="score-grid">
+<div class="score-item"><div class="val score-high">4.8</div><div class="lbl">口味</div></div>
+<div class="score-item"><div class="val score-high">4.8</div><div class="lbl">环境</div></div>
+<div class="score-item"><div class="val score-high">4.8</div><div class="lbl">服务</div></div>
+<div class="score-item"><div class="val">21103</div><div class="lbl">评价数</div></div>
+<div class="score-item"><div class="val" style="font-size:13px">滨江西路172号</div><div class="lbl">地址</div></div>
+</div>
+<div class="section"><h3>🍽️ 推荐菜 Top 10</h3>
+<div class="dish-grid">
+<div class="dish-card">
+<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/NryMpMgd-KldQe4qD8_cgl6JvBNhPFjysTt0tmPs3MJaPK-u1xGv2EDOXo9h_4jRrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
+<div class="info">
+<div class="dish-name"><span class="rank">1</span>皇上皇腊味煲仔饭</div>
+<div class="dish-count">🔥 <span class="select-btn" data-dish="皇上皇腊味煲仔饭" data-shop="惠食佳(滨江大公馆店)" data-img="https://qcloud.dpfile.com/pc/NryMpMgd-KldQe4qD8_cgl6JvBNhPFjysTt0tmPs3MJaPK-u1xGv2EDOXo9h_4jRrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'皇上皇腊味煲仔饭','惠食佳(滨江大公馆店)','https://qcloud.dpfile.com/pc/NryMpMgd-KldQe4qD8_cgl6JvBNhPFjysTt0tmPs3MJaPK-u1xGv2EDOXo9h_4jRrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
+</div>
+</div>
+<div class="dish-card">
+<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/U9KMwJEGnbvrCDz6USj5AS1BAARZ0uSo4kK1jzytjzTn7KyOlI1ij2XoKcz4_ro3rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
+<div class="info">
+<div class="dish-name"><span class="rank">2</span>啫生肠</div>
+<div class="dish-count">🔥 <span class="select-btn" data-dish="啫生肠" data-shop="惠食佳(滨江大公馆店)" data-img="https://qcloud.dpfile.com/pc/U9KMwJEGnbvrCDz6USj5AS1BAARZ0uSo4kK1jzytjzTn7KyOlI1ij2XoKcz4_ro3rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'啫生肠','惠食佳(滨江大公馆店)','https://qcloud.dpfile.com/pc/U9KMwJEGnbvrCDz6USj5AS1BAARZ0uSo4kK1jzytjzTn7KyOlI1ij2XoKcz4_ro3rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
+</div>
+</div>
+<div class="dish-card">
+<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/rxzKjofr_eMzCxeXoNbdOfwazZQOe6fwHURGV9nfBZOipuAflbCJKK6UI9lwcqKprN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
+<div class="info">
+<div class="dish-name"><span class="rank">3</span>原创生啫黄鳝</div>
+<div class="dish-count">🔥 <span class="select-btn" data-dish="原创生啫黄鳝" data-shop="惠食佳(滨江大公馆店)" data-img="https://qcloud.dpfile.com/pc/rxzKjofr_eMzCxeXoNbdOfwazZQOe6fwHURGV9nfBZOipuAflbCJKK6UI9lwcqKprN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'原创生啫黄鳝','惠食佳(滨江大公馆店)','https://qcloud.dpfile.com/pc/rxzKjofr_eMzCxeXoNbdOfwazZQOe6fwHURGV9nfBZOipuAflbCJKK6UI9lwcqKprN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
+</div>
+</div>
+<div class="dish-card">
+<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/pYJ1AincihT6I8-s36i2lolCNOAm49w3WXF3JVA2sgfJksWQ1f7oBWZsxm1DWgcarN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
+<div class="info">
+<div class="dish-name"><span class="rank">4</span>姜撞奶冰淇淋</div>
+<div class="dish-count"> <span class="select-btn" data-dish="姜撞奶冰淇淋" data-shop="惠食佳(滨江大公馆店)" data-img="https://qcloud.dpfile.com/pc/pYJ1AincihT6I8-s36i2lolCNOAm49w3WXF3JVA2sgfJksWQ1f7oBWZsxm1DWgcarN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'姜撞奶冰淇淋','惠食佳(滨江大公馆店)','https://qcloud.dpfile.com/pc/pYJ1AincihT6I8-s36i2lolCNOAm49w3WXF3JVA2sgfJksWQ1f7oBWZsxm1DWgcarN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
+</div>
+</div>
+<div class="dish-card">
+<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/b8UkZQR5YCgkey1N-DDb5_d_LfIVC4_cXAgAE4pvc-KS0ObEd69xzr4GE8FwsjxorN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
+<div class="info">
+<div class="dish-name"><span class="rank">5</span>脆底蠔仔烙</div>
+<div class="dish-count"> <span class="select-btn" data-dish="脆底蠔仔烙" data-shop="惠食佳(滨江大公馆店)" data-img="https://qcloud.dpfile.com/pc/b8UkZQR5YCgkey1N-DDb5_d_LfIVC4_cXAgAE4pvc-KS0ObEd69xzr4GE8FwsjxorN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'脆底蠔仔烙','惠食佳(滨江大公馆店)','https://qcloud.dpfile.com/pc/b8UkZQR5YCgkey1N-DDb5_d_LfIVC4_cXAgAE4pvc-KS0ObEd69xzr4GE8FwsjxorN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
+</div>
+</div>
+<div class="dish-card">
+<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/bFUvHVcV0AkHE32zRPK7KIl0SSRhk9nilessATZdY2zChLLd2xH9HfqaUw41LpAhrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
+<div class="info">
+<div class="dish-name"><span class="rank">6</span>红烧乳鸽</div>
+<div class="dish-count"> <span class="select-btn" data-dish="红烧乳鸽" data-shop="惠食佳(滨江大公馆店)" data-img="https://qcloud.dpfile.com/pc/bFUvHVcV0AkHE32zRPK7KIl0SSRhk9nilessATZdY2zChLLd2xH9HfqaUw41LpAhrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'红烧乳鸽','惠食佳(滨江大公馆店)','https://qcloud.dpfile.com/pc/bFUvHVcV0AkHE32zRPK7KIl0SSRhk9nilessATZdY2zChLLd2xH9HfqaUw41LpAhrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
+</div>
+</div>
+<div class="dish-card">
+<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/cOoK7G95-4kAf28wI-2eK4wct8aR48Yj9gZ7oaB2SJvZ2KqnOjFsy49EWnD8MTEBrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
+<div class="info">
+<div class="dish-name"><span class="rank">7</span>咸蛋黄啫苦瓜煲</div>
+<div class="dish-count"> <span class="select-btn" data-dish="咸蛋黄啫苦瓜煲" data-shop="惠食佳(滨江大公馆店)" data-img="https://qcloud.dpfile.com/pc/cOoK7G95-4kAf28wI-2eK4wct8aR48Yj9gZ7oaB2SJvZ2KqnOjFsy49EWnD8MTEBrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'咸蛋黄啫苦瓜煲','惠食佳(滨江大公馆店)','https://qcloud.dpfile.com/pc/cOoK7G95-4kAf28wI-2eK4wct8aR48Yj9gZ7oaB2SJvZ2KqnOjFsy49EWnD8MTEBrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
+</div>
+</div>
+<div class="dish-card">
+<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/jdKKMSsM-yZXUvHZQOwcoCEx8DpVGCcyIL0AXe_O7VDtzJ2ui-GuL3NsET4yg0AArN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
+<div class="info">
+<div class="dish-name"><span class="rank">8</span>啫啫牛舌</div>
+<div class="dish-count"> <span class="select-btn" data-dish="啫啫牛舌" data-shop="惠食佳(滨江大公馆店)" data-img="https://qcloud.dpfile.com/pc/jdKKMSsM-yZXUvHZQOwcoCEx8DpVGCcyIL0AXe_O7VDtzJ2ui-GuL3NsET4yg0AArN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'啫啫牛舌','惠食佳(滨江大公馆店)','https://qcloud.dpfile.com/pc/jdKKMSsM-yZXUvHZQOwcoCEx8DpVGCcyIL0AXe_O7VDtzJ2ui-GuL3NsET4yg0AArN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
+</div>
+</div>
+<div class="dish-card">
+<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/DhI-9K7CWTGBMbo9fW4zSbAssG5XOuFypLAf3dDCPGkGCpAmG00QbfT4vCCBj7njrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
+<div class="info">
+<div class="dish-name"><span class="rank">9</span>啫芥兰</div>
+<div class="dish-count"> <span class="select-btn" data-dish="啫芥兰" data-shop="惠食佳(滨江大公馆店)" data-img="https://qcloud.dpfile.com/pc/DhI-9K7CWTGBMbo9fW4zSbAssG5XOuFypLAf3dDCPGkGCpAmG00QbfT4vCCBj7njrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'啫芥兰','惠食佳(滨江大公馆店)','https://qcloud.dpfile.com/pc/DhI-9K7CWTGBMbo9fW4zSbAssG5XOuFypLAf3dDCPGkGCpAmG00QbfT4vCCBj7njrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
+</div>
+</div>
+<div class="dish-card">
+<div class="img-wrap"><img src="https://qcloud.dpfile.com/pc/wrWLxyIATq4ZWqS5_pht2d18OThLui3Y5Lbe2oWsM2t0_pEt7fICfQKaolL_tgpzrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-img>🍽️</div>'"></div>
+<div class="info">
+<div class="dish-name"><span class="rank">10</span>鳝丝煲仔饭</div>
+<div class="dish-count"> <span class="select-btn" data-dish="鳝丝煲仔饭" data-shop="惠食佳(滨江大公馆店)" data-img="https://qcloud.dpfile.com/pc/wrWLxyIATq4ZWqS5_pht2d18OThLui3Y5Lbe2oWsM2t0_pEt7fICfQKaolL_tgpzrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onclick="toggleDish(this,'鳝丝煲仔饭','惠食佳(滨江大公馆店)','https://qcloud.dpfile.com/pc/wrWLxyIATq4ZWqS5_pht2d18OThLui3Y5Lbe2oWsM2t0_pEt7fICfQKaolL_tgpzrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg')" style="cursor:pointer;margin-left:6px;font-size:16px">☆</span></div>
+</div>
+</div>
+</div>
+<div class="select-hint">💡 点击菜品上的 <span style="color:#f5a623">☆</span> 收藏到研究清单</div></div>
+<div class="section"><h3>💬 评价关键词 <span class="badge">共6个</span></h3><div class="kw-grid"><span class="kw-tag">建议提前订位 <span class="cnt">264</span></span><span class="kw-tag">必点招牌 <span class="cnt">2204</span></span><span class="kw-tag">包间有小阳台看江景 <span class="cnt">138</span></span><span class="kw-tag">服务费 <span class="cnt">57</span></span><span class="kw-tag">挺有特色 <span class="cnt">11</span></span><span class="kw-tag">燕麦片焖龙虾 <span class="cnt">13</span></span></div></div>
+    <div class="section">
+    <h3>🏪 门店/品牌简介</h3>
+    <p style="font-size:13px;line-height:1.7;color:#555;margin-bottom:8px">惠食佳以创新粤菜和啫啫煲闻名广州，滨江大公馆店坐落于珠江畔，环境优雅。餐厅将传统粤菜烹饪技法与现代口味相结合，深受广州食客喜爱，人均¥182，评价数超21000条。</p>
+    <div style="font-size:12px;color:#666;margin-bottom:8px">🏷️ 创新粤菜代表 · 🏷️ 啫啫煲招牌 · 🏷️ 江景餐厅 · 🏷️ 高性价比</div>
+    
+    </div>
+</div>
+
+<div class="shop-card">
+<div class="shop-banner">
+<h2>15. 和苑·精致粤菜(珠江新城店)</h2>
 <div class="meta">
 <span class="stars">★★★★★</span>
 <span class="score-high" style="font-weight:700;font-size:16px">4.7</span>
@@ -678,6 +627,258 @@ window.addEventListener('load',function(){
 </div>
 <div class="select-hint">💡 点击菜品上的 <span style="color:#f5a623">☆</span> 收藏到研究清单</div></div>
 <div class="section"><h3>💬 评价关键词 <span class="badge">共4个</span></h3><div class="kw-grid"><span class="kw-tag">停车建议 <span class="cnt">32</span></span><span class="kw-tag">必点菜品 <span class="cnt">120</span></span><span class="kw-tag">环境大气适合宴请 <span class="cnt">22010</span></span><span class="kw-tag">服务费 <span class="cnt">26</span></span></div></div>
+</div>
+
+<div class="shop-card">
+<div class="shop-banner">
+<h2>16. 惠食佳(东风大公馆店)</h2>
+<div class="meta">
+<span class="stars"></span>
+<span class="" style="font-weight:700;font-size:16px">0</span>
+<span>|</span><span class="price-tag"></span>
+<span>|</span><span></span>
+
+
+</div>
+</div>
+<div class="score-grid">
+<div class="score-item"><div class="val "></div><div class="lbl">口味</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">环境</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">服务</div></div>
+<div class="score-item"><div class="val"></div><div class="lbl">评价数</div></div>
+
+</div>
+</div>
+
+<div class="shop-card">
+<div class="shop-banner">
+<h2>17. 蝶音沉浸式演绎殿堂</h2>
+<div class="meta">
+<span class="stars"></span>
+<span class="" style="font-weight:700;font-size:16px">0</span>
+<span>|</span><span class="price-tag"></span>
+<span>|</span><span></span>
+
+
+</div>
+</div>
+<div class="score-grid">
+<div class="score-item"><div class="val "></div><div class="lbl">口味</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">环境</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">服务</div></div>
+<div class="score-item"><div class="val"></div><div class="lbl">评价数</div></div>
+
+</div>
+</div>
+
+<div class="shop-card">
+<div class="shop-banner">
+<h2>18. 广州荔湾领展广场</h2>
+<div class="meta">
+<span class="stars"></span>
+<span class="" style="font-weight:700;font-size:16px">0</span>
+<span>|</span><span class="price-tag"></span>
+<span>|</span><span></span>
+
+
+</div>
+</div>
+<div class="score-grid">
+<div class="score-item"><div class="val "></div><div class="lbl">口味</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">环境</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">服务</div></div>
+<div class="score-item"><div class="val"></div><div class="lbl">评价数</div></div>
+
+</div>
+</div>
+
+<div class="shop-card">
+<div class="shop-banner">
+<h2>19. 北京路天河城</h2>
+<div class="meta">
+<span class="stars"></span>
+<span class="" style="font-weight:700;font-size:16px">0</span>
+<span>|</span><span class="price-tag"></span>
+<span>|</span><span></span>
+
+
+</div>
+</div>
+<div class="score-grid">
+<div class="score-item"><div class="val "></div><div class="lbl">口味</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">环境</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">服务</div></div>
+<div class="score-item"><div class="val"></div><div class="lbl">评价数</div></div>
+
+</div>
+</div>
+
+<div class="shop-card">
+<div class="shop-banner">
+<h2>20. 云门 NEW PARK</h2>
+<div class="meta">
+<span class="stars"></span>
+<span class="" style="font-weight:700;font-size:16px">0</span>
+<span>|</span><span class="price-tag"></span>
+<span>|</span><span></span>
+
+
+</div>
+</div>
+<div class="score-grid">
+<div class="score-item"><div class="val "></div><div class="lbl">口味</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">环境</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">服务</div></div>
+<div class="score-item"><div class="val"></div><div class="lbl">评价数</div></div>
+
+</div>
+</div>
+
+<div class="shop-card">
+<div class="shop-banner">
+<h2>21. 广州富力君悦大酒店·凯菲厅</h2>
+<div class="meta">
+<span class="stars"></span>
+<span class="" style="font-weight:700;font-size:16px">0</span>
+<span>|</span><span class="price-tag"></span>
+<span>|</span><span></span>
+
+
+</div>
+</div>
+<div class="score-grid">
+<div class="score-item"><div class="val "></div><div class="lbl">口味</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">环境</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">服务</div></div>
+<div class="score-item"><div class="val"></div><div class="lbl">评价数</div></div>
+
+</div>
+</div>
+
+<div class="shop-card">
+<div class="shop-banner">
+<h2>22. 士多啤梨</h2>
+<div class="meta">
+<span class="stars"></span>
+<span class="" style="font-weight:700;font-size:16px">0</span>
+<span>|</span><span class="price-tag"></span>
+<span>|</span><span></span>
+
+
+</div>
+</div>
+<div class="score-grid">
+<div class="score-item"><div class="val "></div><div class="lbl">口味</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">环境</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">服务</div></div>
+<div class="score-item"><div class="val"></div><div class="lbl">评价数</div></div>
+
+</div>
+</div>
+
+<div class="shop-card">
+<div class="shop-banner">
+<h2>23. 西洋记·西洋收藏品艺术空间</h2>
+<div class="meta">
+<span class="stars"></span>
+<span class="" style="font-weight:700;font-size:16px">0</span>
+<span>|</span><span class="price-tag"></span>
+<span>|</span><span></span>
+
+
+</div>
+</div>
+<div class="score-grid">
+<div class="score-item"><div class="val "></div><div class="lbl">口味</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">环境</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">服务</div></div>
+<div class="score-item"><div class="val"></div><div class="lbl">评价数</div></div>
+
+</div>
+</div>
+
+<div class="shop-card">
+<div class="shop-banner">
+<h2>24. 潮发潮汕牛肉店(北京路店)</h2>
+<div class="meta">
+<span class="stars"></span>
+<span class="" style="font-weight:700;font-size:16px">0</span>
+<span>|</span><span class="price-tag"></span>
+<span>|</span><span></span>
+
+
+</div>
+</div>
+<div class="score-grid">
+<div class="score-item"><div class="val "></div><div class="lbl">口味</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">环境</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">服务</div></div>
+<div class="score-item"><div class="val"></div><div class="lbl">评价数</div></div>
+
+</div>
+</div>
+
+<div class="shop-card">
+<div class="shop-banner">
+<h2>25. 陶陶居酒家(白云机场T2店)</h2>
+<div class="meta">
+<span class="stars"></span>
+<span class="" style="font-weight:700;font-size:16px">0</span>
+<span>|</span><span class="price-tag"></span>
+<span>|</span><span></span>
+
+
+</div>
+</div>
+<div class="score-grid">
+<div class="score-item"><div class="val "></div><div class="lbl">口味</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">环境</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">服务</div></div>
+<div class="score-item"><div class="val"></div><div class="lbl">评价数</div></div>
+
+</div>
+</div>
+
+<div class="shop-card">
+<div class="shop-banner">
+<h2>26. BE BRIGHT KITCHEN(正佳广场店)</h2>
+<div class="meta">
+<span class="stars"></span>
+<span class="" style="font-weight:700;font-size:16px">0</span>
+<span>|</span><span class="price-tag"></span>
+<span>|</span><span></span>
+
+
+</div>
+</div>
+<div class="score-grid">
+<div class="score-item"><div class="val "></div><div class="lbl">口味</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">环境</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">服务</div></div>
+<div class="score-item"><div class="val"></div><div class="lbl">评价数</div></div>
+
+</div>
+</div>
+
+<div class="shop-card">
+<div class="shop-banner">
+<h2>27. 博多天妇罗泰(正佳广场店)</h2>
+<div class="meta">
+<span class="stars"></span>
+<span class="" style="font-weight:700;font-size:16px">0</span>
+<span>|</span><span class="price-tag"></span>
+<span>|</span><span></span>
+
+
+</div>
+</div>
+<div class="score-grid">
+<div class="score-item"><div class="val "></div><div class="lbl">口味</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">环境</div></div>
+<div class="score-item"><div class="val "></div><div class="lbl">服务</div></div>
+<div class="score-item"><div class="val"></div><div class="lbl">评价数</div></div>
+
+</div>
 </div>
 
 <div class="footer">
