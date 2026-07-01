@@ -61,7 +61,7 @@ def build_index():
     <div class="st">🍜 {cuisine} <span class="tg">{cname}</span></div>
     <div class="cg">{''.join(cards)}</div>''')
 
-        style = '' if i == 0 else 'display:none'
+        style = ''
         city_sections.append(f'''
   <div class="city-section" id="city-{cname}" style="{style}">
 {''.join(sections)}
