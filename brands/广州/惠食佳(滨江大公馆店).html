@@ -1,150 +1,25 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>惠食佳(滨江大公馆店) · 品牌详情 · 粤京熹</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;background:#f5f5f5;color:#333}
-.container{max-width:800px;margin:0 auto;padding:16px}
-.header{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);color:#fff;border-radius:12px;padding:28px 24px;margin-bottom:16px}
-.header h1{font-size:22px;margin-bottom:4px}
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>惠食佳(滨江大公馆店)·产品研究·粤京熹</title><style>*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f5f5;color:#333}
+.container{max-width:900px;margin:0 auto;padding:16px}
+.header{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);color:#fff;border-radius:14px;padding:32px 28px;margin-bottom:16px}
+.header h1{font-size:24px;margin-bottom:4px}
 .header .sub{font-size:13px;opacity:.7;margin-bottom:8px}
 .header .tags{display:flex;flex-wrap:wrap;gap:4px}
 .header .tag{background:rgba(255,255,255,.12);padding:2px 10px;border-radius:12px;font-size:10px}
+.header .tag.gold{background:#d4af37;color:#1a1a2e;font-weight:600}
 .back{display:inline-block;color:#666;font-size:12px;margin-bottom:12px;text-decoration:none}
-.section{background:#fff;border-radius:12px;padding:20px;margin-bottom:14px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
-.section h2{font-size:16px;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:6px}
-.section p{font-size:13px;line-height:1.7;color:#555}
-.stars{color:#f5a623;font-size:16px;margin-right:4px}
-.scores{display:flex;gap:12px;font-size:12px;color:#666;margin-top:6px;flex-wrap:wrap}
-.meta{font-size:13px;color:#666;display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
-.price{color:#c0392b;font-weight:700}
-.dish-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px}
-.dish-card{background:#fafafa;border-radius:8px;padding:8px;text-align:center;border:1px solid #eee}
-.dish-card img{width:100%;aspect-ratio:1.5;object-fit:cover;border-radius:4px;margin-bottom:4px}
-.dish-card .dish-info .rank{display:inline-block;width:16px;height:16px;line-height:16px;background:#c0392b;color:#fff;font-size:9px;border-radius:50%;margin-right:2px}
-.dish-card .dish-info .name{font-size:11px;font-weight:600}
-.kw-section{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
-.kw-section .kw{background:#fef3f2;color:#c0392b;padding:2px 8px;border-radius:10px;font-size:10px;border:1px solid #fdd}
-.learn-item{padding:10px 14px;background:#fafafa;border-radius:8px;margin-bottom:8px;border-left:3px solid #c0392b;font-size:12px;line-height:1.6;color:#555}
-.learn-item .title{font-weight:600;color:#333;margin-bottom:2px}
+.section{background:#fff;border-radius:12px;padding:24px;margin-bottom:14px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.section h2{font-size:17px;font-weight:700;margin-bottom:14px}
+.section p{font-size:13px;line-height:1.8;color:#444;margin-bottom:8px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px}
+.fact{text-align:center;padding:12px 8px;background:#f8f8f8;border-radius:8px}
+.fact .num{font-size:18px;font-weight:800;color:#c0392b}
+.fact .lbl{font-size:10px;color:#999;margin-top:2px}
+.dish-card{border-left:3px solid #c0392b;padding:12px 16px;background:#fafafa;border-radius:0 8px 8px 0;margin-bottom:10px}
+.dish-card .name{font-size:14px;font-weight:600;color:#1a1a2e}
+.dish-card .desc{font-size:12px;color:#555;line-height:1.6;margin-top:4px}
+.dish-card .tag{display:inline-block;font-size:10px;background:#fef3f2;color:#c0392b;padding:1px 8px;border-radius:8px;margin-top:4px;margin-right:4px}
+.learn-card{padding:14px 16px;background:#fafafa;border-radius:8px;margin-bottom:10px;border-left:3px solid #2980b9;font-size:12px;line-height:1.7;color:#444}
+.learn-card .title{font-weight:600;color:#1a1a2e;margin-bottom:4px;font-size:13px}
 .footer{text-align:center;padding:16px;color:#999;font-size:11px}
-.footer a{color:#c0392b;text-decoration:none}
-</style>
-</head>
-<body>
-<div class="container">
-<a class="back" href="/yuejingxi-research/广州/广州粤菜_黑珍珠_20260630.html">← 返回报告</a>
-
-<div class="header">
-<h1>惠食佳(滨江大公馆店)</h1>
-<div class="sub">广州 · 粤菜</div>
-<div class="tags"><span class="tag">🏆 黑珍珠</span><span class="tag">🏅 必吃榜</span><span class="tag">🏛️ 老字号</span></div>
-</div>
-
-<div class="section">
-<h2>📊 基本信息</h2>
-<div class="meta">
-<span class="stars">★★★★★</span>
-<span class="price">¥182</span>
-<span>📍 珠江新城</span>
-<span>📍 滨江西路172号</span>
-</div>
-<div class="scores"><span>口味 4.8</span><span>环境 4.8</span><span>服务 4.8</span><span>评价 21104条</span></div>
-</div>
-
-<div class="section"><h2>🍽️ 推荐菜 Top 10</h2><div class="dish-list">
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/NryMpMgd-KldQe4qD8_cgl6JvBNhPFjysTt0tmPs3MJaPK-u1xGv2EDOXo9h_4jRrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#1</span>
-                <span class="name">皇上皇腊味煲仔饭</span>
-            </div>
-        </div>
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/U9KMwJEGnbvrCDz6USj5AS1BAARZ0uSo4kK1jzytjzTn7KyOlI1ij2XoKcz4_ro3rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#2</span>
-                <span class="name">啫生肠</span>
-            </div>
-        </div>
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/rxzKjofr_eMzCxeXoNbdOfwazZQOe6fwHURGV9nfBZOipuAflbCJKK6UI9lwcqKprN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#3</span>
-                <span class="name">原创生啫黄鳝</span>
-            </div>
-        </div>
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/pYJ1AincihT6I8-s36i2lolCNOAm49w3WXF3JVA2sgfJksWQ1f7oBWZsxm1DWgcarN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#4</span>
-                <span class="name">姜撞奶冰淇淋</span>
-            </div>
-        </div>
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/b8UkZQR5YCgkey1N-DDb5_d_LfIVC4_cXAgAE4pvc-KS0ObEd69xzr4GE8FwsjxorN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#5</span>
-                <span class="name">脆底蠔仔烙</span>
-            </div>
-        </div>
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/bFUvHVcV0AkHE32zRPK7KIl0SSRhk9nilessATZdY2zChLLd2xH9HfqaUw41LpAhrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#6</span>
-                <span class="name">红烧乳鸽</span>
-            </div>
-        </div>
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/cOoK7G95-4kAf28wI-2eK4wct8aR48Yj9gZ7oaB2SJvZ2KqnOjFsy49EWnD8MTEBrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#7</span>
-                <span class="name">咸蛋黄啫苦瓜煲</span>
-            </div>
-        </div>
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/jdKKMSsM-yZXUvHZQOwcoCEx8DpVGCcyIL0AXe_O7VDtzJ2ui-GuL3NsET4yg0AArN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#8</span>
-                <span class="name">啫啫牛舌</span>
-            </div>
-        </div>
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/DhI-9K7CWTGBMbo9fW4zSbAssG5XOuFypLAf3dDCPGkGCpAmG00QbfT4vCCBj7njrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#9</span>
-                <span class="name">啫芥兰</span>
-            </div>
-        </div>
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/wrWLxyIATq4ZWqS5_pht2d18OThLui3Y5Lbe2oWsM2t0_pEt7fICfQKaolL_tgpzrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#10</span>
-                <span class="name">鳝丝煲仔饭</span>
-            </div>
-        </div></div></div>
-
-<div class="section"><h2>💬 食客印象</h2><div class="kw-section"><span class="kw">建议提前订位(264)</span> <span class="kw">必点招牌(2204)</span> <span class="kw">包间有小阳台看江景(138)</span> <span class="kw">服务费(57)</span> <span class="kw">挺有特色(11)</span> <span class="kw">燕麦片焖龙虾(22)</span></div></div>
-
-<div class="section">
-<h2>💡 值得学习</h2>
-<div class="learn-item">
-<div class="title">⭐ 亮点</div>
-<div>惠食佳(滨江大公馆店)在黑珍珠榜单中表现突出，评分4.8，人均¥182。位于珠江新城，是广州粤菜的代表性餐厅之一。</div>
-</div>
-<div class="learn-item">
-<div class="title">🍽️ 招牌产品</div>
-<div>推荐菜包括皇上皇腊味煲仔饭、啫生肠、原创生啫黄鳝、姜撞奶冰淇淋、脆底蠔仔烙。</div>
-</div>
-</div>
-
-<div class="footer">
-<a href="/yuejingxi-research/index.html">返回粤京熹首页</a> · 粤京熹 R&D 助手<br>
-<span style="font-size:10px;color:#bbb">本页面由AI自动生成，详细信息待补充</span>
-</div>
-</div>
-</body>
-</html>
+</style></head><body><div class="container"><a class="back" href="/yuejingxi-research/广州/广州粤菜_黑珍珠_20260630.html">← 返回报告</a><div class="header"><h1>惠食佳(滨江大公馆店)</h1><div class="sub">广州·啫啫煲传奇</div><div class="tags"><span class="tag gold">⭐ 米其林一星</span><span class="tag gold">🏆 黑珍珠一钻</span><span class="tag">啫啫煲鼻祖</span></div></div><div class="section"><h2>📊 品牌速览</h2><div class="facts"><div class="fact"><div class="num">1992</div><div class="lbl">创始</div></div><div class="fact"><div class="num">¥182</div><div class="lbl">人均</div></div><div class="fact"><div class="num">啫啫煲</div><div class="lbl">首创</div></div><div class="fact"><div class="num">舌尖2</div><div class="lbl">央视报道</div></div></div></div><div class="section"><h2>📖 品牌故事</h2><p>惠食佳1992年从58平米大排档起家，首创啫啫煲。定制砂煲降低2.5cm使受热更均匀，2014年登上《舌尖2》闻名全国。连续多年米其林一星黑珍珠一钻。</p></div><div class="section"><h2>🍽️ 招牌产品</h2><div class="dish-card"><div class="name">啫啫黄鳝煲 <span style="float:right;color:#c0392b">镇店之宝</span></div><div class="desc">惠食佳首创！厨师根据距离计算火候，定制砂煲仅用一次，10年才能成啫神。</div></div><div class="dish-card"><div class="name">椒盐富贵虾</div><div class="desc">创店招牌，手臂粗泰国濑尿虾，外脆内嫩。</div></div><div class="dish-card"><div class="name">姜撞奶雪糕</div><div class="desc">独创甜品，传统甜品的现代演绎。</div></div></div><div class="section"><h2>💡 产品研发启示</h2><div class="learn-card"><div class="title">① 单品打天下</div><div>万物皆可啫。单品策略+极致执行=品牌壁垒。</div></div><div class="learn-card"><div class="title">② 微创新的力量</div><div>砂煲降低2.5cm——小改动带来革命性提升。</div></div><div class="learn-card"><div class="title">③ 大排档到米其林</div><div>市井美食做高端，关键在于对品质的极致追求。</div></div></div><div class="footer"><a href="/yuejingxi-research/index.html">返回首页</a></div></div></body></html>
