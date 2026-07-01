@@ -62,8 +62,15 @@ body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;backgr
 
 <script>
 const LS = 'yjx_researchList';
-function loadList(){return JSON.parse(localStorage.getItem(LS)||'[]')}
-function saveList(l){localStorage.setItem(LS,JSON.stringify(l))}
+function loadList(){
+  var data = JSON.parse(localStorage.getItem(LS)||'[]');
+  if(data.length===0) data = JSON.parse(localStorage.getItem('researchList')||'[]');
+  return data;
+}
+function saveList(l){
+  localStorage.setItem(LS,JSON.stringify(l));
+  localStorage.removeItem('researchList');
+}
 
 function render(){
   const list = loadList(), c = document.getElementById('content'), cn = document.getElementById('countNum');
