@@ -1,25 +1,150 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="referrer" content="no-referrer"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>向群饭店·老字号研究</title><style>*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f5f5;color:#333}
-.container{max-width:900px;margin:0 auto;padding:16px}
-.header{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);color:#fff;border-radius:14px;padding:32px 28px;margin-bottom:16px}
-.header h1{font-size:24px;margin-bottom:4px}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>粤·向群饭店(城光荟店) · 品牌详情 · 粤京熹</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;background:#f5f5f5;color:#333}
+.container{max-width:800px;margin:0 auto;padding:16px}
+.header{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);color:#fff;border-radius:12px;padding:28px 24px;margin-bottom:16px}
+.header h1{font-size:22px;margin-bottom:4px}
 .header .sub{font-size:13px;opacity:.7;margin-bottom:8px}
 .header .tags{display:flex;flex-wrap:wrap;gap:4px}
 .header .tag{background:rgba(255,255,255,.12);padding:2px 10px;border-radius:12px;font-size:10px}
-.header .tag.gold{background:#d4af37;color:#1a1a2e;font-weight:600}
 .back{display:inline-block;color:#666;font-size:12px;margin-bottom:12px;text-decoration:none}
-.section{background:#fff;border-radius:12px;padding:24px;margin-bottom:14px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
-.section h2{font-size:17px;font-weight:700;margin-bottom:14px}
-.section p{font-size:13px;line-height:1.8;color:#444;margin-bottom:8px}
-.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px}
-.fact{text-align:center;padding:12px 8px;background:#f8f8f8;border-radius:8px}
-.fact .num{font-size:18px;font-weight:800;color:#c0392b}
-.fact .lbl{font-size:10px;color:#999;margin-top:2px}
-.dish-card{border-left:3px solid #c0392b;padding:12px 16px;background:#fafafa;border-radius:0 8px 8px 0;margin-bottom:10px}
-.dish-card .name{font-size:14px;font-weight:600;color:#1a1a2e}
-.dish-card .desc{font-size:12px;color:#555;line-height:1.6;margin-top:4px}
-.dish-card .tag{display:inline-block;font-size:10px;background:#fef3f2;color:#c0392b;padding:1px 8px;border-radius:8px;margin-top:4px;margin-right:4px}
-.learn-card{padding:14px 16px;background:#fafafa;border-radius:8px;margin-bottom:10px;border-left:3px solid #2980b9;font-size:12px;line-height:1.7;color:#444}
-.learn-card .title{font-weight:600;color:#1a1a2e;margin-bottom:4px;font-size:13px}
+.section{background:#fff;border-radius:12px;padding:20px;margin-bottom:14px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.section h2{font-size:16px;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.section p{font-size:13px;line-height:1.7;color:#555}
+.stars{color:#f5a623;font-size:16px;margin-right:4px}
+.scores{display:flex;gap:12px;font-size:12px;color:#666;margin-top:6px;flex-wrap:wrap}
+.meta{font-size:13px;color:#666;display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+.price{color:#c0392b;font-weight:700}
+.dish-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px}
+.dish-card{background:#fafafa;border-radius:8px;padding:8px;text-align:center;border:1px solid #eee}
+.dish-card img{width:100%;aspect-ratio:1.5;object-fit:cover;border-radius:4px;margin-bottom:4px}
+.dish-card .dish-info .rank{display:inline-block;width:16px;height:16px;line-height:16px;background:#c0392b;color:#fff;font-size:9px;border-radius:50%;margin-right:2px}
+.dish-card .dish-info .name{font-size:11px;font-weight:600}
+.kw-section{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.kw-section .kw{background:#fef3f2;color:#c0392b;padding:2px 8px;border-radius:10px;font-size:10px;border:1px solid #fdd}
+.learn-item{padding:10px 14px;background:#fafafa;border-radius:8px;margin-bottom:8px;border-left:3px solid #c0392b;font-size:12px;line-height:1.6;color:#555}
+.learn-item .title{font-weight:600;color:#333;margin-bottom:2px}
 .footer{text-align:center;padding:16px;color:#999;font-size:11px}
-.learn-card{padding:14px 16px;background:#fafafa;border-radius:8px;margin-bottom:10px;border-left:3px solid #2980b9;font-size:12px;line-height:1.7;color:#444}.learn-card .title{font-weight:600;color:#1a1a2e;margin-bottom:4px;font-size:13px}.timeline{position:relative;padding-left:20px;margin:10px 0}.timeline::before{content:"";position:absolute;left:6px;top:0;bottom:0;width:2px;background:#e0e0e0}.tl-item{position:relative;padding:0 0 14px 16px;font-size:12px;color:#555;line-height:1.6}.tl-item::before{content:"";position:absolute;left:-18px;top:4px;width:10px;height:10px;border-radius:50%;background:#c0392b;border:2px solid #fff;box-shadow:0 0 0 1.5px #c0392b}.tl-item .year{font-weight:700;color:#c0392b;font-size:11px}</style></head><body><div class="container"><a class="back" href="/yuejingxi-research/广州/广州粤菜_必吃榜_20260630.html">← 返回报告</a><div class="header"><h1>粤·向群饭店(城光荟店)</h1><div class="sub">广州</div><div class="tags"><span class="tag gold">🏅 必吃榜</span><span class="tag gold">🏛️ 老字号</span><span class="tag">始于1988</span></div></div><div class="section"><h2>📊 品牌速览</h2><div class="facts"><div class="fact"><div class="num">1988</div><div class="lbl">始创</div></div><div class="fact"><div class="num">8家</div><div class="lbl">直营店</div></div><div class="fact"><div class="num">葱油淋鸡</div><div class="lbl">头牌必点</div></div><div class="fact"><div class="num">米其林</div><div class="lbl">必比登</div></div></div></div><div class="section"><h2>📜 发展历程</h2><div class="timeline"><div class="tl-item"><div class="year">1980</div>前身向群冰室在龙津东路开业，卖冰棍冰饮碟头饭</div><div class="tl-item"><div class="year">1988</div>冰室与烧腊档合并为大排档，得名向群。定位平民百姓都能吃得起</div><div class="tl-item"><div class="year">1992</div>关海昌黄广生玲姐三人承包，改名向群饭店——铁三角组合</div><div class="tl-item"><div class="year">2020</div>更名粤·向群饭店，开出首间商场分店，从街坊老店转型连锁</div><div class="tl-item"><div class="year">至今</div>8家直营分店，连续六年米其林必比登+必吃榜</div></div></div><div class="section"><h2>🏆 品牌故事</h2><p>向群饭店1988年从龙津路冰室起家，是广州街坊的家庭饭堂。招牌葱油淋鸡选用180天清远走地鸡，淋滚烫葱姜花生油——是向群首创并做成招牌的经典。坚持每日采购新鲜食材杜绝半成品，保留粤菜锅气传统。连续六年米其林必比登+必吃榜。</p></div><div class="section"><h2>🍽 产品与经营亮点</h2><div class="dish-card"><div class="name">🐔 葱油淋鸡 — 向群首创</div><div class="desc">180天清远走地鸡白切后淋滚烫葱姜花生油。<strong>研发启示：</strong>越简单的菜越难做好。葱油鸡看似简单，选鸡+油温+葱姜比例就是核心技术。</div></div><div class="dish-card"><div class="name">🏪 从冰室到大排档到连锁</div><div class="desc">1980冰室→1988大排档→2020连锁化。一个品牌32年完成三次进化。<strong>运营启示：</strong>老字号不是一成不变，要在保持核心产品力的前提下迭代模式。</div></div></div><div class="section"><h2>💡 研发与运营启示</h2><div class="learn-card"><div class="title">🔑 一道葱油鸡定义一个品牌</div><div>向群=葱油淋鸡。把一道简单的菜做到极致就是品牌护城河。不在于创新多复杂，在于把简单的菜做到无可挑剔。</div></div><div class="learn-card"><div class="title">🔑 家族传承+专业化转型</div><div>第二代传人接班后推动商场连锁化。老字号的传承需要二代有"守正出奇"的能力——守住老味道，创新新模式。</div></div></div><div class="footer"><a href="/yuejingxi-research/index.html">返回首页</a> · 粤京熹 R&amp;D</div></div></body></html>
+.footer a{color:#c0392b;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="container">
+<a class="back" href="/yuejingxi-research/广州/广州粤菜_黑珍珠_20260630.html">← 返回报告</a>
+
+<div class="header">
+<h1>粤·向群饭店(城光荟店)</h1>
+<div class="sub">广州 · 粤菜</div>
+<div class="tags"><span class="tag">🏛️ 老字号</span></div>
+</div>
+
+<div class="section">
+<h2>📊 基本信息</h2>
+<div class="meta">
+<span class="stars">★★★★★</span>
+<span class="price">¥81</span>
+<span>📍 北京路</span>
+<span>📍 康王中路600号城光荟商场5楼距地铁1号线陈家祠站</span>
+</div>
+<div class="scores"><span>口味 4.7</span><span>环境 4.8</span><span>服务 4.7</span><span>评价 18246条</span></div>
+</div>
+
+<div class="section"><h2>🍽️ 推荐菜 Top 10</h2><div class="dish-list">
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/EHjWAgOKWhBdSJzPSzmafXLFyTijMcaLs42cmtpbDNDChLLd2xH9HfqaUw41LpAhrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#1</span>
+                <span class="name">始创葱油淋鸡</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/RtEOAxMn7K0BdTVbq5i-dTdBNi8eLb2XjfT0Ro8O52FmqETFiV-Q6Thx0PNeIZ6JrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#2</span>
+                <span class="name">士多啤梨咕噜肉</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/7NAu1gY5ymDL0eB4EGaHzyCl80vGFjfEujtyWMjXwtX4Fih5q7Hv5AZYTWKdG1SKrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#3</span>
+                <span class="name">油渣生炒菜心</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/lluaGELb4TDjJOwWymHFZ3Wufp8oQ_MvimAJ59cTOFJoBi-EqPUR7-9iHAYTHY1lrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#4</span>
+                <span class="name">豉油皇鹅肠</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/EQnj9w3dFmvjOwo5gD2EJP23WQCOq3UzLQyttFKndAZcIGL6n6YbPhgO9ekFYu4trN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#5</span>
+                <span class="name">黑松露煎手打虾饼</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/do8W8af1VilkOrHCzYSse3t9aNgm4Y66mNfdKRqIBqciWckIbiCo3OTQ4xPEhrctrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#6</span>
+                <span class="name">锦鲤杨枝甘露</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/fgcT6NNwNk40-tpKI-QEnzr_jv1B9Lga2uT3n4jyVRAN56-_QiKuOvyio1OOxsRtrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#7</span>
+                <span class="name">瑶柱炖节瓜汤</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/Je1OT9Z55JExj0mPQYBe-D94B62X2mLoUFlJPMYcvM0GCpAmG00QbfT4vCCBj7njrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#8</span>
+                <span class="name">向群幸福炒饭</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/IpjfeNErRAMB5jh-7iReDQ2zSp_ijcqFnGOwTGQF91y_KJSEnm9fiirk3YqIVqWprN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#9</span>
+                <span class="name">葱油淋鲈鱼</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/ILjqL48i6pnOChT4Euh3kzuX8JKu-Rn1GEgAg-Hlsysz9bMNcq0hRfhjXHu0cVcyrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#10</span>
+                <span class="name">感动街头炸春卷</span>
+            </div>
+        </div></div></div>
+
+<div class="section"><h2>💬 食客印象</h2><div class="kw-section"><span class="kw">停车建议(40)</span> <span class="kw">必点菜单(555)</span> <span class="kw">葱油鸡有鸡味(364)</span> <span class="kw">包间环境安静(84)</span> <span class="kw">团购价格更实惠(229)</span> <span class="kw">碌鹅甜咸口味(24)</span></div></div>
+
+<div class="section">
+<h2>💡 值得学习</h2>
+<div class="learn-item">
+<div class="title">⭐ 亮点</div>
+<div>粤·向群饭店(城光荟店)在老字号榜单中表现突出，评分4.7，人均¥81。位于北京路，是广州粤菜的代表性餐厅之一。</div>
+</div>
+<div class="learn-item">
+<div class="title">🍽️ 招牌产品</div>
+<div>推荐菜包括始创葱油淋鸡、士多啤梨咕噜肉、油渣生炒菜心、豉油皇鹅肠、黑松露煎手打虾饼。</div>
+</div>
+</div>
+
+<div class="footer">
+<a href="/yuejingxi-research/index.html">返回粤京熹首页</a> · 粤京熹 R&D 助手<br>
+<span style="font-size:10px;color:#bbb">本页面由AI自动生成，详细信息待补充</span>
+</div>
+</div>
+</body>
+</html>

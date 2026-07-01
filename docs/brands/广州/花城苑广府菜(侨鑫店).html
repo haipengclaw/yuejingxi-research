@@ -1,26 +1,150 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8">
-<meta name="referrer" content="no-referrer"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>花城苑广府菜(侨鑫店)·深度研究</title><style>*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f5f5;color:#333}
-.container{max-width:900px;margin:0 auto;padding:16px}
-.header{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);color:#fff;border-radius:14px;padding:32px 28px;margin-bottom:16px}
-.header h1{font-size:24px;margin-bottom:4px}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>花城苑广府菜(侨鑫店) · 品牌详情 · 粤京熹</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;background:#f5f5f5;color:#333}
+.container{max-width:800px;margin:0 auto;padding:16px}
+.header{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);color:#fff;border-radius:12px;padding:28px 24px;margin-bottom:16px}
+.header h1{font-size:22px;margin-bottom:4px}
 .header .sub{font-size:13px;opacity:.7;margin-bottom:8px}
 .header .tags{display:flex;flex-wrap:wrap;gap:4px}
 .header .tag{background:rgba(255,255,255,.12);padding:2px 10px;border-radius:12px;font-size:10px}
-.header .tag.gold{background:#d4af37;color:#1a1a2e;font-weight:600}
 .back{display:inline-block;color:#666;font-size:12px;margin-bottom:12px;text-decoration:none}
-.section{background:#fff;border-radius:12px;padding:24px;margin-bottom:14px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
-.section h2{font-size:17px;font-weight:700;margin-bottom:14px}
-.section p{font-size:13px;line-height:1.8;color:#444;margin-bottom:8px}
-.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px}
-.fact{text-align:center;padding:12px 8px;background:#f8f8f8;border-radius:8px}
-.fact .num{font-size:18px;font-weight:800;color:#c0392b}
-.fact .lbl{font-size:10px;color:#999;margin-top:2px}
-.dish-card{border-left:3px solid #c0392b;padding:12px 16px;background:#fafafa;border-radius:0 8px 8px 0;margin-bottom:10px}
-.dish-card .name{font-size:14px;font-weight:600;color:#1a1a2e}
-.dish-card .desc{font-size:12px;color:#555;line-height:1.6;margin-top:4px}
-.dish-card .tag{display:inline-block;font-size:10px;background:#fef3f2;color:#c0392b;padding:1px 8px;border-radius:8px;margin-top:4px;margin-right:4px}
-.learn-card{padding:14px 16px;background:#fafafa;border-radius:8px;margin-bottom:10px;border-left:3px solid #2980b9;font-size:12px;line-height:1.7;color:#444}
-.learn-card .title{font-weight:600;color:#1a1a2e;margin-bottom:4px;font-size:13px}
+.section{background:#fff;border-radius:12px;padding:20px;margin-bottom:14px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.section h2{font-size:16px;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.section p{font-size:13px;line-height:1.7;color:#555}
+.stars{color:#f5a623;font-size:16px;margin-right:4px}
+.scores{display:flex;gap:12px;font-size:12px;color:#666;margin-top:6px;flex-wrap:wrap}
+.meta{font-size:13px;color:#666;display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+.price{color:#c0392b;font-weight:700}
+.dish-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px}
+.dish-card{background:#fafafa;border-radius:8px;padding:8px;text-align:center;border:1px solid #eee}
+.dish-card img{width:100%;aspect-ratio:1.5;object-fit:cover;border-radius:4px;margin-bottom:4px}
+.dish-card .dish-info .rank{display:inline-block;width:16px;height:16px;line-height:16px;background:#c0392b;color:#fff;font-size:9px;border-radius:50%;margin-right:2px}
+.dish-card .dish-info .name{font-size:11px;font-weight:600}
+.kw-section{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.kw-section .kw{background:#fef3f2;color:#c0392b;padding:2px 8px;border-radius:10px;font-size:10px;border:1px solid #fdd}
+.learn-item{padding:10px 14px;background:#fafafa;border-radius:8px;margin-bottom:8px;border-left:3px solid #c0392b;font-size:12px;line-height:1.6;color:#555}
+.learn-item .title{font-weight:600;color:#333;margin-bottom:2px}
 .footer{text-align:center;padding:16px;color:#999;font-size:11px}
-.timeline{position:relative;padding-left:20px;margin:10px 0}.timeline::before{content:"";position:absolute;left:6px;top:0;bottom:0;width:2px;background:#e0e0e0}.tl-item{position:relative;padding:0 0 14px 16px;font-size:12px;color:#555;line-height:1.6}.tl-item::before{content:"";position:absolute;left:-18px;top:4px;width:10px;height:10px;border-radius:50%;background:#c0392b;border:2px solid #fff;box-shadow:0 0 0 1.5px #c0392b}.tl-item .year{font-weight:700;color:#c0392b;font-size:11px}.success-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}.success-card{padding:14px;background:#f0f8f0;border-radius:8px;border-left:3px solid #27ae60;font-size:12px;line-height:1.6;color:#444}.success-card .title{font-weight:600;color:#27ae60;margin-bottom:4px;font-size:13px}</style></head><body><div class="container"><a class="back" href="/yuejingxi-research/广州/广州粤菜_黑珍珠_20260630.html">← 返回报告</a><div class="header"><h1>花城苑广府菜(侨鑫店)</h1><div class="sub">广州·珠江新城</div><div class="tags"><span class="tag gold">🏆 黑珍珠一钻</span><span class="tag">必比登推介</span><span class="tag">富豪饭堂</span></div></div><div class="section"><h2>📊 品牌速览</h2><div class="facts"><div class="fact"><div class="num">¥218</div><div class="lbl">人均</div></div><div class="fact"><div class="num">5年</div><div class="lbl">黑珍珠</div></div><div class="fact"><div class="num">29年</div><div class="lbl">猪肚汤</div></div><div class="fact"><div class="num">梁健宇</div><div class="lbl">总厨</div></div></div></div><div class="section"><h2>📜 发展脉络</h2><div class="timeline"><div class="tl-item"><div class="year">创立</div>以粗菜细做的广府家常菜为特色，被誉为广州富豪饭堂——看似普通的菜品味道却惊艳</div><div class="tl-item"><div class="year">定位</div>不追求摆盘精美专注味道。"摆盘不够味道来凑"是食客的评价</div><div class="tl-item"><div class="year">黑珍珠</div>连续5年黑珍珠一钻</div><div class="tl-item"><div class="year">米其林</div>2022-2025连续4年米其林必比登推介。行政总厨梁健宇获福厨称号</div></div></div><div class="section"><h2>🏆 成功因素分析</h2><div class="success-grid"><div class="success-card"><div class="title">🔑 反其道而行</div><div>人人追求精致摆盘，花城苑坚持味道第一。反潮流定位成为品牌辨识度。</div></div><div class="success-card"><div class="title">🔑 一道菜卖29年</div><div>腐竹福果猪肚汤卖了29年。把一道汤做到极致就是品牌超级符号。</div></div><div class="success-card"><div class="title">🔑 人均218的黑珍珠</div><div>黑珍珠中少有的低价位。证明高端评价不等于高价格——味道才是核心。</div></div></div></div><div class="section"><h2>🍽️ 产品深度解析</h2><div class="dish-card"><div class="name">腐竹福果猪肚汤 <span style="float:right;color:#c0392b">卖了29年</span></div><div class="desc">汤色奶白腐竹融入汤底入口绵绸滑甘甜无腥味。一道汤卖29年说明产品力够强。不是所有产品都需要创新，有些经典产品要做的是持续保持一致的高品质。</div></div><div class="dish-card"><div class="name">虾喇膏蒸蛋</div><div class="desc">蟹膏铺在蒸蛋底下鲜香嫩滑。时令食材+家常做法=高性价比高端菜。</div></div></div><div class="section"><h2>💡 研发启示</h2><div class="learn-card"><div class="title">① 味道才是核心竞争力</div><div>不需要精致摆盘也能拿黑珍珠。做产品先抓味道，其他都是锦上添花。</div></div><div class="learn-card"><div class="title">② 超级单品策略</div><div>一道猪肚汤卖29年。找到一个产品做到极致，让它成为品牌的代名词。</div></div></div><div class="footer"><a href="/yuejingxi-research/index.html">返回首页</a> · 粤京熹 R&amp;D</div></div></body></html>
+.footer a{color:#c0392b;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="container">
+<a class="back" href="/yuejingxi-research/广州/广州粤菜_黑珍珠_20260630.html">← 返回报告</a>
+
+<div class="header">
+<h1>花城苑广府菜(侨鑫店)</h1>
+<div class="sub">广州 · 粤菜</div>
+<div class="tags"><span class="tag">🏆 黑珍珠</span></div>
+</div>
+
+<div class="section">
+<h2>📊 基本信息</h2>
+<div class="meta">
+<span class="stars">★★★★★</span>
+<span class="price">¥218</span>
+<span>📍 珠江新城</span>
+<span>📍 金穗路62号侨鑫国际附楼广州美仑美奂酒店5层距华轩酒店公寓10</span>
+</div>
+<div class="scores"><span>口味 4.7</span><span>环境 4.8</span><span>服务 4.8</span><span>评价 2409条</span></div>
+</div>
+
+<div class="section"><h2>🍽️ 推荐菜 Top 10</h2><div class="dish-list">
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/sVCSupyXGQPpvfniOZgN9OaV1SjOBAXUUzZYGIDiiGs9thrOHKCZqVapCs44Fv_zrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#1</span>
+                <span class="name">猪肚汤</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/9fkk9iGuL3dWLJgfWFZv-vqio8jrlcBe6wd5v8bV-zGC8tmzzKd4P_r64CXeZIK2rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#2</span>
+                <span class="name">煎藕粉</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/Uq-vFAi24TB5fnKUM1z4KJQNjtAwSp8EZTQfdJspT2Qb9pQa5ST5unqHxetUwsg6rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#3</span>
+                <span class="name">姜丝蒸黄脚立鱼</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/Hm8juB7zqfsukOaLfRYTHZ5MFBTrdzM9xUlcamxSZ_Tb7ejKKUJ5jqBlyPGMUFvErN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#4</span>
+                <span class="name">虾喇膏蒸蛋</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/CkDQ_yxLA1x8ZVdWpnNpma6jQ08ZhEKHtBxCApq1f0z3wQqRnfyWwNPnZqWvr_q6rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#5</span>
+                <span class="name">清炖鸡</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/24cj9d42MbjLhd0yyr5CXzc26TCis-1GngT1XjDaCjc18GfWuFWv2rkwnBU1hi0jrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#6</span>
+                <span class="name">碌鹅</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/YnDSw3G0xFEs5_xVeXevwTb34C8T7j-1WnCj6lm6I3zEdoxiutxyE8UKBQVpTR7zrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#7</span>
+                <span class="name">豉油皇大肠头</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/CN-6S5m_7PAeZhn0rMoCA1JRrgQ41Qz4MIeEmm17hGN2D-aWdrpf_hSIQXn7wiMorN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#8</span>
+                <span class="name">绿豆沙</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/uZSCQsmO5Qy1AiTqSjaS_9fM-zZ4WWLce--B3mxDeZkLJfV-4Vsy2vcytSds15ERrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#9</span>
+                <span class="name">河虾</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/PgmyQ10YJ9LIe1xcy8Gb5rptuy3pv_IsFVfuR0vmi45cIGL6n6YbPhgO9ekFYu4trN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#10</span>
+                <span class="name">沙琪玛</span>
+            </div>
+        </div></div></div>
+
+<div class="section"><h2>💬 食客印象</h2><div class="kw-section"><span class="kw">停车建议(15)</span> <span class="kw">必点菜单(63)</span> <span class="kw">适合生日庆祝(27)</span> <span class="kw">猪肠粉有锅气足(15)</span></div></div>
+
+<div class="section">
+<h2>💡 值得学习</h2>
+<div class="learn-item">
+<div class="title">⭐ 亮点</div>
+<div>花城苑广府菜(侨鑫店)在黑珍珠榜单中表现突出，评分4.7，人均¥218。位于珠江新城，是广州粤菜的代表性餐厅之一。</div>
+</div>
+<div class="learn-item">
+<div class="title">🍽️ 招牌产品</div>
+<div>推荐菜包括猪肚汤、煎藕粉、姜丝蒸黄脚立鱼、虾喇膏蒸蛋、清炖鸡。</div>
+</div>
+</div>
+
+<div class="footer">
+<a href="/yuejingxi-research/index.html">返回粤京熹首页</a> · 粤京熹 R&D 助手<br>
+<span style="font-size:10px;color:#bbb">本页面由AI自动生成，详细信息待补充</span>
+</div>
+</div>
+</body>
+</html>

@@ -1,36 +1,150 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8">
-<meta name="referrer" content="no-referrer"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>跃·Yue · 产品深度研究</title><style>*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f5f5;color:#333}
-.container{max-width:900px;margin:0 auto;padding:16px}
-.header{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);color:#fff;border-radius:14px;padding:32px 28px;margin-bottom:16px}
-.header h1{font-size:24px;margin-bottom:4px}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>跃·Yue现代粤菜料理 · 品牌详情 · 粤京熹</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;background:#f5f5f5;color:#333}
+.container{max-width:800px;margin:0 auto;padding:16px}
+.header{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);color:#fff;border-radius:12px;padding:28px 24px;margin-bottom:16px}
+.header h1{font-size:22px;margin-bottom:4px}
 .header .sub{font-size:13px;opacity:.7;margin-bottom:8px}
 .header .tags{display:flex;flex-wrap:wrap;gap:4px}
 .header .tag{background:rgba(255,255,255,.12);padding:2px 10px;border-radius:12px;font-size:10px}
-.header .tag.gold{background:#d4af37;color:#1a1a2e;font-weight:600}
 .back{display:inline-block;color:#666;font-size:12px;margin-bottom:12px;text-decoration:none}
-.section{background:#fff;border-radius:12px;padding:24px;margin-bottom:14px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
-.section h2{font-size:17px;font-weight:700;margin-bottom:14px}
-.section p{font-size:13px;line-height:1.8;color:#444;margin-bottom:8px}
-.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px}
-.fact{text-align:center;padding:12px 8px;background:#f8f8f8;border-radius:8px}
-.fact .num{font-size:18px;font-weight:800;color:#c0392b}
-.fact .lbl{font-size:10px;color:#999;margin-top:2px}
-.dish-card{border-left:3px solid #c0392b;padding:12px 16px;background:#fafafa;border-radius:0 8px 8px 0;margin-bottom:10px}
-.dish-card .name{font-size:14px;font-weight:600;color:#1a1a2e}
-.dish-card .desc{font-size:12px;color:#555;line-height:1.6;margin-top:4px}
-.dish-card .tag{display:inline-block;font-size:10px;background:#fef3f2;color:#c0392b;padding:1px 8px;border-radius:8px;margin-top:4px;margin-right:4px}
-.learn-card{padding:14px 16px;background:#fafafa;border-radius:8px;margin-bottom:10px;border-left:3px solid #2980b9;font-size:12px;line-height:1.7;color:#444}
-.learn-card .title{font-weight:600;color:#1a1a2e;margin-bottom:4px;font-size:13px}
+.section{background:#fff;border-radius:12px;padding:20px;margin-bottom:14px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.section h2{font-size:16px;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.section p{font-size:13px;line-height:1.7;color:#555}
+.stars{color:#f5a623;font-size:16px;margin-right:4px}
+.scores{display:flex;gap:12px;font-size:12px;color:#666;margin-top:6px;flex-wrap:wrap}
+.meta{font-size:13px;color:#666;display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+.price{color:#c0392b;font-weight:700}
+.dish-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px}
+.dish-card{background:#fafafa;border-radius:8px;padding:8px;text-align:center;border:1px solid #eee}
+.dish-card img{width:100%;aspect-ratio:1.5;object-fit:cover;border-radius:4px;margin-bottom:4px}
+.dish-card .dish-info .rank{display:inline-block;width:16px;height:16px;line-height:16px;background:#c0392b;color:#fff;font-size:9px;border-radius:50%;margin-right:2px}
+.dish-card .dish-info .name{font-size:11px;font-weight:600}
+.kw-section{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.kw-section .kw{background:#fef3f2;color:#c0392b;padding:2px 8px;border-radius:10px;font-size:10px;border:1px solid #fdd}
+.learn-item{padding:10px 14px;background:#fafafa;border-radius:8px;margin-bottom:8px;border-left:3px solid #c0392b;font-size:12px;line-height:1.6;color:#555}
+.learn-item .title{font-weight:600;color:#333;margin-bottom:2px}
 .footer{text-align:center;padding:16px;color:#999;font-size:11px}
+.footer a{color:#c0392b;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="container">
+<a class="back" href="/yuejingxi-research/广州/广州粤菜_黑珍珠_20260630.html">← 返回报告</a>
 
-.timeline{position:relative;padding-left:20px;margin:10px 0}
-.timeline::before{content:"";position:absolute;left:6px;top:0;bottom:0;width:2px;background:#e0e0e0}
-.tl-item{position:relative;padding:0 0 14px 16px;font-size:12px;color:#555;line-height:1.6}
-.tl-item::before{content:"";position:absolute;left:-18px;top:4px;width:10px;height:10px;border-radius:50%;background:#c0392b;border:2px solid #fff;box-shadow:0 0 0 1.5px #c0392b}
-.tl-item .year{font-weight:700;color:#c0392b;font-size:11px}
-.success-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}
-.success-card{padding:14px;background:#f0f8f0;border-radius:8px;border-left:3px solid #27ae60;font-size:12px;line-height:1.6;color:#444}
-.success-card .title{font-weight:600;color:#27ae60;margin-bottom:4px;font-size:13px}
-@media(max-width:640px){.success-grid{grid-template-columns:1fr}}
-</style></head><body><div class="container"><a class="back" href="/yuejingxi-research/广州/广州粤菜_黑珍珠_20260630.html">← 返回报告</a><div class="header"><h1>跃·Yue 现代粤菜料理</h1><div class="sub">广州·现代粤菜先锋</div><div class="tags"><span class="tag gold">🏆 黑珍珠二钻</span><span class="tag gold">⭐ 米其林餐盘</span><span class="tag">现代粤菜</span><span class="tag">人均¥1,377</span></div></div><div class="section"><h2>📊 品牌速览</h2><div class="facts"><div class="fact"><div class="num">2018</div><div class="lbl">开业</div></div><div class="fact"><div class="num">¥1,377</div><div class="lbl">人均</div></div><div class="fact"><div class="num">4个</div><div class="lbl">子品牌</div></div><div class="fact"><div class="num">陈晓东</div><div class="lbl">主厨</div></div></div></div><div class="section"><h2>📜 发展脉络</h2><div class="timeline"><div class="tl-item"><div class="year">2000s初</div>进入传统粤菜厨房学徒，体验行业封闭之痛</div><div class="tl-item"><div class="year">2007</div>转行学西餐，习得标准化操作体系SOP</div><div class="tl-item"><div class="year">2016</div>结识投资人在全球巡游米其林餐厅汲取灵感</div><div class="tl-item"><div class="year">2018底</div><strong>跃·Yue</strong>开业，用现代料理演绎传统粤菜</div><div class="tl-item"><div class="year">2021</div><strong>潮跃</strong>开业，聚焦潮州菜现代表达</div><div class="tl-item"><div class="year">2022</div><strong>焯跃</strong>开业，12种温区解构烹饪。仅12个板前位</div><div class="tl-item"><div class="year">至今</div>跃系列品牌矩阵成型，陈晓东获黑珍珠年轻主厨奖</div></div></div><div class="section"><h2>🏆 成功因素分析</h2><div class="success-grid"><div class="success-card"><div class="title">🔑 打破行业痛点</div>反传统而行：数据化称重/计时/控温、标准化SOP、开放式厨房。后厨更像食研室</div><div class="success-card"><div class="title">🔑 科技赋能传统</div>使用精密计量秤测温仪数据化每个环节。焯跃用12种温区烹饪</div><div class="success-card"><div class="title">🔑 从做菜到做体验</div>海浪声手抓食物牙膏甜品。跃系列成为广州纪念日餐厅</div><div class="success-card"><div class="title">🔑 务实的商业逻辑</div>所有门店在行业低谷期也保持盈利。超预期体验让食客买单</div></div></div><div class="section"><h2>🍽️ 产品深度解析</h2><div class="dish-card"><div class="name">鱼子酱卤水鹅肝 <span style="float:right;color:#c0392b">跃系列从未下架</span></div><div class="desc"><strong>为什么得奖：</strong>潮汕卤水+法国鹅肝+鱼子酱——洋为中用的完美诠释。近年持续优化配方加入脆片——招牌菜需要持续迭代，这是产品生命力的关键。</div></div><div class="dish-card"><div class="name">护国海参 <span style="float:right;color:#c0392b">五感体验</span></div><div class="desc"><strong>为什么受欢迎：</strong>护国菜羹做珊瑚盘底，海参填入海胆鱼籽，上桌伴海浪声。一桌饭需要一道有记忆点的菜。五感体验=社交货币。</div></div><div class="dish-card"><div class="name">疯狂的石头 <span style="float:right;color:#c0392b">爆款单品</span></div><div class="desc"><strong>为什么受欢迎：</strong>墨鱼汁包裹去骨凤爪做成石头造型，用手直接吃。造型+互动=记忆点，社交媒体被大量传播。</div></div></div><div class="section"><h2>💡 研发启示</h2><div class="learn-card"><div class="title">① 重新定义品类</div><div>粤菜的精髓是海纳百川不断进化。做研发要敢于打破传统的框框。</div></div><div class="learn-card"><div class="title">② 科学烹饪是标准化基石</div><div>少许适量变成精确数据。所有配方SOP化，这是连锁扩张的基础。</div></div><div class="learn-card"><div class="title">③ 品牌矩阵覆盖全客层</div><div>跃(¥1,300)→潮跃(¥1,600)→焯跃(¥3,000+)，同套研发能力覆盖多价格带。</div></div><div class="learn-card"><div class="title">④ 产品即体验</div><div>每道菜设计一个记忆点。研发时要思考：这道菜能让客人记得住吗？</div></div></div><div class="footer"><a href="/yuejingxi-research/index.html">返回首页</a> · 粤京熹 R&amp;D</div></div></body></html>
+<div class="header">
+<h1>跃·Yue现代粤菜料理</h1>
+<div class="sub">广州 · 粤菜</div>
+<div class="tags"><span class="tag">🏆 黑珍珠</span></div>
+</div>
+
+<div class="section">
+<h2>📊 基本信息</h2>
+<div class="meta">
+<span class="stars">★★★★★</span>
+<span class="price">¥1350</span>
+<span>📍 珠江新城</span>
+<span>📍 新港东路618号南丰汇</span>
+</div>
+<div class="scores"><span>口味 4.8</span><span>环境 4.9</span><span>服务 4.9</span><span>评价 2024条</span></div>
+</div>
+
+<div class="section"><h2>🍽️ 推荐菜 Top 10</h2><div class="dish-list">
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/JWETDzYKKt8IjvBm0nw8GOPWPFNv0MEp5EbIyBmh3nUjB9PnpfRGfwdf-EZnI0PtrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#1</span>
+                <span class="name">鱼子酱卤水鹅肝</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/nV4qctgafMKPZHDOQiEy1oTTpX26Jelt4iAFeRWAe966yDO85r4c9iK1SxJXYVNnrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#2</span>
+                <span class="name">护国海参</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/PdP7yxdKitgFo5iKIrqqvwGBQoZ_1nzYw-OMvbIsTc_wjNRkROR25SQZ44_lLEhTrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#3</span>
+                <span class="name">酥皮溏心鲍</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/jakkJbNw9snVvCT-BQFeVyJXNeMTHrZxyhDdnv5nuKF5A1dtNM723PBv4iYRCNuIrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#4</span>
+                <span class="name">豉椒牛肉</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/JeZMtywFUffsVAYN-NbL5IoxSTC9TT_4AmLlZAw3T5Ogc9RJlnFycIAKPeAVvXnMrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#5</span>
+                <span class="name">鱼子酱</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/INK3S5YB6sWOFzDX2Sg1tqnvYLX7iL2mot5UJ_F_H9VM0wAYLEIz_v9tRtctzr3YrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#6</span>
+                <span class="name">燕窝椰汁西米露</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/fGZwGShiG9tfa71Jqi5aZxRDwnqJyNXTfLArw7GWeWDV8IcW7pqDfbeFWHI9d-kvrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#7</span>
+                <span class="name">西班牙火腿黑松茸腊味饭</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/rTGkDRrX3UrbbfpKOu955G-BLTM0prWlBZ3SA4v8Fmx0g9GKcGwT0s8S0tLexOvQrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#8</span>
+                <span class="name">水晶虾饺</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/RV5bbrh2txI_MdR4ynLCuejaHr58Pk-l48UGxMMovD_vUPc0uvPZgapcPaIAQB27rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#9</span>
+                <span class="name">椰子雪糕</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/AjmaWkySKIBsCgo2RXq1NNe-Dc8jZtj1QFE6WgYK-hP_6ATiXK-VOW3bSoDeuH_PrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#10</span>
+                <span class="name">稻香和牛</span>
+            </div>
+        </div></div></div>
+
+<div class="section"><h2>💬 食客印象</h2><div class="kw-section"><span class="kw">惊喜街头小吃呈现(15)</span> <span class="kw">厨师讲解用餐场景(51)</span> <span class="kw">环境私密安静(62)</span> <span class="kw">主厨创新菜品(128)</span> <span class="kw">服务员主动拍照留念(17)</span> <span class="kw">高级灰黑装修风格(15)</span></div></div>
+
+<div class="section">
+<h2>💡 值得学习</h2>
+<div class="learn-item">
+<div class="title">⭐ 亮点</div>
+<div>跃·Yue现代粤菜料理在黑珍珠榜单中表现突出，评分4.8，人均¥1350。位于珠江新城，是广州粤菜的代表性餐厅之一。</div>
+</div>
+<div class="learn-item">
+<div class="title">🍽️ 招牌产品</div>
+<div>推荐菜包括鱼子酱卤水鹅肝、护国海参、酥皮溏心鲍、豉椒牛肉、鱼子酱。</div>
+</div>
+</div>
+
+<div class="footer">
+<a href="/yuejingxi-research/index.html">返回粤京熹首页</a> · 粤京熹 R&D 助手<br>
+<span style="font-size:10px;color:#bbb">本页面由AI自动生成，详细信息待补充</span>
+</div>
+</div>
+</body>
+</html>

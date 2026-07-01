@@ -1,25 +1,150 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="referrer" content="no-referrer"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>滋粥楼·顺德菜品牌研究</title><style>*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f5f5;color:#333}
-.container{max-width:900px;margin:0 auto;padding:16px}
-.header{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);color:#fff;border-radius:14px;padding:32px 28px;margin-bottom:16px}
-.header h1{font-size:24px;margin-bottom:4px}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>滋粥楼·顺德菜(南村万博长隆商圈店) · 品牌详情 · 粤京熹</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;background:#f5f5f5;color:#333}
+.container{max-width:800px;margin:0 auto;padding:16px}
+.header{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);color:#fff;border-radius:12px;padding:28px 24px;margin-bottom:16px}
+.header h1{font-size:22px;margin-bottom:4px}
 .header .sub{font-size:13px;opacity:.7;margin-bottom:8px}
 .header .tags{display:flex;flex-wrap:wrap;gap:4px}
 .header .tag{background:rgba(255,255,255,.12);padding:2px 10px;border-radius:12px;font-size:10px}
-.header .tag.gold{background:#d4af37;color:#1a1a2e;font-weight:600}
 .back{display:inline-block;color:#666;font-size:12px;margin-bottom:12px;text-decoration:none}
-.section{background:#fff;border-radius:12px;padding:24px;margin-bottom:14px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
-.section h2{font-size:17px;font-weight:700;margin-bottom:14px}
-.section p{font-size:13px;line-height:1.8;color:#444;margin-bottom:8px}
-.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px}
-.fact{text-align:center;padding:12px 8px;background:#f8f8f8;border-radius:8px}
-.fact .num{font-size:18px;font-weight:800;color:#c0392b}
-.fact .lbl{font-size:10px;color:#999;margin-top:2px}
-.dish-card{border-left:3px solid #c0392b;padding:12px 16px;background:#fafafa;border-radius:0 8px 8px 0;margin-bottom:10px}
-.dish-card .name{font-size:14px;font-weight:600;color:#1a1a2e}
-.dish-card .desc{font-size:12px;color:#555;line-height:1.6;margin-top:4px}
-.dish-card .tag{display:inline-block;font-size:10px;background:#fef3f2;color:#c0392b;padding:1px 8px;border-radius:8px;margin-top:4px;margin-right:4px}
-.learn-card{padding:14px 16px;background:#fafafa;border-radius:8px;margin-bottom:10px;border-left:3px solid #2980b9;font-size:12px;line-height:1.7;color:#444}
-.learn-card .title{font-weight:600;color:#1a1a2e;margin-bottom:4px;font-size:13px}
+.section{background:#fff;border-radius:12px;padding:20px;margin-bottom:14px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.section h2{font-size:16px;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.section p{font-size:13px;line-height:1.7;color:#555}
+.stars{color:#f5a623;font-size:16px;margin-right:4px}
+.scores{display:flex;gap:12px;font-size:12px;color:#666;margin-top:6px;flex-wrap:wrap}
+.meta{font-size:13px;color:#666;display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+.price{color:#c0392b;font-weight:700}
+.dish-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px}
+.dish-card{background:#fafafa;border-radius:8px;padding:8px;text-align:center;border:1px solid #eee}
+.dish-card img{width:100%;aspect-ratio:1.5;object-fit:cover;border-radius:4px;margin-bottom:4px}
+.dish-card .dish-info .rank{display:inline-block;width:16px;height:16px;line-height:16px;background:#c0392b;color:#fff;font-size:9px;border-radius:50%;margin-right:2px}
+.dish-card .dish-info .name{font-size:11px;font-weight:600}
+.kw-section{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.kw-section .kw{background:#fef3f2;color:#c0392b;padding:2px 8px;border-radius:10px;font-size:10px;border:1px solid #fdd}
+.learn-item{padding:10px 14px;background:#fafafa;border-radius:8px;margin-bottom:8px;border-left:3px solid #c0392b;font-size:12px;line-height:1.6;color:#555}
+.learn-item .title{font-weight:600;color:#333;margin-bottom:2px}
 .footer{text-align:center;padding:16px;color:#999;font-size:11px}
-.learn-card{padding:14px 16px;background:#fafafa;border-radius:8px;margin-bottom:10px;border-left:3px solid #2980b9;font-size:12px;line-height:1.7;color:#444}.learn-card .title{font-weight:600;color:#1a1a2e;margin-bottom:4px;font-size:13px}.timeline{position:relative;padding-left:20px;margin:10px 0}.timeline::before{content:"";position:absolute;left:6px;top:0;bottom:0;width:2px;background:#e0e0e0}.tl-item{position:relative;padding:0 0 14px 16px;font-size:12px;color:#555;line-height:1.6}.tl-item::before{content:"";position:absolute;left:-18px;top:4px;width:10px;height:10px;border-radius:50%;background:#c0392b;border:2px solid #fff;box-shadow:0 0 0 1.5px #c0392b}.tl-item .year{font-weight:700;color:#c0392b;font-size:11px}</style></head><body><div class="container"><a class="back" href="/yuejingxi-research/广州/广州粤菜_必吃榜_20260630.html">← 返回报告</a><div class="header"><h1>滋粥楼·顺德菜(南村万博长隆商圈店)</h1><div class="sub">广州</div><div class="tags"><span class="tag gold">🏅 必吃榜</span><span class="tag">🚶 排队</span><span class="tag">顺德菜</span><span class="tag">粥水火锅</span></div></div><div class="section"><h2>📊 品牌速览</h2><div class="facts"><div class="fact"><div class="num">2005</div><div class="lbl">创立</div></div><div class="fact"><div class="num">王伟</div><div class="lbl">创始人</div></div><div class="fact"><div class="num">3000-6000</div><div class="lbl">㎡大店</div></div><div class="fact"><div class="num">蔡澜</div><div class="lbl">力荐</div></div></div></div><div class="section"><h2>📜 发展历程</h2><div class="timeline"><div class="tl-item"><div class="year">2005</div>顺德人王伟在番禺广场开首店，3000㎡800+餐位。不会做菜但以口味为唯一标准</div><div class="tl-item"><div class="year">2013</div>南村旗舰店开业，6000㎡1100餐位55间包房——广州最大顺德菜酒楼</div><div class="tl-item"><div class="year">2017</div>斥资200万导入4D食品安全现场管理体系</div><div class="tl-item"><div class="year">2019</div>与食尚国味集团合作推出滋粥楼小馆，进军CBD</div><div class="tl-item"><div class="year">至今</div>连续四年必吃榜，黑珍珠入围。粥水火锅成广州顺德菜名片</div></div></div><div class="section"><h2>🏆 品牌故事</h2><p>滋粥楼2005年由顺德人王伟创立。王伟原是电气工程师，因热爱美食跨界餐饮。不会做菜但以"我的口味就是唯一标准"把控出品。3000㎡大店起步，做到连续四年必吃榜。蔡澜多次免费为其宣传。核心产品粥水火锅采用无米粒工艺，4小时熬煮。</p></div><div class="section"><h2>🍽 产品与经营亮点</h2><div class="dish-card"><div class="name">🍲 粥水火锅 — 核心招牌</div><div class="desc">无米粒工艺，上等米4小时熬煮，粥底绵稠滑。先涮贝类→肉类→蔬菜→最后喝粥。<strong>研发启示：</strong>把"煮粥"这件小事做到极致：无米粒工艺+精准4小时+特定吃法顺序。每个细节都是壁垒。</div></div><div class="dish-card"><div class="name">🏪 3000-6000㎡超大店模式</div><div class="desc">番禺广场店3000㎡，南村旗舰店6000㎡。<strong>运营启示：</strong>大店模式虽然压力大，但可以建立品牌高度和体验深度。适合做餐饮地标。</div></div><div class="dish-card"><div class="name">🤝 同盟合作模式</div><div class="desc">2019年与食尚国味集团合作推出小馆品牌。<strong>运营启示：</strong>产品方+运营方的合作模式各取所长。自己不擅长的事找专业的人做。</div></div></div><div class="section"><h2>💡 研发与运营启示</h2><div class="learn-card"><div class="title">🔑 外行做餐饮的成功之道</div><div>电气工程师出身的王伟不会做菜，但以食客身份把控出品。"我的口味就是唯一标准"——创始人作为典型用户来决策，比厨师决策更贴近市场需求。</div></div><div class="learn-card"><div class="title">🔑 先做地标大店，再做商圈小馆</div><div>先以3000-6000㎡大店建立品牌高度，再以300㎡小馆进入CBD。大店做品牌，小店做利润。</div></div><div class="learn-card"><div class="title">🔑 不做营销的底气</div><div>王伟坚持"好口碑才是最好的宣传"。用7-8年培养供应商，独家食材建立产品壁垒。</div></div></div><div class="footer"><a href="/yuejingxi-research/index.html">返回首页</a> · 粤京熹 R&amp;D</div></div></body></html>
+.footer a{color:#c0392b;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="container">
+<a class="back" href="/yuejingxi-research/广州/广州粤菜_黑珍珠_20260630.html">← 返回报告</a>
+
+<div class="header">
+<h1>滋粥楼·顺德菜(南村万博长隆商圈店)</h1>
+<div class="sub">广州 · 顺德菜</div>
+<div class="tags"><span class="tag">🚶 排队</span><span class="tag">🏛️ 老字号</span></div>
+</div>
+
+<div class="section">
+<h2>📊 基本信息</h2>
+<div class="meta">
+<span class="stars">★★★★★</span>
+<span class="price">¥112</span>
+<span>📍 珠江新城</span>
+
+</div>
+<div class="scores"><span>口味 4.8</span><span>环境 4.9</span><span>服务 4.9</span><span>评价 23347条</span></div>
+</div>
+
+<div class="section"><h2>🍽️ 推荐菜 Top 10</h2><div class="dish-list">
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/IGd_uIsXVThR1rqU7SZalCUTD7mMc-BtM9z4-__UVRoGCpAmG00QbfT4vCCBj7njrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#1</span>
+                <span class="name">古法烧鹅</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/9NErqBfGC_GIGZyducQ0QveY1Hn-L4n0v92sLRoU1JP_6ATiXK-VOW3bSoDeuH_PrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#2</span>
+                <span class="name">三味黄金油条</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/JNOaWC7PH7X-d8vrB8bSQjl6QVr1xSxs6MOZw4rXEUgnC5tacyrnsfycSXExtz4DrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#3</span>
+                <span class="name">顺德拆鱼粥</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/Bn8OiAoBmGaeiaQA5QFKPPwhzLGZ0be8m__IseYj7gkWZs4liQl-t2_Mz8AcMe9prN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#4</span>
+                <span class="name">酥皮双皮奶</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/56hbujYj6vE0kSrY_S1Z6GhTr0Kj28bQW9b9zJeZeZWpRKzSBzQnLPwzWURFZUAvrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#5</span>
+                <span class="name">XO酱炒陈村粉</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/jhAkOTrLjX5zTrKCddaR6QwKhTQy2yB32rMX5HLmnEI6LhM5mo9xh_TBdVFsdo7-rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#6</span>
+                <span class="name">粥水火锅</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/6wADcnxzibpyU6SdKF_N5CR4wvHT31vtPHZM02scNzWcFMSWLVOmqUQMV3kVNKhTrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#7</span>
+                <span class="name">伦教糕</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/87Fs9Lcse24fsVvGbx5pfMAxTwdwV1cDac4Tm5jPqXsmpoyeBPQOJE4vOdYZwm9ArN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#8</span>
+                <span class="name">白贝</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/DJw651zPC3PLn6HSwQyCuceiO42tEp4gaaANuhBQExsrby3SL8JiuqxTxq0ya0ULrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#9</span>
+                <span class="name">滋味鸡</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/S87XXkXjYc9LJfDcDx4r60SMP5pdj4swlcxIIPbZf-BoBi-EqPUR7-9iHAYTHY1lrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#10</span>
+                <span class="name">三杯鸡</span>
+            </div>
+        </div></div></div>
+
+<div class="section"><h2>💬 食客印象</h2><div class="kw-section"><span class="kw">排队时间(1062)</span> <span class="kw">头菜蒸龙趸(10)</span> <span class="kw">传统顺德风味(711)</span> <span class="kw">服务员分岗服务(19)</span> <span class="kw">环境宽敞大气(523)</span> <span class="kw">打卡送伦教糕(71)</span></div></div>
+
+<div class="section">
+<h2>💡 值得学习</h2>
+<div class="learn-item">
+<div class="title">⭐ 亮点</div>
+<div>滋粥楼·顺德菜(南村万博长隆商圈店)在排队榜单中表现突出，评分4.8，人均¥112。位于珠江新城，是广州顺德菜的代表性餐厅之一。</div>
+</div>
+<div class="learn-item">
+<div class="title">🍽️ 招牌产品</div>
+<div>推荐菜包括古法烧鹅、三味黄金油条、顺德拆鱼粥、酥皮双皮奶、XO酱炒陈村粉。</div>
+</div>
+</div>
+
+<div class="footer">
+<a href="/yuejingxi-research/index.html">返回粤京熹首页</a> · 粤京熹 R&D 助手<br>
+<span style="font-size:10px;color:#bbb">本页面由AI自动生成，详细信息待补充</span>
+</div>
+</div>
+</body>
+</html>

@@ -1,25 +1,150 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="referrer" content="no-referrer"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>大同酒家·老字号研究</title><style>*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f5f5;color:#333}
-.container{max-width:900px;margin:0 auto;padding:16px}
-.header{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);color:#fff;border-radius:14px;padding:32px 28px;margin-bottom:16px}
-.header h1{font-size:24px;margin-bottom:4px}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大同酒家(体育中心店) · 品牌详情 · 粤京熹</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;background:#f5f5f5;color:#333}
+.container{max-width:800px;margin:0 auto;padding:16px}
+.header{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);color:#fff;border-radius:12px;padding:28px 24px;margin-bottom:16px}
+.header h1{font-size:22px;margin-bottom:4px}
 .header .sub{font-size:13px;opacity:.7;margin-bottom:8px}
 .header .tags{display:flex;flex-wrap:wrap;gap:4px}
 .header .tag{background:rgba(255,255,255,.12);padding:2px 10px;border-radius:12px;font-size:10px}
-.header .tag.gold{background:#d4af37;color:#1a1a2e;font-weight:600}
 .back{display:inline-block;color:#666;font-size:12px;margin-bottom:12px;text-decoration:none}
-.section{background:#fff;border-radius:12px;padding:24px;margin-bottom:14px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
-.section h2{font-size:17px;font-weight:700;margin-bottom:14px}
-.section p{font-size:13px;line-height:1.8;color:#444;margin-bottom:8px}
-.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px}
-.fact{text-align:center;padding:12px 8px;background:#f8f8f8;border-radius:8px}
-.fact .num{font-size:18px;font-weight:800;color:#c0392b}
-.fact .lbl{font-size:10px;color:#999;margin-top:2px}
-.dish-card{border-left:3px solid #c0392b;padding:12px 16px;background:#fafafa;border-radius:0 8px 8px 0;margin-bottom:10px}
-.dish-card .name{font-size:14px;font-weight:600;color:#1a1a2e}
-.dish-card .desc{font-size:12px;color:#555;line-height:1.6;margin-top:4px}
-.dish-card .tag{display:inline-block;font-size:10px;background:#fef3f2;color:#c0392b;padding:1px 8px;border-radius:8px;margin-top:4px;margin-right:4px}
-.learn-card{padding:14px 16px;background:#fafafa;border-radius:8px;margin-bottom:10px;border-left:3px solid #2980b9;font-size:12px;line-height:1.7;color:#444}
-.learn-card .title{font-weight:600;color:#1a1a2e;margin-bottom:4px;font-size:13px}
+.section{background:#fff;border-radius:12px;padding:20px;margin-bottom:14px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.section h2{font-size:16px;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.section p{font-size:13px;line-height:1.7;color:#555}
+.stars{color:#f5a623;font-size:16px;margin-right:4px}
+.scores{display:flex;gap:12px;font-size:12px;color:#666;margin-top:6px;flex-wrap:wrap}
+.meta{font-size:13px;color:#666;display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+.price{color:#c0392b;font-weight:700}
+.dish-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px}
+.dish-card{background:#fafafa;border-radius:8px;padding:8px;text-align:center;border:1px solid #eee}
+.dish-card img{width:100%;aspect-ratio:1.5;object-fit:cover;border-radius:4px;margin-bottom:4px}
+.dish-card .dish-info .rank{display:inline-block;width:16px;height:16px;line-height:16px;background:#c0392b;color:#fff;font-size:9px;border-radius:50%;margin-right:2px}
+.dish-card .dish-info .name{font-size:11px;font-weight:600}
+.kw-section{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.kw-section .kw{background:#fef3f2;color:#c0392b;padding:2px 8px;border-radius:10px;font-size:10px;border:1px solid #fdd}
+.learn-item{padding:10px 14px;background:#fafafa;border-radius:8px;margin-bottom:8px;border-left:3px solid #c0392b;font-size:12px;line-height:1.6;color:#555}
+.learn-item .title{font-weight:600;color:#333;margin-bottom:2px}
 .footer{text-align:center;padding:16px;color:#999;font-size:11px}
-.learn-card{padding:14px 16px;background:#fafafa;border-radius:8px;margin-bottom:10px;border-left:3px solid #2980b9;font-size:12px;line-height:1.7;color:#444}.learn-card .title{font-weight:600;color:#1a1a2e;margin-bottom:4px;font-size:13px}.timeline{position:relative;padding-left:20px;margin:10px 0}.timeline::before{content:"";position:absolute;left:6px;top:0;bottom:0;width:2px;background:#e0e0e0}.tl-item{position:relative;padding:0 0 14px 16px;font-size:12px;color:#555;line-height:1.6}.tl-item::before{content:"";position:absolute;left:-18px;top:4px;width:10px;height:10px;border-radius:50%;background:#c0392b;border:2px solid #fff;box-shadow:0 0 0 1.5px #c0392b}.tl-item .year{font-weight:700;color:#c0392b;font-size:11px}</style></head><body><div class="container"><a class="back" href="/yuejingxi-research/广州/广州粤菜_必吃榜_20260630.html">← 返回报告</a><div class="header"><h1>大同酒家(体育中心店)</h1><div class="sub">广州</div><div class="tags"><span class="tag gold">🏅 必吃榜</span><span class="tag gold">🏛️ 中华老字号</span><span class="tag">始于1938</span><span class="tag">长堤三大</span></div></div><div class="section"><h2>📊 品牌速览</h2><div class="facts"><div class="fact"><div class="num">1938</div><div class="lbl">始创</div></div><div class="fact"><div class="num">87年</div><div class="lbl">历史</div></div><div class="fact"><div class="num">长堤三大</div><div class="lbl">之一</div></div><div class="fact"><div class="num">周恩来</div><div class="lbl">曾宴请</div></div></div></div><div class="section"><h2>📜 发展历程</h2><div class="timeline"><div class="tl-item"><div class="year">1938</div>日人开设广州园酒家。1942年冯俭生接手更名大同酒家</div><div class="tl-item"><div class="year">1946</div>谭杰南高价拍得，集穗港澳人才创多道名菜。孙科李宗仁等为常客</div><div class="tl-item"><div class="year">1955</div>广州饮食业第一家公私合营试点。周恩来曾宴请金日成等多国政要</div><div class="tl-item"><div class="year">1985</div>创办国内第一家自助西饼屋</div><div class="tl-item"><div class="year">2016</div>因经营不善停业，全城惋惜</div><div class="tl-item"><div class="year">2018</div>中信广场重新开业，老字号复活</div><div class="tl-item"><div class="year">至今</div>多店运营+预制菜+抖音直播，30岁以下消费者占比提升20%</div></div></div><div class="section"><h2>🏆 品牌故事</h2><p>大同酒家1938年创立，与大公餐厅、大三元并称"长堤三大"。大同脆皮鸡载入《中国名菜谱》，鸡蛋挞33层获"中华名小食"。1955年成为广州第一家公私合营企业，周恩来曾在此宴请金日成。2016年停业引发全城惋惜，2018年复活重生。近年来通过抖音直播、预制菜等创新方式焕发新生。</p></div><div class="section"><h2>🍽 产品与经营亮点</h2><div class="dish-card"><div class="name">🐔 大同脆皮鸡 — 载入《中国名菜谱》</div><div class="desc">最负盛名的招牌菜。传统粤式脆皮鸡的极致演绎。<strong>研发启示：</strong>一道菜载入名菜谱就是品牌最大的产品壁垒。</div></div><div class="dish-card"><div class="name">🥚 大同鸡蛋挞 — 33层酥皮</div><div class="desc">全手工制作，挞皮达33层，获中华名小食。<strong>研发启示：</strong>33层这个数字本身就是品质的承诺和品牌故事。</div></div><div class="dish-card"><div class="name">📱 老字号的数字化转型</div><div class="desc">复活后通过抖音直播团购，30岁以下消费者占比提升20%。开发预制菜、外卖、会员商城。<strong>运营启示：</strong>老字号也可以数字化。核心产品力不变，渠道和营销方式可以更新。</div></div></div><div class="section"><h2>💡 研发与运营启示</h2><div class="learn-card"><div class="title">🔑 老字号的"死而复生"</div><div>大同酒家2016年停业、2018年复活的经历是经典案例。品牌价值不会因为停业消失——只要品牌认知还在，就可以重启。</div></div><div class="learn-card"><div class="title">🔑 一道菜载入名菜谱</div><div>大同脆皮鸡载入《中国名菜谱》——产品做到极致就会被历史记住。做研发要有"做出传世之作"的追求。</div></div><div class="learn-card"><div class="title">🔑 抖音直播拯救老字号</div><div>通过抖音直播让30岁以下消费者占比提升20%。传统品牌+新媒体渠道=新增长。不是产品不好，是渠道要更新。</div></div></div><div class="footer"><a href="/yuejingxi-research/index.html">返回首页</a> · 粤京熹 R&amp;D</div></div></body></html>
+.footer a{color:#c0392b;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="container">
+<a class="back" href="/yuejingxi-research/广州/广州粤菜_黑珍珠_20260630.html">← 返回报告</a>
+
+<div class="header">
+<h1>大同酒家(体育中心店)</h1>
+<div class="sub">广州 · 粤菜</div>
+<div class="tags"><span class="tag">🏅 必吃榜</span></div>
+</div>
+
+<div class="section">
+<h2>📊 基本信息</h2>
+<div class="meta">
+<span class="stars">★★★★</span>
+<span class="price">¥92</span>
+<span>📍 天河路/体育中心</span>
+<span>📍 体育东路138号金利来大厦5楼距地铁1号线体育中心站</span>
+</div>
+<div class="scores"><span>口味 4.5</span><span>环境 4.4</span><span>服务 4.4</span><span>评价 7864条</span></div>
+</div>
+
+<div class="section"><h2>🍽️ 推荐菜 Top 10</h2><div class="dish-list">
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/nJdXrPqdKQw9OEB-L06xk4kTSBQTC7TK9A-1S9LdhNuFN349ZUxhqLaffVW3JiaVrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#1</span>
+                <span class="name">大同鸡蛋挞</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/pHK5PRcmMsTePPleH0VLNGwiKIDRISmQ_b0Yz5UWXWv_6ATiXK-VOW3bSoDeuH_PrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#2</span>
+                <span class="name">大同脆皮鸡</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/2JZQKyqI9Vgl8aDD62AVwrIk2AF98W5_f-s_qQQfibqgyRN0TVJ3isxCoRdI3HU3rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#3</span>
+                <span class="name">宫廷笋尖虾饺</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/iKf8g5WUJo6gpWFBUtrqVSWZ8Vb1QY865ETTrLV-rEzTtYaXFmiKBqJc_bNvyQABrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#4</span>
+                <span class="name">金沙红米肠</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/YSuDKNhBCjsJSZmJzPg0PAfcss_Cdv1XsiviB_7Dpborby3SL8JiuqxTxq0ya0ULrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#5</span>
+                <span class="name">蜂巢炸芋角</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/32Zr4iyXno3vpnProv95lde57WKZmyXown_iXxTAEsMphJfrL7bpWNvTSHVIqFQMrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#6</span>
+                <span class="name">百合酱凤爪</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/Nou_EqriK3YApw2GXlvynu-Iu0x6efn4MXOqD95T2K6x-vxa7-jRdMqvX-dxFsWzrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#7</span>
+                <span class="name">招牌脆皮咕噜肉</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/jL4uarQRQLGzQzhixqKHTeu0Dw4M1w2DHWx4jbxrD1Ef-C60XS1ZLhaJmRN2Hng_rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#8</span>
+                <span class="name">手抓妙龄乳鸽</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/S2XN5i_yymBdNU4y1rnzKyk9hJZzzfe_QhB7-LqxeNxph2eIJA04NCRvoGqL4_oprN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#9</span>
+                <span class="name">大同一品包</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/VVdcYpseyEA7tWOL9vl-9deYKOq5XI4TNhFB3gsJkWNej6SzjOLL4AHjAW34ZgqwrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#10</span>
+                <span class="name">咸蛋黄啫对虾</span>
+            </div>
+        </div></div></div>
+
+<div class="section"><h2>💬 食客印象</h2><div class="kw-section"><span class="kw">元代金券今日可用(17)</span> <span class="kw">停车建议(34)</span> <span class="kw">早茶价格实惠(73)</span> <span class="kw">必点菜品(317)</span> <span class="kw">脆皮鸡皮咸香酥脆(447)</span> <span class="kw">蜂巢炸芋角芋蓉绵密(14)</span></div></div>
+
+<div class="section">
+<h2>💡 值得学习</h2>
+<div class="learn-item">
+<div class="title">⭐ 亮点</div>
+<div>大同酒家(体育中心店)在必吃榜榜单中表现突出，评分4.5，人均¥92。位于天河路/体育中心，是广州粤菜的代表性餐厅之一。</div>
+</div>
+<div class="learn-item">
+<div class="title">🍽️ 招牌产品</div>
+<div>推荐菜包括大同鸡蛋挞、大同脆皮鸡、宫廷笋尖虾饺、金沙红米肠、蜂巢炸芋角。</div>
+</div>
+</div>
+
+<div class="footer">
+<a href="/yuejingxi-research/index.html">返回粤京熹首页</a> · 粤京熹 R&D 助手<br>
+<span style="font-size:10px;color:#bbb">本页面由AI自动生成，详细信息待补充</span>
+</div>
+</div>
+</body>
+</html>

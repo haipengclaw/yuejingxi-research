@@ -1,11 +1,17 @@
 {
-  "date": "20260630",
+  "date": "20260701",
   "cities": [
     {
       "name": "广州",
       "pinyin": "guangzhou",
       "slug": "guangzhou",
       "cityId": 4
+    },
+    {
+      "name": "深圳",
+      "pinyin": "shenzhen",
+      "slug": "shenzhen",
+      "cityId": 7
     }
   ],
   "templates": {
@@ -55,7 +61,7 @@
   },
   "jobs": [
     {
-      "city": "广州",
+      "city": "深圳",
       "template": "yuecai"
     }
   ],

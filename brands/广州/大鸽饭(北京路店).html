@@ -1,25 +1,150 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="referrer" content="no-referrer"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>大鸽饭·品牌研究</title><style>*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f5f5;color:#333}
-.container{max-width:900px;margin:0 auto;padding:16px}
-.header{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);color:#fff;border-radius:14px;padding:32px 28px;margin-bottom:16px}
-.header h1{font-size:24px;margin-bottom:4px}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大鸽饭(北京路店) · 品牌详情 · 粤京熹</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;background:#f5f5f5;color:#333}
+.container{max-width:800px;margin:0 auto;padding:16px}
+.header{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);color:#fff;border-radius:12px;padding:28px 24px;margin-bottom:16px}
+.header h1{font-size:22px;margin-bottom:4px}
 .header .sub{font-size:13px;opacity:.7;margin-bottom:8px}
 .header .tags{display:flex;flex-wrap:wrap;gap:4px}
 .header .tag{background:rgba(255,255,255,.12);padding:2px 10px;border-radius:12px;font-size:10px}
-.header .tag.gold{background:#d4af37;color:#1a1a2e;font-weight:600}
 .back{display:inline-block;color:#666;font-size:12px;margin-bottom:12px;text-decoration:none}
-.section{background:#fff;border-radius:12px;padding:24px;margin-bottom:14px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
-.section h2{font-size:17px;font-weight:700;margin-bottom:14px}
-.section p{font-size:13px;line-height:1.8;color:#444;margin-bottom:8px}
-.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px}
-.fact{text-align:center;padding:12px 8px;background:#f8f8f8;border-radius:8px}
-.fact .num{font-size:18px;font-weight:800;color:#c0392b}
-.fact .lbl{font-size:10px;color:#999;margin-top:2px}
-.dish-card{border-left:3px solid #c0392b;padding:12px 16px;background:#fafafa;border-radius:0 8px 8px 0;margin-bottom:10px}
-.dish-card .name{font-size:14px;font-weight:600;color:#1a1a2e}
-.dish-card .desc{font-size:12px;color:#555;line-height:1.6;margin-top:4px}
-.dish-card .tag{display:inline-block;font-size:10px;background:#fef3f2;color:#c0392b;padding:1px 8px;border-radius:8px;margin-top:4px;margin-right:4px}
-.learn-card{padding:14px 16px;background:#fafafa;border-radius:8px;margin-bottom:10px;border-left:3px solid #2980b9;font-size:12px;line-height:1.7;color:#444}
-.learn-card .title{font-weight:600;color:#1a1a2e;margin-bottom:4px;font-size:13px}
+.section{background:#fff;border-radius:12px;padding:20px;margin-bottom:14px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.section h2{font-size:16px;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.section p{font-size:13px;line-height:1.7;color:#555}
+.stars{color:#f5a623;font-size:16px;margin-right:4px}
+.scores{display:flex;gap:12px;font-size:12px;color:#666;margin-top:6px;flex-wrap:wrap}
+.meta{font-size:13px;color:#666;display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+.price{color:#c0392b;font-weight:700}
+.dish-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px}
+.dish-card{background:#fafafa;border-radius:8px;padding:8px;text-align:center;border:1px solid #eee}
+.dish-card img{width:100%;aspect-ratio:1.5;object-fit:cover;border-radius:4px;margin-bottom:4px}
+.dish-card .dish-info .rank{display:inline-block;width:16px;height:16px;line-height:16px;background:#c0392b;color:#fff;font-size:9px;border-radius:50%;margin-right:2px}
+.dish-card .dish-info .name{font-size:11px;font-weight:600}
+.kw-section{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.kw-section .kw{background:#fef3f2;color:#c0392b;padding:2px 8px;border-radius:10px;font-size:10px;border:1px solid #fdd}
+.learn-item{padding:10px 14px;background:#fafafa;border-radius:8px;margin-bottom:8px;border-left:3px solid #c0392b;font-size:12px;line-height:1.6;color:#555}
+.learn-item .title{font-weight:600;color:#333;margin-bottom:2px}
 .footer{text-align:center;padding:16px;color:#999;font-size:11px}
-.learn-card{padding:14px 16px;background:#fafafa;border-radius:8px;margin-bottom:10px;border-left:3px solid #2980b9;font-size:12px;line-height:1.7;color:#444}.learn-card .title{font-weight:600;color:#1a1a2e;margin-bottom:4px;font-size:13px}.timeline{position:relative;padding-left:20px;margin:10px 0}.timeline::before{content:"";position:absolute;left:6px;top:0;bottom:0;width:2px;background:#e0e0e0}.tl-item{position:relative;padding:0 0 14px 16px;font-size:12px;color:#555;line-height:1.6}.tl-item::before{content:"";position:absolute;left:-18px;top:4px;width:10px;height:10px;border-radius:50%;background:#c0392b;border:2px solid #fff;box-shadow:0 0 0 1.5px #c0392b}.tl-item .year{font-weight:700;color:#c0392b;font-size:11px}</style></head><body><div class="container"><a class="back" href="/yuejingxi-research/广州/广州粤菜_必吃榜_20260630.html">← 返回报告</a><div class="header"><h1>大鸽饭(北京路店)</h1><div class="sub">广州</div><div class="tags"><span class="tag gold">🏅 必吃榜</span><span class="tag">🚶 排队</span><span class="tag">乳鸽专家</span></div></div><div class="section"><h2>📊 品牌速览</h2><div class="facts"><div class="fact"><div class="num">2007</div><div class="lbl">创始</div></div><div class="fact"><div class="num">18家</div><div class="lbl">直营店</div></div><div class="fact"><div class="num">350万</div><div class="lbl">年销乳鸽</div></div><div class="fact"><div class="num">黄小华</div><div class="lbl">创始人</div></div></div></div><div class="section"><h2>📜 发展历程</h2><div class="timeline"><div class="tl-item"><div class="year">2007</div>湖南教师黄小华辞职来广州创业，从大排档起步做乳鸽主题</div><div class="tl-item"><div class="year">第一年</div>持续亏损但不放弃，调整出品打磨产品</div><div class="tl-item"><div class="year">2019-2024</div>五度必吃榜+米其林必比登。年销乳鸽350万只</div><div class="tl-item"><div class="year">至今</div>18家直营店，年营收超2亿。计划8年开60-80家</div></div></div><div class="section"><h2>🏆 品牌故事</h2><p>大鸽饭创始人黄小华原是湖南中学语文教师，因"趁年轻再折腾一把"辞职闯广州。从湘菜馆到川菜馆都失败后，偶然吃到中山大鸽饭被震撼，决心做乳鸽主题餐厅。从大排档起步，17年做到年销350万只乳鸽的"鸽王"。</p></div><div class="section"><h2>🍽 产品与经营亮点</h2><div class="dish-card"><div class="name">🥇 大鸽饭 — 店名同款必点</div><div class="desc">用特制电陶炉+探针精准控温保证锅气。<strong>研发启示：</strong>用科技工具（探针）保证传统煲仔饭的品质稳定。</div></div><div class="dish-card"><div class="name">🥇 盐焗鸽 — 单品贡献40%营收</div><div class="desc">创始人亲自寻盐，结合每日现宰鲜鸽。<strong>研发启示：</strong>一款产品做到极致就能撑起品牌。单品贡献40%营收说明产品力极强。</div></div><div class="dish-card"><div class="name">🏪 逆向思维：聚焦社区大店</div><div class="desc">别人做mall小店，大鸽饭做社区大店(800-3000㎡)。15年仅开18家。<strong>运营启示：</strong>不是只有快速扩张一条路。慢发展+品质=品牌厚度。</div></div></div><div class="section"><h2>💡 研发与运营启示</h2><div class="learn-card"><div class="title">🔑 教师出身的创始人做餐饮</div><div>黄小华从教师跨界做餐饮，成功说明"外行"也能做好餐饮。关键在于对产品的执着和对品质的坚持。</div></div><div class="learn-card"><div class="title">🔑 逆向思维：社区大店+慢扩张</div><div>不跟风商场小店，聚焦社区大店（800-3000㎡），重场景体验。15年仅开18家直营店。<br>做品牌不是跑得快，而是跑得稳。</div></div><div class="learn-card"><div class="title">🔑 供应链的"三定"策略</div><div>不建养殖场，但与10家养鸽场合作"定量定品种定价"。自建屠宰场把控关键环节——这是轻资产做供应链的聪明方式。</div></div></div><div class="footer"><a href="/yuejingxi-research/index.html">返回首页</a> · 粤京熹 R&amp;D</div></div></body></html>
+.footer a{color:#c0392b;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="container">
+<a class="back" href="/yuejingxi-research/广州/广州粤菜_黑珍珠_20260630.html">← 返回报告</a>
+
+<div class="header">
+<h1>大鸽饭(北京路店)</h1>
+<div class="sub">广州 · 粤菜</div>
+<div class="tags"><span class="tag">🚶 排队</span></div>
+</div>
+
+<div class="section">
+<h2>📊 基本信息</h2>
+<div class="meta">
+<span class="stars">★★★★★</span>
+<span class="price">¥97</span>
+<span>📍 珠江新城</span>
+<span>📍 西湖路68号201</span>
+</div>
+<div class="scores"><span>口味 4.9</span><span>环境 4.9</span><span>服务 4.9</span><span>评价 23902条</span></div>
+</div>
+
+<div class="section"><h2>🍽️ 推荐菜 Top 10</h2><div class="dish-list">
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/ZOpuyTTbPpb_rPzua7Q-tT4WwsVYTabfiqF23cLl2vAmGVzKihBHmIPXEs1dq4FirN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#1</span>
+                <span class="name">爆汁红烧鸽皇</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/BHS0q7o6ni_ipvfCo07jpSDHd6HOjc_MwYT3lrreHEugc9RJlnFycIAKPeAVvXnMrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#2</span>
+                <span class="name">黑松露大鸽饭</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/u4FVNy9nx_cBNJBvSpXu5-lY8VZb-ME3r3MBGD9tLmws4z_FydFkzPHSBbYH_zu-rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#3</span>
+                <span class="name">传统盐焗鸽皇</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/hwkD17LZYXV0Hk116e_kpyit-kXv7hk-8QErNKuZFOvuvMTBvjlwVfXwQDC-N7xarN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#4</span>
+                <span class="name">大鸽饭</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/DzfGiLsK-H9D-zW6PLfiIupEynYZPoCEAORZw93PS_Vx24-SZ1IlPxQoqJ7Ro87drN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#5</span>
+                <span class="name">铜盘沙姜焗猪脷</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/T7FmL9DnC5ek9F-zIJToSfmYme8WO_gvLFYHsMOrz4bFiQxTaXLzdOMprdkUI1qprN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#6</span>
+                <span class="name">羊肚菌焖河源豆腐</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/O7wncVArgdZtXl4DEjIkRLK1EWWZEFrhiawaiNzQVlay70VzwHwZJS5WbgX4LWBLrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#7</span>
+                <span class="name">鸽汤万年青</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/2DmTi8WKOZ6F7WoqGYXfGIYij_50mzsksDe_CJQnCUdJ1d-UaiACIbCESM9tlXdTrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#8</span>
+                <span class="name">鸽汤泡饭</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/Arn_ixWfkbgQmGDwz5oVyU6RbdAUVgTDKIDjpnISRMFKDKcUBpLtixvsrKsbtZQhrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#9</span>
+                <span class="name">大鸽饭（大）</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/Ukv3WJ7OlUhu9iCJX6ctF0WgM-UGoS29Rfgv8Z_l4rqeUTpyRvj2azXvAQnE7eVvrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#10</span>
+                <span class="name">竹笙浸农家桑叶</span>
+            </div>
+        </div></div></div>
+
+<div class="section"><h2>💬 食客印象</h2><div class="kw-section"><span class="kw">鸽油浸润米饭(72)</span> <span class="kw">建议排队取号(871)</span> <span class="kw">生日送长寿面(134)</span> <span class="kw">地铁口附近(76)</span> <span class="kw">性价比在线(895)</span> <span class="kw">满洲窗岭南文化(112)</span></div></div>
+
+<div class="section">
+<h2>💡 值得学习</h2>
+<div class="learn-item">
+<div class="title">⭐ 亮点</div>
+<div>大鸽饭(北京路店)在排队榜单中表现突出，评分4.9，人均¥97。位于珠江新城，是广州粤菜的代表性餐厅之一。</div>
+</div>
+<div class="learn-item">
+<div class="title">🍽️ 招牌产品</div>
+<div>推荐菜包括爆汁红烧鸽皇、黑松露大鸽饭、传统盐焗鸽皇、大鸽饭、铜盘沙姜焗猪脷。</div>
+</div>
+</div>
+
+<div class="footer">
+<a href="/yuejingxi-research/index.html">返回粤京熹首页</a> · 粤京熹 R&D 助手<br>
+<span style="font-size:10px;color:#bbb">本页面由AI自动生成，详细信息待补充</span>
+</div>
+</div>
+</body>
+</html>

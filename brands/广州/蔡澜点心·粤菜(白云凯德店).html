@@ -1,25 +1,150 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="referrer" content="no-referrer"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>蔡澜点心·品牌研究</title><style>*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f5f5;color:#333}
-.container{max-width:900px;margin:0 auto;padding:16px}
-.header{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);color:#fff;border-radius:14px;padding:32px 28px;margin-bottom:16px}
-.header h1{font-size:24px;margin-bottom:4px}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>蔡澜点心·粤菜(白云凯德店) · 品牌详情 · 粤京熹</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;background:#f5f5f5;color:#333}
+.container{max-width:800px;margin:0 auto;padding:16px}
+.header{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);color:#fff;border-radius:12px;padding:28px 24px;margin-bottom:16px}
+.header h1{font-size:22px;margin-bottom:4px}
 .header .sub{font-size:13px;opacity:.7;margin-bottom:8px}
 .header .tags{display:flex;flex-wrap:wrap;gap:4px}
 .header .tag{background:rgba(255,255,255,.12);padding:2px 10px;border-radius:12px;font-size:10px}
-.header .tag.gold{background:#d4af37;color:#1a1a2e;font-weight:600}
 .back{display:inline-block;color:#666;font-size:12px;margin-bottom:12px;text-decoration:none}
-.section{background:#fff;border-radius:12px;padding:24px;margin-bottom:14px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
-.section h2{font-size:17px;font-weight:700;margin-bottom:14px}
-.section p{font-size:13px;line-height:1.8;color:#444;margin-bottom:8px}
-.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px}
-.fact{text-align:center;padding:12px 8px;background:#f8f8f8;border-radius:8px}
-.fact .num{font-size:18px;font-weight:800;color:#c0392b}
-.fact .lbl{font-size:10px;color:#999;margin-top:2px}
-.dish-card{border-left:3px solid #c0392b;padding:12px 16px;background:#fafafa;border-radius:0 8px 8px 0;margin-bottom:10px}
-.dish-card .name{font-size:14px;font-weight:600;color:#1a1a2e}
-.dish-card .desc{font-size:12px;color:#555;line-height:1.6;margin-top:4px}
-.dish-card .tag{display:inline-block;font-size:10px;background:#fef3f2;color:#c0392b;padding:1px 8px;border-radius:8px;margin-top:4px;margin-right:4px}
-.learn-card{padding:14px 16px;background:#fafafa;border-radius:8px;margin-bottom:10px;border-left:3px solid #2980b9;font-size:12px;line-height:1.7;color:#444}
-.learn-card .title{font-weight:600;color:#1a1a2e;margin-bottom:4px;font-size:13px}
+.section{background:#fff;border-radius:12px;padding:20px;margin-bottom:14px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.section h2{font-size:16px;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.section p{font-size:13px;line-height:1.7;color:#555}
+.stars{color:#f5a623;font-size:16px;margin-right:4px}
+.scores{display:flex;gap:12px;font-size:12px;color:#666;margin-top:6px;flex-wrap:wrap}
+.meta{font-size:13px;color:#666;display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+.price{color:#c0392b;font-weight:700}
+.dish-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px}
+.dish-card{background:#fafafa;border-radius:8px;padding:8px;text-align:center;border:1px solid #eee}
+.dish-card img{width:100%;aspect-ratio:1.5;object-fit:cover;border-radius:4px;margin-bottom:4px}
+.dish-card .dish-info .rank{display:inline-block;width:16px;height:16px;line-height:16px;background:#c0392b;color:#fff;font-size:9px;border-radius:50%;margin-right:2px}
+.dish-card .dish-info .name{font-size:11px;font-weight:600}
+.kw-section{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.kw-section .kw{background:#fef3f2;color:#c0392b;padding:2px 8px;border-radius:10px;font-size:10px;border:1px solid #fdd}
+.learn-item{padding:10px 14px;background:#fafafa;border-radius:8px;margin-bottom:8px;border-left:3px solid #c0392b;font-size:12px;line-height:1.6;color:#555}
+.learn-item .title{font-weight:600;color:#333;margin-bottom:2px}
 .footer{text-align:center;padding:16px;color:#999;font-size:11px}
-.learn-card{padding:14px 16px;background:#fafafa;border-radius:8px;margin-bottom:10px;border-left:3px solid #2980b9;font-size:12px;line-height:1.7;color:#444}.learn-card .title{font-weight:600;color:#1a1a2e;margin-bottom:4px;font-size:13px}.timeline{position:relative;padding-left:20px;margin:10px 0}.timeline::before{content:"";position:absolute;left:6px;top:0;bottom:0;width:2px;background:#e0e0e0}.tl-item{position:relative;padding:0 0 14px 16px;font-size:12px;color:#555;line-height:1.6}.tl-item::before{content:"";position:absolute;left:-18px;top:4px;width:10px;height:10px;border-radius:50%;background:#c0392b;border:2px solid #fff;box-shadow:0 0 0 1.5px #c0392b}.tl-item .year{font-weight:700;color:#c0392b;font-size:11px}</style></head><body><div class="container"><a class="back" href="/yuejingxi-research/广州/广州粤菜_必吃榜_20260630.html">← 返回报告</a><div class="header"><h1>蔡澜点心·粤菜(白云凯德店)</h1><div class="sub">广州</div><div class="tags"><span class="tag">🚶 排队</span><span class="tag">蔡澜IP</span><span class="tag">手工现做</span><span class="tag">100+门店</span></div></div><div class="section"><h2>📊 品牌速览</h2><div class="facts"><div class="fact"><div class="num">2018</div><div class="lbl">创立</div></div><div class="fact"><div class="num">100+</div><div class="lbl">全国门店</div></div><div class="fact"><div class="num">¥88</div><div class="lbl">人均</div></div><div class="fact"><div class="num">40名</div><div class="lbl">厨师/店</div></div></div></div><div class="section"><h2>📜 发展历程</h2><div class="timeline"><div class="tl-item"><div class="year">2017</div>77岁的蔡澜说"要开一间年轻人喜欢的点心店"</div><div class="tl-item"><div class="year">2018</div>与甘棠明善集团联合创立，深圳首店开业。400多天50多次研发测试</div><div class="tl-item"><div class="year">2019</div>广州正佳首店开业，不到一个月成粤菜热门榜第一</div><div class="tl-item"><div class="year">2025</div>全国100+门店，年营收近10亿。蔡澜在香港离世享年83岁</div></div></div><div class="section"><h2>🏆 品牌故事</h2><p>蔡澜点心由香港四大才子之一蔡澜与甘棠明善集团（探鱼、撒椒母公司）联合创立。77岁的蔡澜以"要开一间年轻人喜欢的点心店"为初心，纯手工现点现做，每家店配备40名厨师只做43款点心。酥皮山楂叉烧包年销500-800万只。2025年全国100+门店。</p></div><div class="section"><h2>🍽 产品与经营亮点</h2><div class="dish-card"><div class="name">🥟 酥皮山楂叉烧包 — 镇店之宝</div><div class="desc">菠萝包与叉烧包的混合体，新鲜山楂熬煮3小时调味，年销500-800万只。<strong>研发启示：</strong>传统叉烧包+山楂开胃解腻=全新口感。经典产品的微创新路径：在传统基础上加一个味型。</div></div><div class="dish-card"><div class="name">💡 300㎡配40名厨师</div><div class="desc">纯手工现点现做，只做43款点心。<strong>运营启示：</strong>减法比加法难。只做43款、每款都做到极致，比做几百款更有效。</div></div><div class="dish-card"><div class="name">👨‍🍳 蔡澜IP的强大号召力</div><div class="desc">77岁创业，美食家蔡澜的个人IP就是品牌最大的资产。<strong>品牌启示：</strong>个人IP+专业团队=品牌双轮驱动。光有IP没有产品不行，光有产品没有IP也难</div></div></div><div class="section"><h2>💡 研发与运营启示</h2><div class="learn-card"><div class="title">🔑 77岁创业：蔡澜的个人IP+专业团队</div><div>蔡澜的美食家身份是品牌最大的信任背书。与甘棠明善集团合作，IP方+运营方各取所长。这是餐饮品牌合作的成功范式。</div></div><div class="learn-card"><div class="title">🔑 减法的力量：只做43款</div><div>每家店配备40名厨师，只做43款点心。少而精的产品策略保证每一款都是精品。研发也要学会做减法。</div></div></div><div class="footer"><a href="/yuejingxi-research/index.html">返回首页</a> · 粤京熹 R&amp;D</div></div></body></html>
+.footer a{color:#c0392b;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="container">
+<a class="back" href="/yuejingxi-research/广州/广州粤菜_黑珍珠_20260630.html">← 返回报告</a>
+
+<div class="header">
+<h1>蔡澜点心·粤菜(白云凯德店)</h1>
+<div class="sub">广州 · 粤菜</div>
+<div class="tags"><span class="tag">🚶 排队</span></div>
+</div>
+
+<div class="section">
+<h2>📊 基本信息</h2>
+<div class="meta">
+<span class="stars">★★★★</span>
+<span class="price">¥77</span>
+<span>📍 天河北</span>
+<span>📍 云城西路890号凯德广场4楼04铺距地铁2号线白云公园站出入口步行190</span>
+</div>
+<div class="scores"><span>口味 4.4</span><span>环境 4.5</span><span>服务 4.4</span><span>评价 11549条</span></div>
+</div>
+
+<div class="section"><h2>🍽️ 推荐菜 Top 10</h2><div class="dish-list">
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/0adPpaWFFEqWPZwcXBXJjsAAwo4eLD-cv0i5aUfBlJH9bCQDIiUoQBWVY93ElrLHrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#1</span>
+                <span class="name">酥皮山楂叉烧包</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/SDH4Yrs0phsq1fTYCaPh8Gzfpyt-XXmbScm5MPEDtnNGEzAPPptLTCRa2KhFCT1UrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#2</span>
+                <span class="name">双层脆网红米肠</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/eSnzHV3MQOoy2Os1JHYwTWDzccqp4X6xqX5eR6TUX3jzrC8Y-b3mDZCktYnLeqgcrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#3</span>
+                <span class="name">九层塔豉汁凤爪</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/eFSYijiQ2pgV8SfF4Wkjahvw-5GMTiqqFMdIHcMvx550_pEt7fICfQKaolL_tgpzrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#4</span>
+                <span class="name">赛螃蟹凤眼饺</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/J9r1lsZxCZnpZSd3a58T6KJ7HD396mTUwqQmfTS1uXg4jyZZRObLs5ym-WtN-3N1rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#5</span>
+                <span class="name">黑松露鲜菌饺</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/c6hABOwl932LwV1tfKLSa3AAIctXfltUYuD7QWsC47RoBi-EqPUR7-9iHAYTHY1lrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#6</span>
+                <span class="name">青姜蓉鸡肉拌饭</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/-PNc2hpKYAxGNo-_Q-RCpoTFezFVmxUCHxY8W1rKCF4bYuOq7icNkajXTu5yOh9crN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#7</span>
+                <span class="name">生滚鲜牛肉粥</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/zS7n-Hq_p_lsNdiTgTUCHyyKbM7G8gW_s4MZgGg2CC89byagjLlrseWxnl1LcbuSrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#8</span>
+                <span class="name">紫苏沙姜蒸排骨</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/B2CFql4HDA6TF1Zpb-XGROLpzUXHfklVj_gGj_lBI2toBi-EqPUR7-9iHAYTHY1lrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#9</span>
+                <span class="name">干炒牛肉豉油皇炒面</span>
+            </div>
+        </div>
+        <div class="dish-card">
+            <img src="https://qcloud.dpfile.com/pc/FOOKO1_a7pOFcOv1b9LgWm2yhbzSYd39djlipKu3j-UchVTUwgs16tFR7U48rkUtrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
+            <div class="dish-info">
+                <span class="rank">#10</span>
+                <span class="name">脆鱼皮艇仔粥</span>
+            </div>
+        </div></div></div>
+
+<div class="section"><h2>💬 食客印象</h2><div class="kw-section"><span class="kw">元代金券周一至周五(10)</span> <span class="kw">环境适合带儿童(98)</span> <span class="kw">停车建议(83)</span> <span class="kw">山楂汁解腻开胃(814)</span> <span class="kw">老师傅手工制作点心(50)</span> <span class="kw">必点菜品(264)</span></div></div>
+
+<div class="section">
+<h2>💡 值得学习</h2>
+<div class="learn-item">
+<div class="title">⭐ 亮点</div>
+<div>蔡澜点心·粤菜(白云凯德店)在排队榜单中表现突出，评分4.4，人均¥77。位于天河北，是广州粤菜的代表性餐厅之一。</div>
+</div>
+<div class="learn-item">
+<div class="title">🍽️ 招牌产品</div>
+<div>推荐菜包括酥皮山楂叉烧包、双层脆网红米肠、九层塔豉汁凤爪、赛螃蟹凤眼饺、黑松露鲜菌饺。</div>
+</div>
+</div>
+
+<div class="footer">
+<a href="/yuejingxi-research/index.html">返回粤京熹首页</a> · 粤京熹 R&D 助手<br>
+<span style="font-size:10px;color:#bbb">本页面由AI自动生成，详细信息待补充</span>
+</div>
+</div>
+</body>
+</html>
