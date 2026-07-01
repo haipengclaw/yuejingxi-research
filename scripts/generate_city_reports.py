@@ -8,6 +8,13 @@ from report_utils import CONFIG, find_paired, get_shop_info, CSS, JS, score_clas
 
 REPO = CONFIG['paths']['repo']
 DATE = CONFIG.get('date', datetime.now().strftime('%Y%m%d'))
+BRANDS_FILE = os.path.join(REPO, 'brands', 'data.json')
+brands_data = {}
+if os.path.exists(BRANDS_FILE):
+    try:
+        brands_data = json.load(open(BRANDS_FILE, encoding='utf-8'))
+    except Exception:
+        brands_data = {}
 
 
 def ensure_dir(path):
@@ -103,6 +110,20 @@ def generate_one_report(city_name, city_pinyin, cuisine_name, category_label, sh
             for kw, cnt in keywords[:20]:
                 html += f'<span class="kw-tag">{kw} <span class="cnt">{cnt}</span></span>'
             html += '</div></div>'
+
+        # Brand intro section
+        brand_info = brands_data.get(name, None)
+        if brand_info:
+            highlights_html = ' · '.join(f'🏷️ {h}' for h in brand_info.get('highlights', []))
+            detail_link = brand_info.get('page', '')
+            detail_btn = f'<a href="../../brands/{city_name}/{detail_link}" class="detail-btn" target="_blank">📋 详细案例</a>' if detail_link else ''
+            html += f'''
+    <div class="section">
+    <h3>🏪 门店/品牌简介</h3>
+    <p style="font-size:13px;line-height:1.7;color:#555;margin-bottom:8px">{brand_info["summary"]}</p>
+    <div style="font-size:12px;color:#666;margin-bottom:8px">{highlights_html}</div>
+    {detail_btn}
+    </div>'''
 
         html += '\n</div>\n'
 
