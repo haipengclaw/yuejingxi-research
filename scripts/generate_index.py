@@ -9,9 +9,16 @@ with open(os.path.join(REPO, 'data/city_config.json')) as f:
 DATE = CONFIG.get('date', '20260624')
 
 
-def report_exists(city_name, cuisine_name, cat_key):
-    fname = f'{city_name}{cuisine_name}_{cat_key}_{DATE}.html'
-    return os.path.exists(os.path.join(CONFIG['paths']['desktop'], city_name, fname))
+def find_report(city_name, cuisine_name, cat_key):
+    """Find report file and return (exists, date)."""
+    dates = [DATE, '20260630', '20260701', '20260702']
+    for d in dates:
+        for base in [CONFIG['paths']['desktop'], os.path.join(REPO, 'docs')]:
+            fname = f'{city_name}{cuisine_name}_{cat_key}_{d}.html'
+            fp = os.path.join(base, city_name, fname)
+            if os.path.exists(fp):
+                return (True, d)
+    return (False, DATE)
 
 
 def build_index():
@@ -42,10 +49,10 @@ def build_index():
             cards = []
             for cat in tpl['report_categories']:
                 key = cat['key']
-                fname = f'{cname}{cuisine}_{key}_{DATE}.html'
-                exists = report_exists(cname, cuisine, key)
-                badge = '<span class="tg2">已生成</span>' if exists else '<span class="tg2 pending">待生成</span>'
-                href = f'{cname}/{fname}' if exists else '#'
+                found, found_date = find_report(cname, cuisine, key)
+                fname = f'{cname}{cuisine}_{key}_{found_date}.html'
+                badge = '<span class="tg2">已生成</span>' if found else '<span class="tg2 pending">待生成</span>'
+                href = f'{cname}/{fname}' if found else '#'
                 # Pick icon by key
                 icon = {'黑珍珠':'🏆','精选':'🏆','必吃榜':'🏅','排队':'🚶','老字号':'🏛️'}.get(key,'📄')
                 cards.append(f'''
