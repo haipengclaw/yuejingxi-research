@@ -65,7 +65,7 @@ def generate_one_report(city_name, city_pinyin, cuisine_name, category_label, sh
         rating = info.get('rating', 0)
         stars = '★' * max(1, round(rating)) if rating else ''
         bp = os.path.join(REPO, 'docs', 'brands', city_name, f'{name}.html')
-        dbn = f' <a href="/yuejingxi-research/brands/{city_name}/{name}.html" class="detail-btn" target="_blank" title="查看品牌详情">📋 详细</a>' if os.path.exists(bp) else ''
+        dbn = f' <a href="/yuejingxi-research/brands/{city_name}/{name}.html" class="detail-btn" title="查看品牌详情">📋 详细</a>' if os.path.exists(bp) else ''
 
         html += f'''
 <div class="shop-card">
@@ -119,7 +119,7 @@ def generate_one_report(city_name, city_pinyin, cuisine_name, category_label, sh
             highlights_html = ' · '.join(f'🏷️ {h}' for h in brand_info.get('highlights', []))
             detail_link = brand_info.get('page', '')
             brand_path = os.path.join(REPO, "docs", "brands", city_name, detail_link)
-            detail_btn = f'<a href="/yuejingxi-research/brands/{city_name}/{detail_link}" class="detail-btn" target="_blank">📋 详细案例</a>' if detail_link and os.path.exists(brand_path) else ''
+            detail_btn = f'<a href="/yuejingxi-research/brands/{city_name}/{detail_link}" class="detail-btn" >📋 详细案例</a>' if detail_link and os.path.exists(brand_path) else ''
             html += f'''
     <div class="section">
     <h3>🏪 门店/品牌简介</h3>
