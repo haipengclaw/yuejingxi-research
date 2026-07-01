@@ -1,150 +1,25 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>岁集院子 · 品牌详情 · 粤京熹</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;background:#f5f5f5;color:#333}
-.container{max-width:800px;margin:0 auto;padding:16px}
-.header{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);color:#fff;border-radius:12px;padding:28px 24px;margin-bottom:16px}
-.header h1{font-size:22px;margin-bottom:4px}
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>岁集院子·深度研究</title><style>*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f5f5;color:#333}
+.container{max-width:900px;margin:0 auto;padding:16px}
+.header{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);color:#fff;border-radius:14px;padding:32px 28px;margin-bottom:16px}
+.header h1{font-size:24px;margin-bottom:4px}
 .header .sub{font-size:13px;opacity:.7;margin-bottom:8px}
 .header .tags{display:flex;flex-wrap:wrap;gap:4px}
 .header .tag{background:rgba(255,255,255,.12);padding:2px 10px;border-radius:12px;font-size:10px}
+.header .tag.gold{background:#d4af37;color:#1a1a2e;font-weight:600}
 .back{display:inline-block;color:#666;font-size:12px;margin-bottom:12px;text-decoration:none}
-.section{background:#fff;border-radius:12px;padding:20px;margin-bottom:14px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
-.section h2{font-size:16px;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:6px}
-.section p{font-size:13px;line-height:1.7;color:#555}
-.stars{color:#f5a623;font-size:16px;margin-right:4px}
-.scores{display:flex;gap:12px;font-size:12px;color:#666;margin-top:6px;flex-wrap:wrap}
-.meta{font-size:13px;color:#666;display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
-.price{color:#c0392b;font-weight:700}
-.dish-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px}
-.dish-card{background:#fafafa;border-radius:8px;padding:8px;text-align:center;border:1px solid #eee}
-.dish-card img{width:100%;aspect-ratio:1.5;object-fit:cover;border-radius:4px;margin-bottom:4px}
-.dish-card .dish-info .rank{display:inline-block;width:16px;height:16px;line-height:16px;background:#c0392b;color:#fff;font-size:9px;border-radius:50%;margin-right:2px}
-.dish-card .dish-info .name{font-size:11px;font-weight:600}
-.kw-section{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
-.kw-section .kw{background:#fef3f2;color:#c0392b;padding:2px 8px;border-radius:10px;font-size:10px;border:1px solid #fdd}
-.learn-item{padding:10px 14px;background:#fafafa;border-radius:8px;margin-bottom:8px;border-left:3px solid #c0392b;font-size:12px;line-height:1.6;color:#555}
-.learn-item .title{font-weight:600;color:#333;margin-bottom:2px}
+.section{background:#fff;border-radius:12px;padding:24px;margin-bottom:14px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.section h2{font-size:17px;font-weight:700;margin-bottom:14px}
+.section p{font-size:13px;line-height:1.8;color:#444;margin-bottom:8px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px}
+.fact{text-align:center;padding:12px 8px;background:#f8f8f8;border-radius:8px}
+.fact .num{font-size:18px;font-weight:800;color:#c0392b}
+.fact .lbl{font-size:10px;color:#999;margin-top:2px}
+.dish-card{border-left:3px solid #c0392b;padding:12px 16px;background:#fafafa;border-radius:0 8px 8px 0;margin-bottom:10px}
+.dish-card .name{font-size:14px;font-weight:600;color:#1a1a2e}
+.dish-card .desc{font-size:12px;color:#555;line-height:1.6;margin-top:4px}
+.dish-card .tag{display:inline-block;font-size:10px;background:#fef3f2;color:#c0392b;padding:1px 8px;border-radius:8px;margin-top:4px;margin-right:4px}
+.learn-card{padding:14px 16px;background:#fafafa;border-radius:8px;margin-bottom:10px;border-left:3px solid #2980b9;font-size:12px;line-height:1.7;color:#444}
+.learn-card .title{font-weight:600;color:#1a1a2e;margin-bottom:4px;font-size:13px}
 .footer{text-align:center;padding:16px;color:#999;font-size:11px}
-.footer a{color:#c0392b;text-decoration:none}
-</style>
-</head>
-<body>
-<div class="container">
-<a class="back" href="/yuejingxi-research/广州/广州粤菜_黑珍珠_20260630.html">← 返回报告</a>
-
-<div class="header">
-<h1>岁集院子</h1>
-<div class="sub">广州 · 潮汕菜</div>
-<div class="tags"><span class="tag">🏆 黑珍珠</span></div>
-</div>
-
-<div class="section">
-<h2>📊 基本信息</h2>
-<div class="meta">
-<span class="stars">★★★★★</span>
-<span class="price">¥700</span>
-<span>📍 珠江新城</span>
-<span>📍 迎宾路348号101房距地铁3号线大石站</span>
-</div>
-<div class="scores"><span>口味 4.8</span><span>环境 4.9</span><span>服务 4.9</span><span>评价 1062条</span></div>
-</div>
-
-<div class="section"><h2>🍽️ 推荐菜 Top 10</h2><div class="dish-list">
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/nJRI9d3WO4koZYdPzBfa1pHBaP-klzd5AKEmUEjweWAb9pQa5ST5unqHxetUwsg6rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#1</span>
-                <span class="name">鸡汤秒灼加拿大象拔蚌</span>
-            </div>
-        </div>
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/C7BY5lSTQVAf6DgnIq3w_GV-FtPBvJ2RAx_jjPMNbuirppd5nAzZ7irlqFq5lAEqrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#2</span>
-                <span class="name">招牌玻璃脆皮乳鸽</span>
-            </div>
-        </div>
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/LEgC2NacFx9QJJO5H5P0suE5rTCcucDlJ0H3uR91YH3EdoxiutxyE8UKBQVpTR7zrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#3</span>
-                <span class="name">挑战刀工极限无骨鲫鱼蚌胆粥</span>
-            </div>
-        </div>
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/JPK6FHEmijFXGTyR_zDgfWnybKWxhrRb9FlfLSbXIYIk_8jvD9Uj-YY77xBNnHR4rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#4</span>
-                <span class="name">潮式卤水老鹅掌</span>
-            </div>
-        </div>
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/FolC-9BgcHpnirLG0aieqMbl76yuHVFEEtp_4tMHsv-eUTpyRvj2azXvAQnE7eVvrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#5</span>
-                <span class="name">安格拉牛肉粒</span>
-            </div>
-        </div>
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/78AY-SfEJrSjwYza83J9u9JmI7HERe_oyx3Wki9z2RFgFvMmoLdprHuYmfsNaLy7rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#6</span>
-                <span class="name">前菜</span>
-            </div>
-        </div>
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/5iySCag0kQXwcND8o-ThX3KtVgim86HfgRGCeS4BAEGC8tmzzKd4P_r64CXeZIK2rN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#7</span>
-                <span class="name">金耳百合炖攀枝花枇杷</span>
-            </div>
-        </div>
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/bmNqmMwHwJLYNnrkpDk1n1n9hRjRAvbKMUmsK9vbSK_f8V4tJl5zXTJogRFQfddErN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#8</span>
-                <span class="name">麻椒樱桃小萝卜皮</span>
-            </div>
-        </div>
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/EaOOAMzJ2aVCdiRP7WCbSGWXiQmMjTP23O88q04kgAg0pUlE80XOPlInPTnkJtEjrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#9</span>
-                <span class="name">咸柠檬老芫茜炖雪花土猪汤</span>
-            </div>
-        </div>
-        <div class="dish-card">
-            <img src="https://qcloud.dpfile.com/pc/lSBHt829QVcJESXRmlE6DGu8YzmieksftbDrsAh1vvRaPK-u1xGv2EDOXo9h_4jRrN2OTQBCkke2ZGfpZ5SDFFEuLYk00OmSS1IdNpm8K8sG4JN9RIm2mTKcbLtc2o2vmIU_8ZGOT1OjpJmLxG6urQ.jpg" onerror="this.style.display='none'">
-            <div class="dish-info">
-                <span class="rank">#10</span>
-                <span class="name">首创金不换菊花煮鱼翅</span>
-            </div>
-        </div></div></div>
-
-<div class="section"><h2>💬 食客印象</h2><div class="kw-section"><span class="kw">红油大鱿鱼推荐(22)</span> <span class="kw">适合朋友小聚(112)</span> <span class="kw">安格斯雪花牛肉推荐(19)</span> <span class="kw">用餐过程有互动(41)</span> <span class="kw">菜品摆盘精致(234)</span> <span class="kw">玻璃脆皮乳鸽独特(12)</span></div></div>
-
-<div class="section">
-<h2>💡 值得学习</h2>
-<div class="learn-item">
-<div class="title">⭐ 亮点</div>
-<div>岁集院子在黑珍珠榜单中表现突出，评分4.8，人均¥700。位于珠江新城，是广州潮汕菜的代表性餐厅之一。</div>
-</div>
-<div class="learn-item">
-<div class="title">🍽️ 招牌产品</div>
-<div>推荐菜包括鸡汤秒灼加拿大象拔蚌、招牌玻璃脆皮乳鸽、挑战刀工极限无骨鲫鱼蚌胆粥、潮式卤水老鹅掌、安格拉牛肉粒。</div>
-</div>
-</div>
-
-<div class="footer">
-<a href="/yuejingxi-research/index.html">返回粤京熹首页</a> · 粤京熹 R&D 助手<br>
-<span style="font-size:10px;color:#bbb">本页面由AI自动生成，详细信息待补充</span>
-</div>
-</div>
-</body>
-</html>
+.timeline{position:relative;padding-left:20px;margin:10px 0}.timeline::before{content:"";position:absolute;left:6px;top:0;bottom:0;width:2px;background:#e0e0e0}.tl-item{position:relative;padding:0 0 14px 16px;font-size:12px;color:#555;line-height:1.6}.tl-item::before{content:"";position:absolute;left:-18px;top:4px;width:10px;height:10px;border-radius:50%;background:#c0392b;border:2px solid #fff;box-shadow:0 0 0 1.5px #c0392b}.tl-item .year{font-weight:700;color:#c0392b;font-size:11px}.success-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}.success-card{padding:14px;background:#f0f8f0;border-radius:8px;border-left:3px solid #27ae60;font-size:12px;line-height:1.6;color:#444}.success-card .title{font-weight:600;color:#27ae60;margin-bottom:4px;font-size:13px}</style></head><body><div class="container"><a class="back" href="/yuejingxi-research/广州/广州粤菜_黑珍珠_20260630.html">← 返回报告</a><div class="header"><h1>岁集院子</h1><div class="sub">广州·番禺·高端私房菜</div><div class="tags"><span class="tag gold">⭐ 米其林一星</span><span class="tag gold">🏆 黑珍珠一钻</span><span class="tag">黄景辉主理</span></div></div><div class="section"><h2>📊 品牌速览</h2><div class="facts"><div class="fact"><div class="num">番禺</div><div class="lbl">位置</div></div><div class="fact"><div class="num">¥700</div><div class="lbl">人均</div></div><div class="fact"><div class="num">黄景辉</div><div class="lbl">主理</div></div><div class="fact"><div class="num">无菜单</div><div class="lbl">定制</div></div></div></div><div class="section"><h2>📜 发展脉络</h2><div class="timeline"><div class="tl-item"><div class="year">品牌起源</div>岁集品牌由知名设计师朱子创立，最初是家具设计品牌，强调东方古典与现代融合</div><div class="tl-item"><div class="year">跨界餐饮</div>将家具设计的美学理念延伸至餐饮，朱子亲自设计原木庭院风，竹林茶室</div><div class="tl-item"><div class="year">辉师傅加入</div>米其林二星名厨黄景辉担任主理人，统筹菜品研发。驻店主厨唐启水是其弟子</div><div class="tl-item"><div class="year">荣誉</div>连续获米其林一星和黑珍珠一钻，被誉为广州高端私房菜天花板</div></div></div><div class="section"><h2>🏆 成功因素分析</h2><div class="success-grid"><div class="success-card"><div class="title">🔑 设计+餐饮跨界</div><div>家具设计师跨界做餐厅，空间本身就是品牌最大差异化。原木庭院竹林茶室——用设计美学建立高溢价。</div></div><div class="success-card"><div class="title">🔑 无菜单定制模式</div><div>因时因料因人定制，不设固定菜单。稀缺性+个性化=高客单价。需提前预约。</div></div><div class="success-card"><div class="title">🔑 名厨+设计师双IP</div><div>黄景辉烹饪实力+朱子设计品味=双重品牌背书。不同领域顶尖人才合作产生叠加效应。</div></div></div></div><div class="section"><h2>🍽️ 产品深度解析</h2><div class="dish-card"><div class="name">鸡汤秒灼加拿大象拔蚌 <span style="float:right;color:#c0392b">必点招牌</span></div><div class="desc">以秒计时的精确灼煮，厚切象拔蚌爽脆弹牙。<strong>研发启示：</strong>秒灼本身就是工艺壁垒——精准到秒的烹饪时间是技术门槛。</div></div><div class="dish-card"><div class="name">无骨鲫鱼蚌胆粥 <span style="float:right;color:#c0392b">黄景辉原创</span></div><div class="desc">手工剔除鲫鱼所有细刺耗时20分钟+，现场堂做。<strong>研发启示：</strong>耗时20分钟剔刺这个工艺就是品牌故事。消费者愿意为匠心买单。</div></div></div><div class="section"><h2>💡 研发启示</h2><div class="learn-card"><div class="title">① 跨界是最大差异化</div><div>家具设计师做的餐厅，空间本身就是壁垒。做餐饮不一定只盯着菜品。</div></div><div class="learn-card"><div class="title">② 定制化稀缺价值</div><div>无菜单+预约制制造稀缺感。高端定位不一定靠贵食材，靠的是独一无二的体验。</div></div></div><div class="footer"><a href="/yuejingxi-research/index.html">返回首页</a> · 粤京熹 R&amp;D</div></div></body></html>
