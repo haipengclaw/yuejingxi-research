@@ -67,7 +67,7 @@ body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;backgr
 .kw-tag .cnt{color:#e74c3c;font-weight:700;margin-left:3px}
 .select-hint{font-size:11px;color:#999;text-align:center;padding:4px 0 8px;border-bottom:1px solid #eee}.brand-summary{font-size:13px;line-height:1.7;color:#555;margin-bottom:8px}.brand-tags{display:flex;flex-wrap:wrap;gap:4px 10px;font-size:12px;color:#666;margin-bottom:8px}
 .footer{text-align:center;padding:20px;color:#999;font-size:12px}
-@media(max-width:768px){.dish-grid{grid-template-columns:repeat(3,1fr)}.shop-banner h2{font-size:15px}.detail-btn{font-size:11px;padding:3px 10px}.score-grid{gap:6px;padding:8px 12px}.score-item .val{font-size:14px}.section{padding:10px 14px}.dish-card .dish-name{font-size:11px}}
+@media(max-width:768px){.dish-grid{grid-template-columns:repeat(2,1fr)}.shop-banner h2{font-size:15px}.detail-btn{font-size:11px;padding:3px 10px}.score-grid{gap:6px;padding:8px 12px}.score-item .val{font-size:14px}.section{padding:10px 14px}.dish-card .dish-name{font-size:11px}}
 @media print{body{background:#fff;padding:0}.shop-card{box-shadow:none;border:1px solid #ddd;break-inside:avoid}.header{background:#c0392b!important;-webkit-print-color-adjust:exact}.select-btn,.select-hint,.btn-print{display:none!important}}
 '''
 
@@ -193,7 +193,7 @@ def get_shop_info(shop_id, shop_name, city_name):
         info['envScore'] = float(m.group(2))
         info['serviceScore'] = float(m.group(3))
 
-    m = re.search(r'(\d{4}上榜[^ ]+)', text)
+    m = re.search(r'(\d{4}上榜[^营]+)', text)
     if m:
         info['award'] = m.group(1)
 

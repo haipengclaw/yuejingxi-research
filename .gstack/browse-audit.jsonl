@@ -8149,3 +8149,4 @@
 {"ts":"2026-07-01T10:44:34.941Z","cmd":"click","args":"@e1","origin":"https://haipengclaw.github.io/yuejingxi-research/index.html","durationMs":906,"status":"ok","hasCookies":false,"mode":"headed"}
 {"ts":"2026-07-01T10:44:39.994Z","cmd":"url","args":"","origin":"https://haipengclaw.github.io/yuejingxi-research/index.html","durationMs":0,"status":"ok","hasCookies":false,"mode":"headed"}
 {"ts":"2026-07-01T10:44:40.023Z","cmd":"js","args":"document.title","origin":"https://haipengclaw.github.io/yuejingxi-research/index.html","durationMs":0,"status":"ok","hasCookies":false,"mode":"headed"}
+{"ts":"2026-07-01T11:39:19.039Z","cmd":"goto","args":"https://haipengclaw.github.io/yuejingxi-research/research_list.html","origin":"https://haipengclaw.github.io/yuejingxi-research/research_list.html","durationMs":11191,"status":"ok","hasCookies":false,"mode":"headed"}
