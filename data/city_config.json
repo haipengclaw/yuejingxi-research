@@ -61,6 +61,10 @@
   },
   "jobs": [
     {
+      "city": "广州",
+      "template": "yuecai"
+    },
+    {
       "city": "深圳",
       "template": "yuecai"
     }
