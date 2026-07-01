@@ -18,7 +18,7 @@ body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;backgr
 .city-tab.active{background:#c0392b;color:#fff;border-color:#c0392b}
 .st{font-size:18px;font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:8px;color:#333}
 .st .tg{font-size:12px;background:#c0392b;color:#fff;padding:2px 10px;border-radius:10px}
-.cg{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:36px}
+.cg{display:flex;gap:14px;margin-bottom:36px}.cg .cc{flex:1;min-width:0}
 .cc{background:#fff;border-radius:16px;padding:22px 20px;box-shadow:0 2px 12px rgba(0,0,0,.08);text-decoration:none;color:#333;display:block;position:relative;overflow:hidden;transition:transform .2s}
 .cc:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(0,0,0,.12)}
 .cc .bar{position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#c0392b,#e74c3c)}
@@ -29,7 +29,7 @@ body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;backgr
 .cc .tg2.pending{background:#eee;color:#999}
 .ll{display:inline-block;background:#fff;border-radius:12px;padding:14px 24px;box-shadow:0 2px 8px rgba(0,0,0,.06);text-decoration:none;color:#333;font-size:15px;font-weight:600}
 .footer{text-align:center;padding:30px;color:#999;font-size:12px}
-@media(max-width:768px){.cg{grid-template-columns:repeat(2,1fr)}.header{padding:36px 16px 30px}.header h1{font-size:24px}}
+@media(max-width:1024px){.cg{flex-wrap:wrap}.cg .cc{flex:1 1 calc(50% - 14px)}}
 </style>
 </head>
 <body>
