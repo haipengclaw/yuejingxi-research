@@ -61,7 +61,7 @@ def generate_one_report(city_name, city_pinyin, cuisine_name, category_label, sh
         html += f'''
 <div class="shop-card">
 <div class="shop-banner">
-<h2>{idx+1}. {name}</h2>
+<h2>{idx+1}. {name} <a href="../../brands/{city_name}/{name}.html" class="detail-btn" target="_blank" title="查看品牌详情">📋 详细</a></h2>
 <div class="meta">
 <span class="stars">{stars}</span>
 <span class="{score_class(rating)}" style="font-weight:700;font-size:16px">{rating}</span>

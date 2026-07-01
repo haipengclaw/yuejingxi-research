@@ -1,7 +1,12 @@
 {
   "date": "20260630",
   "cities": [
-    {"name": "广州", "pinyin": "guangzhou", "slug": "guangzhou", "cityId": 4}
+    {
+      "name": "广州",
+      "pinyin": "guangzhou",
+      "slug": "guangzhou",
+      "cityId": 4
+    }
   ],
   "templates": {
     "yuecai": {
@@ -9,16 +14,50 @@
       "dianping_level1": "10",
       "dianping_level2": "g101",
       "report_categories": [
-        {"key": "黑珍珠", "search_keywords": ["粤菜 黑珍珠"], "max": 60},
-        {"key": "米其林", "search_keywords": ["粤菜 米其林"], "max": 60},
-        {"key": "必吃榜", "search_keywords": ["粤菜 必吃榜"], "max": 60},
-        {"key": "排队", "search_keywords": ["粤菜 排队"], "sort_by": "reviewCount", "max": 60},
-        {"key": "老字号", "search_keywords": ["粤菜 老字号"], "max": 60}
+        {
+          "key": "黑珍珠",
+          "search_keywords": [
+            "粤菜 黑珍珠"
+          ],
+          "max": 60
+        },
+        {
+          "key": "米其林",
+          "search_keywords": [
+            "粤菜 米其林"
+          ],
+          "max": 60
+        },
+        {
+          "key": "必吃榜",
+          "search_keywords": [
+            "粤菜 必吃榜"
+          ],
+          "max": 60
+        },
+        {
+          "key": "排队",
+          "search_keywords": [
+            "粤菜 排队"
+          ],
+          "sort_by": "reviewCount",
+          "max": 60
+        },
+        {
+          "key": "老字号",
+          "search_keywords": [
+            "粤菜 老字号"
+          ],
+          "max": 60
+        }
       ]
     }
   },
   "jobs": [
-    {"city": "广州", "template": "yuecai"}
+    {
+      "city": "广州",
+      "template": "yuecai"
+    }
   ],
   "dianping": {
     "base_url": "https://www.dianping.com",
@@ -39,9 +78,9 @@
     "desktop": "/Users/macclaw/Desktop/餐饮品牌/粤京熹菜品研发数据库"
   },
   "validation": {
-    "max_missing_rating": 0.10,
+    "max_missing_rating": 0.1,
     "max_missing_price": 0.15,
-    "max_missing_dishes": 0.20,
-    "max_low_image_ratio": 0.30
+    "max_missing_dishes": 0.2,
+    "max_low_image_ratio": 0.3
   }
 }
